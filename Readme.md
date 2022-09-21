@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валерия Плюхина](https://up.htmlacademy.ru/htmlcss/35/user/2098045).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артемов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
