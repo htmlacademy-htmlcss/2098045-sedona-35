@@ -13,13 +13,13 @@
 		<nav class="navigation">
 			<ul class="navigation-list">
 				<li class="navigation-item">
-					<a class="navigation-link" href="index.html">Главная</a>
+					<a class="navigation-link" aria-current="page" href="index.html">Главная</a>
 				</li>
 				<li class="navigation-item">
 					<a class="navigation-link" href="#">О Седоне</a>
 				</li>
 				<li class="navigation-item">
-					<a class="navigation-link navigation-link-currant" href="catalog.html" >Гостиницы</a>
+					<a class="navigation-link" href="catalog.html" >Гостиницы</a>
 				</li>
 			</ul>
 
@@ -46,34 +46,31 @@
 				<h1>Гостиницы Седоны</h1>
 				<ul class="breadcrums">
 					<li class="breadcrumbs-item">
-						<a class="breadcrumbs-link" href="index.html">Главная</a>
+						<a class="breadcrumbs-link" aria-current="page" href="index.html">Главная</a>
 					</li>
 					<li class="breadcrumbs-item">
-						<a class="breadcrumbs-link">Каталог</a>
+						<a class="breadcrumbs-link" aria-current="page" href="index.html">Каталог</a>
 					</li>
 				</ul>
 		</header>
 
 		<section>
-			<h2 class="visual-hidden">Список товаров фильтров</h2>
+			<h2 class="visual-hidden">Список позиций для фильтров</h2>
 			<form class="catalog-filter" action="https://echo.htmlcademy.ru" method="get">
 				<button class="button" type="submit">Применить</button>
 				<button class="button" type="submit">Сбросить</button>
-			</form>
-
-
 
 			<fieldset class="catalog-infrostructure-group">
 				<legend class="catalog-filter-title">Гостиницы</legend>
 					<ul class="hotel-filter-list">
 						<li class="hotel-filter-item">
-							<label><input type="checkbox" name="Бассейн" checked>Бассей</label>
+							<label><input type="checkbox" name="infrostructure" value="Бассейн" checked>Бассей</label>
 						</li>
 						<li class="hotel-filter-item">
-							<label><input type="checkbox" name="Парковка" checked>Парковка</label>
+							<label><input type="checkbox" name="infrostructure" value="Парковка" checked>Парковка</label>
 						</li>
 						<li class="hotel-filter-item">
-								<label><input type="checkbox" name="Wi-Fi">Wi-Fi
+								<label><input type="checkbox" name="infrostructure" value="Wi-Fi">Wi-Fi
 						</label></li>
 					</ul>
 			</fieldset>
@@ -94,7 +91,6 @@
 			</fieldset>
 
 
-
 			<fieldset class="prise-group">
 				<legend>Стоимость, р:</legend>
 				<input placeholder="0" type="number">
@@ -102,7 +98,7 @@
 				<input type="range" name="range" id="prise" min="0" max="9000" value="7000" step="1">
 			</fieldset>
 
-
+		</form>
 
 		</section>
 
@@ -230,12 +226,13 @@
 	<section class="page-footer-subscribe">
 		<h2 class="hotel-search-header whie">Подпишитесь на рассылку</h2>
 		<p class="hotel-search-paragrapher">Только полезная информация и никакого спама, честное бойскаутское!</p>
-		<input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="your-email" required>
-		<button class="button subscribe" type="submit">Подписаться</button>
+		<form class="subscribe-form">
+			<input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="your-email" required>
+			<button class="button subscribe" type="submit">Подписаться</button>
+		</form>
 	</section>
 
 	<section class="page-footer-social">
-		<a class="logo-academy"><img crs="http://htmlacademy.ru"></a>
 		<ul class="footer-social-list">
 			<li class="footer-social-item">
 				<a class="button" href="https://vk.com/htmlacademy">
@@ -255,6 +252,9 @@
 		</ul>
 		<a class="footer-phone" href="tel:88128121212">
 			+7 (812) 812-12-12
+		</a>
+		<a class="logo-academy" href="https://htmlacademy.ru">
+			<span class="visually-hidden">Разработано в Html Academy</span>
 		</a>
 	</section>
 
