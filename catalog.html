@@ -9,17 +9,17 @@
 
 	<body>
 		<header class="page-header">
-			<a href="#"><img src="https://htmlacademy.ru/" class="logo" alt="Логотип сайта городка Седона" width="140" height="70"></a>
+			<a href="index.html"><img src="https://htmlacademy.ru/" class="logo" alt="Логотип сайта городка Седона" width="140" height="70"></a>
 			<nav class="navigation">
 				<ul class="navigation-list">
 					<li class="navigation-item">
-						<a class="navigation-link" aria-current="page" href="index.html">Главная</a>
+						<a class="navigation-link" href="index.html">Главная</a>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-link" href="#">О Седоне</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="catalog.html">Гостиницы</a>
+						<a class="navigation-link" aria-current="page" href="catalog.html" >Гостиницы</a>
 					</li>
 				</ul>
 
@@ -46,10 +46,10 @@
 				<h1>Гостиницы Седоны</h1>
 				<ul class="breadcrums">
 					<li class="breadcrumbs-item">
-						<a class="breadcrumbs-link" aria-current="page" href="index.html">Главная</a>
+						<a class="breadcrumbs-link" href="index.html">Главная</a>
 					</li>
 					<li class="breadcrumbs-item">
-						<a class="breadcrumbs-link" aria-current="page" href="index.html">Каталог</a>
+						<a class="breadcrumbs-link" aria-current="page" href="catalog.html">Каталог</a>
 					</li>
 				</ul>
 			</header>
@@ -124,7 +124,7 @@
 				<li class="hotels-card">
 					<a class="hotels-card-link" href="hotels.html">
 						<h3 class="hotels-card-title">Amara Resort & SPA</h3>
-						<img class="hotels-card-image" src="" alt="">
+						<img class="hotels-card-image" src="#" alt="">
 					</a>
 					<b class="hotels-card-price">от 4000 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
@@ -135,7 +135,7 @@
 				<li class="hotels-card">
 					<a class="hotels-card-link" href="hotels.html">
 						<h3 class="hotels-card-title">Villas at Poco diablo</h3>
-						<img class="hotels-card-image" src="" alt="">
+						<img class="hotels-card-image" src="#" alt="">
 					</a>
 					<b class="hotels-card-price">от 5000 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
@@ -146,9 +146,9 @@
 				<li class="hotels-card">
 					<a class="hotels-card-link" href="hotels.html">
 						<h3 class="hotels-card-title">Desert Quail Inn</h3>
-						<img class="hotels-card-image" src="" alt="">
+						<img class="hotels-card-image" src="#" alt="">
 					</a>
-					<b class="hotels-card-price">от 4000 ₽</b>
+					<b class="hotels-card-price">от 2500 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
 					<a class="hotels-card-button button elected" href="#">В избранное</a>
 					<a class="hotels-card-button button level" href="#">Рейтинг</a>
@@ -156,23 +156,14 @@
 				<li class="hotels-card">
 					<a class="hotels-card-link" href="hotels.html">
 						<h3 class="hotels-card-title">GreenTree Inn</h3>
-						<img class="hotels-card-image" src="" alt="">
+						<img class="hotels-card-image" src="#" alt="">
 					</a>
-					<b class="hotels-card-price">от 4000 ₽</b>
+					<b class="hotels-card-price">от 1500 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
 					<a class="hotels-card-button button elected" href="#">В избранное</a>
 					<a class="hotels-card-button button level" href="#">Рейтинг</a>
 				</li>
-				<li class="hotels-card">
-					<a class="hotels-card-link" href="hotels.html">
-						<h3 class="hotels-card-title">Amara Resort & SPA</h3>
-						<img class="hotels-card-image" src="" alt="">
-					</a>
-					<b class="hotels-card-price">от 4000 ₽</b>
-					<a class="hotels-card-button button" href="#">Подробнее</a>
-					<a class="hotels-card-button button elected" href="#">В избранное</a>
-					<a class="hotels-card-button button level" href="#">Рейтинг</a>
-				</li>
+
 			</ul>
 
 			<ul class="pagination">
@@ -194,19 +185,7 @@
 					<a class="pagination-link" href="#">4</a>
 				</li>
 				<li class="pagination-item">
-					<a class="pagination-link" href="#">5</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">6</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">7</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">8</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">9</a>
+					<a class="pagination-link" href="#">...</a>
 				</li>
 				<li class="pagination-item">
 					<a class="pagination-link" href="#">10</a>
@@ -227,13 +206,14 @@
 		<section class="page-footer-subscribe">
 			<h2 class="hotel-search-header whie">Подпишитесь на рассылку</h2>
 			<p class="hotel-search-paragrapher">Только полезная информация и никакого спама, честное бойскаутское!</p>
-			<form class="subscribe-form">
+			<form class="subscribe-form" action="https://echo.htmlcademy.ru" method="get">
 				<input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="your-email" required>
 				<button class="button subscribe" type="submit">Подписаться</button>
 			</form>
 		</section>
 
 		<section class="page-footer-social">
+			<h2 class="visually-hidden">Социальные сети</h2>
 			<ul class="footer-social-list">
 				<li class="footer-social-item">
 					<a class="button" href="https://vk.com/htmlacademy">
