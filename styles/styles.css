@@ -2,3 +2,8 @@ html body {
 	padding: 0;
 	margin:0;
 }
+
+.hero {
+	background-image: url("/images/index/index-background.jpg");
+	background-repeat: no-repeat;
+}
