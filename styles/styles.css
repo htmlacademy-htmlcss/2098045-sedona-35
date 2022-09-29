@@ -1,9 +1,52 @@
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
+	font-display: swap;
+  }
+
+
+
 html body {
 	padding: 0;
 	margin:0;
 }
 
+body {
+	font-family: "PT Sans" sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+
+}
+
+
+
 .hero {
-	background-image: url("/images/index/index-background.jpg");
+	background-image: url("/images/index-background.jpg");
 	background-repeat: no-repeat;
+
+
+}
+
+
+
+.navigation {
+	.item {
+		margin-bottom: 20px;
+	  }
+
+	  .item:last-child {
+		margin-bottom: 0;
+	  }
+
 }
