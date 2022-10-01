@@ -24,23 +24,35 @@ html body {
 
 body {
 	font-family: "PT Sans", sans-serif;
+	font-weight: 400px;
 	font-size: 18px;
 	line-height: 21px;
+	background-color: #F2F2F2;
+	color: #242424;
 
 }
 
-
-
-.hero {
-	background-image: url("/images/index-background.jpg");
-	background-repeat: no-repeat;
-
-
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
+/* Pages */
 
-.navigation {
+.page-header {
+	color: #000000;
+	background-color: #ffffff;
+  }
+
+  .navigation {
 	.item {
 		margin-bottom: 20px;
 	  }
@@ -48,5 +60,141 @@ body {
 	  .item:last-child {
 		margin-bottom: 0;
 	  }
+	}
+
+		.navigation-link {
+			font-family: "PT Sans", sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+			text-decoration: none;
+			color: #000000;
+
+		}
+
+.main-index {
+	background-color: #ffffff;
+	color: #000000;
 
 }
+
+
+	.hero {
+		background-image: url("/images/index-background.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 485px;
+	}
+
+
+
+
+
+	.advantages-reasons {
+		height: 282px;
+	}
+
+  .advantages-title {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.advantages-description {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+
+}
+
+/* List */
+
+.advantages-list, .another-advantages-list {
+	text-align: center;
+  }
+
+  /* title */
+
+  .advantages-list-title {
+	font-weight: 700px;
+	font-size: 24px;
+	line-height: 28px;
+  }
+
+  .advantages-list-title.white (
+
+	)
+
+.advantages-list-description {
+	font-weight: 400px;
+	font-size: 18px;
+	line-height: 21x;
+}
+
+/* Поиск гостиниц */
+
+.hotel-search {
+	height: 406px;
+	text-align: center;
+}
+	.hotel-search-header {
+		font-weight: 700px;
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.hotel-search-paragrapher {
+		font-weight: 400px;
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	/*  Подвал  */
+
+	.page-footer-subscribe {
+		height: 415px;
+		text-align: center;
+		background-image: url("/images/Footer-subscribe.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+
+		.page-footer-header {
+			font-weight: 700px;
+			font-size: 30px;
+			line-height: 36px;
+			color: #ffffff;
+			text-transform: uppercase;
+
+		}
+
+		.page-footer-paragrapher {
+			font-weight: 400px;
+			font-size: 22px;
+			line-height: 26px;
+			color: #ffffff;
+		}
+
+		.subscribe.button {
+			background-color: #82B3D3;
+			font-weight: 700px;
+			font-size: 20px;
+			line-height: 36px;
+		}
+
+		.page-footer-social {
+			height: 120px;
+
+		}
+
+			.footer-phone {
+				font-weight: 400px;
+				font-size: 40px;
+				line-height: 40px;
+				color: #000000;
+				text-decoration: none;
+				text-align: center;
+			}

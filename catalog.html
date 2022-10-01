@@ -12,17 +12,18 @@
 
 		<!-- Шапка -->
 		<header class="page-header">
-			<a href="index.html"><img src="images/logo.png" class="logo" alt="Логотип сайта городка Седона" width="140" height="70"></a>
+			<a href="index.html" aria-current="page"><img src="/images/logo.png" class="logo" alt="Логотип сайта городка Седона" width="140" height="70"></a>
+
 			<nav class="navigation">
 				<ul class="navigation-list">
 					<li class="navigation-item">
-						<a class="navigation-link" href="index.html">Главная</a>
+						<a class="navigation-link" href="index.html" aria-current="page">Главная</a>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-link" href="#">О Седоне</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" aria-current="page" href="catalog.html">Гостиницы</a>
+						<a class="navigation-link" href="catalog.html">Гостиницы</a>
 					</li>
 				</ul>
 
@@ -38,10 +39,12 @@
 						</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="#">Хочу сюда</a>
+						<a class="navigation-link button" href="#">Хочу сюда</a>
 					</li>
 				</ul>
+
 			</nav>
+
 		</header>
 
 		<main class="main-inner">
@@ -217,14 +220,13 @@
 		<footer class="page-footer">
 
 			<section class="page-footer-subscribe">
-				<h2 class="hotel-search-header whie">Подпишитесь на рассылку</h2>
-				<p class="hotel-search-paragrapher">Только полезная информация и никакого спама, честное бойскаутское!</p>
+				<h2 class="page-footer-header">Подпишитесь на рассылку</h2>
+				<p class="page-footer-paragrapher">Только полезная информация и никакого спама, честное бойскаутское!</p>
 				<form class="subscribe-form" action="https://echo.htmlcademy.ru" method="get">
 					<input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="your-email" required>
-					<button class="button subscribe" type="submit">Подписаться</button>
+					<button class="subscribe button" type="submit">Подписаться</button>
 				</form>
 			</section>
-
 
 			<!-- Контакты -->
 			<section class="page-footer-social">
@@ -255,6 +257,7 @@
 			</section>
 
 		</footer>
+
 	</body>
 
 </html>
