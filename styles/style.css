@@ -26,7 +26,7 @@ body {
 	font-weight: 400px;
 	font-size: 18px;
 	line-height: 21px;
-	background-color: #f2f2f2;
+	background-color: #ffffff;
 	color: #242424;
 }
 
@@ -40,7 +40,10 @@ body {
 	background-color: #756157;
 	text-decoration: none;
 	text-transform: uppercase;
+	border: none;
 }
+
+
 
 
 /* Pages */
@@ -53,6 +56,18 @@ body {
 
 .navigation-item {
 	margin-bottom: 20px;
+}
+
+.navigation-link.button {
+	font-family: inherit;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+	background-color: #756157;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .navigation-item:last-child {
@@ -173,6 +188,7 @@ body {
 	font-weight: 700px;
 	font-size: 20px;
 	line-height: 36px;
+	border: none;
 }
 
 .page-footer-social {
@@ -188,6 +204,11 @@ body {
 	text-align: center;
 }
 
+.page-footer-social {
+	background-image: url("/images/logo-htmlacademy.svg");
+	background-repeat: no-repeat;
+}
+
 
 img {
 	max-width: 100%;
@@ -195,10 +216,139 @@ img {
 	object-fit: contain;
 }
 
-/* Catalod */
+
+
+/* Catalog */
+
 .inner-header {
 	height: 412px;
-	background-image: url("images/Catalog-filter.jpg");
+	background-image: url("/images/Catalog-filter.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: 100% 412px;
+	background-color:#ffffff;
 }
+
+.inner-header h1 {
+	color:#ffffff;
+	font-weight: 700px;
+	font-size: 60px;
+	line-height: 78px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs-item {
+	color: #ffffff;
+}
+
+/* Link */
+.breadcrumbs-link {
+	font-family: inherit;
+	font-weight: 400px;
+	font-size: 16px;
+	line-height: 21px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+/* Фильтры, инфроструктура*/
+
+.catalog-infrostructure-group {
+	width: 150px;
+	height: 155px;
+}
+.catalog-filter-title {
+	font-weight: 700px;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.catalog-filter {
+	font-weight: 400px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+
+}
+
+
+/* Кнопки*/
+.button.use {
+	background-color: #82b3d3;
+	font-weight: 700px;
+	font-size: 20px;
+	line-height: 36px;
+	border: none;
+}
+
+.hotels-card-button.favorites {
+	background-color: #82b3d3;
+	font-weight: 700px;
+	font-size: 20px;
+	line-height: 36px;
+	border: none;
+}
+
+.hotels-card-button.rating {
+	background-color: #F2F2F2;
+	font-weight: 400px;
+	font-size: 16px;
+	line-height: 20px;
+	border: none;
+	color: #333333;
+
+}
+
+
+/* Сортировка */
+.catalog-select {
+	height:150px;
+
+}
+.select-control option {
+	font-weight: 400px;
+	font-size: 14px;
+	line-height: 20px;
+
+}
+
+
+/* Список отелей */
+.hotels-card-link {
+	font-weight: 700px;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Price */
+.hotels-card-price {
+	font-weight: 400px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #333333;
+}
+
+/* Link */
+.pagination {
+	background-color: #ffffff;
+}
+
+.pagination-link {
+	color: #ffffff;
+	background-color:  #82B3D3;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 700;
+  }
+
+  .pagination-current {
+	color: #242424;
+  	background-color: #F2F2F2;
+}
+
+.pagination-disabled {
+	background-color: #82B3D3;
+  }

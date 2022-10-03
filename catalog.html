@@ -62,15 +62,14 @@
 						<a class="breadcrumbs-link" aria-current="page" href="catalog.html">Каталог</a>
 					</li>
 				</ul>
-			</header>
 
 			<section>
 
 				<!-- Фильтр -->
 				<h2 class="visual-hidden">Список позиций для фильтров</h2>
 				<form class="catalog-filter" action="https://echo.htmlcademy.ru" method="get">
-					<button class="button" type="submit">Применить</button>
-					<button class="button" type="submit">Сбросить</button>
+					<button class="button use" type="submit">Применить</button>
+					<button class="button" type="submit colorless">Сбросить</button>
 
 					<fieldset class="catalog-infrostructure-group">
 						<legend class="catalog-filter-title">Гостиницы</legend>
@@ -110,11 +109,13 @@
 						<input type="range" name="range" id="prise" min="0" max="9000" value="7000" step="1">
 					</fieldset>
 
-				</form>
+					</form>
 
 			</section>
+		</header>
 
 			<!-- Сортировка отелей -->
+		<div class="catalog-select">
 			<select class="select-control" aria-label="Сортировка">
 				<option value="popular">Сначала популярное</option>
 				<option value="cheap">Сначала дешёвое</option>
@@ -132,6 +133,7 @@
 					<span class="visually-hidden">Показать списком</span>
 				</a>
 			</div>
+		</div>
 
 			<!-- Список отелей -->
 			<ul class="hotels-list">
@@ -142,8 +144,8 @@
 					</a>
 					<b class="hotels-card-price">от 4000 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
-					<a class="hotels-card-button button elected" href="#">В избранное</a>
-					<a class="hotels-card-button button level" href="#">Рейтинг</a>
+					<a class="hotels-card-button button favorites" href="#">В избранное</a>
+					<a class="hotels-card-button button rating" href="#">Рейтинг:<span>8,5</span></a>
 				</li>
 
 				<li class="hotels-card">
@@ -153,8 +155,8 @@
 					</a>
 					<b class="hotels-card-price">от 5000 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
-					<a class="hotels-card-button button elected" href="#">В избранное</a>
-					<a class="hotels-card-button button level" href="#">Рейтинг</a>
+					<a class="hotels-card-button button favorites" href="#">В избранное</a>
+					<a class="hotels-card-button button rating" href="#">Рейтинг:<span>9,2</span></a>
 				</li>
 
 				<li class="hotels-card">
@@ -164,8 +166,8 @@
 					</a>
 					<b class="hotels-card-price">от 2500 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
-					<a class="hotels-card-button button elected" href="#">В избранное</a>
-					<a class="hotels-card-button button level" href="#">Рейтинг</a>
+					<a class="hotels-card-button button favorites" href="#">В избранное</a>
+					<a class="hotels-card-button button rating" href="#">Рейтинг:<span>6,9</span></a>
 				</li>
 				<li class="hotels-card">
 					<a class="hotels-card-link" href="hotels.html">
@@ -174,8 +176,8 @@
 					</a>
 					<b class="hotels-card-price">от 1500 ₽</b>
 					<a class="hotels-card-button button" href="#">Подробнее</a>
-					<a class="hotels-card-button button elected" href="#">В избранное</a>
-					<a class="hotels-card-button button level" href="#">Рейтинг</a>
+					<a class="hotels-card-button button favorites" href="#">В избранное</a>
+					<a class="hotels-card-button button rating" href="#">Рейтинг:<span>5,0</span></a>
 				</li>
 
 			</ul>
@@ -187,7 +189,7 @@
 					</a>
 				</li>
 				<li class="pagination-item">
-					<a class="pagination-link" href="https://htmlacademy.ru" aria-current="page">1</a>
+					<a class="pagination-link pagination-current" href="https://htmlacademy.ru" aria-current="page">1</a>
 				</li>
 				<li class="pagination-item">
 					<a class="pagination-link" href="#">2</a>
