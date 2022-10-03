@@ -44,8 +44,6 @@ body {
 }
 
 
-
-
 /* Pages */
 
 .page-header {
@@ -92,7 +90,7 @@ body {
 
 
 .hero {
-	background-image: url("/images/index-background.jpg");
+	background-image: url("../images/index-background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 485px;
 }
@@ -163,7 +161,7 @@ body {
 .page-footer-subscribe {
 	height: 415px;
 	text-align: center;
-	background-image: url("/images/Footer-subscribe.jpg");
+	background-image: url("../images/Footer-subscribe.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
@@ -205,7 +203,7 @@ body {
 }
 
 .page-footer-social {
-	background-image: url("/images/logo-htmlacademy.svg");
+	background-image: url("../images/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
 
@@ -217,19 +215,18 @@ img {
 }
 
 
-
 /* Catalog */
 
 .inner-header {
 	height: 412px;
-	background-image: url("/images/Catalog-filter.jpg");
+	background-image: url("../images/Catalog-filter.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 412px;
-	background-color:#ffffff;
+	background-color: #ffffff;
 }
 
 .inner-header h1 {
-	color:#ffffff;
+	color: #ffffff;
 	font-weight: 700px;
 	font-size: 60px;
 	line-height: 78px;
@@ -257,6 +254,7 @@ img {
 	width: 150px;
 	height: 155px;
 }
+
 .catalog-filter-title {
 	font-weight: 700px;
 	font-size: 20px;
@@ -268,7 +266,6 @@ img {
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
-
 }
 
 
@@ -290,26 +287,24 @@ img {
 }
 
 .hotels-card-button.rating {
-	background-color: #F2F2F2;
+	background-color: #f2f2f2;
 	font-weight: 400px;
 	font-size: 16px;
 	line-height: 20px;
 	border: none;
 	color: #333333;
-
 }
 
 
 /* Сортировка */
 .catalog-select {
-	height:150px;
-
+	height: 150px;
 }
+
 .select-control option {
 	font-weight: 400px;
 	font-size: 14px;
 	line-height: 20px;
-
 }
 
 
@@ -337,18 +332,18 @@ img {
 
 .pagination-link {
 	color: #ffffff;
-	background-color:  #82B3D3;
+	background-color: #82b3d3;
 	text-decoration: none;
 	font-size: 20px;
 	line-height: 36px;
 	font-weight: 700;
-  }
+}
 
-  .pagination-current {
+.pagination-current {
 	color: #242424;
-  	background-color: #F2F2F2;
+	background-color: #f2f2f2;
 }
 
 .pagination-disabled {
-	background-color: #82B3D3;
-  }
+	background-color: #82b3d3;
+}
