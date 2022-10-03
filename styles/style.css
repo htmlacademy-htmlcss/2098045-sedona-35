@@ -194,3 +194,11 @@ img {
 	height: auto;
 	object-fit: contain;
 }
+
+/* Catalod */
+.inner-header {
+	height: 412px;
+	background-image: url("images/Catalog-filter.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
