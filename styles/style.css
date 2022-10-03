@@ -189,10 +189,6 @@ body {
 	border: none;
 }
 
-.page-footer-social {
-	height: 120px;
-}
-
 .footer-phone {
 	font-weight: 400px;
 	font-size: 40px;
@@ -203,6 +199,7 @@ body {
 }
 
 .page-footer-social {
+	height: 120px;
 	background-image: url("../images/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
