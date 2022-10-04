@@ -137,6 +137,10 @@ body {
 	line-height: 21px;
 }
 
+.advantages-items {
+	background-color: #82b3d3;
+}
+
 /* Поиск гостиниц */
 
 .hotel-search {
@@ -200,7 +204,6 @@ body {
 
 .page-footer-social {
 	height: 120px;
-	background-image: url("../images/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
 
