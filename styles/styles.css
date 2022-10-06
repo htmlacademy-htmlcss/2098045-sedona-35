@@ -165,7 +165,7 @@ body {
 .page-footer-subscribe {
 	height: 415px;
 	text-align: center;
-	background-image: url("../images/Footer-subscribe.jpg");
+	background-image: url("../images/footer-subscribe.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
@@ -219,7 +219,7 @@ img {
 
 .inner-header {
 	height: 412px;
-	background-image: url("../images/Catalog-filter.jpg");
+	background-image: url("../images/catalog-filter.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 412px;
 	background-color: #ffffff;
