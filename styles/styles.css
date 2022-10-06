@@ -21,7 +21,7 @@ html body {
 	margin: 0;
 }
 
-.container {
+.fix-container {
 	margin: 0 auto;
 	width: 960px;
 }
