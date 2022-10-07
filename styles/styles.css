@@ -68,6 +68,29 @@ body {
 	background-color: #ffffff;
 }
 
+.logo {
+	display: block;
+}
+
+.navigation {
+	display: flex;
+	width: 980px;
+	margin: 0 auto;
+}
+
+.navigation-list {
+	margin: 0;
+	padding: 0;
+}
+
+.class-on-li::marker {
+	color: transparent;
+}
+
+.navigation-user {
+	max-width: 310px;
+	margin-left: auto;
+}
 
 .navigation-item {
 	margin-bottom: 20px;
@@ -112,6 +135,18 @@ body {
 	background-size: 100% 485px;
 }
 
+/* List */
+
+.advantages-list,
+.another-advantages-list {
+	text-align: center;
+}
+
+.advantages-list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
 
 .advantages-title {
 	font-family: "PT Sans", sans-serif;
@@ -119,24 +154,14 @@ body {
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: uppercase;
-	text-align: center;
-}
+	}
 
 .advantages-description {
 	height: 282px;
 	font-size: 22px;
 	line-height: 26px;
-	text-align: center;
 }
 
-/* List */
-
-.advantages-list,
-.another-advantages-list {
-	text-align: center;
-
-
-}
 
 /* title */
 
