@@ -34,9 +34,9 @@ body {
 	color: #242424;
 }
 
-.fix-container {
+.page-container {
 	margin: 0 auto;
-	width: 960px;
+	width: 1200px;
 	background-color: #ffffff;
 }
 
@@ -67,7 +67,9 @@ body {
 
 .logo {
 	display: block;
+	padding-left: 40px;
 }
+
 
 .navigation {
 	display: flex;
@@ -130,24 +132,43 @@ body {
 .hero {
 	background-image: url("../images/index-background.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 485px;
+	background-size: 100% auto;
+
+}
+
+.hero-logo-text {
+	margin: 0 auto;
+	display: flex;
+}
+
+.about-sedona {
+	margin: 0 auto;
+	text-align: center;}
+
+.about-sedona-title {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.about-sedona-description {
+	font-weight: 400px;
+	font-size: 22px;
+	line-height: 26px;
 }
 
 /* List */
-
-.advantages-list,
-.another-advantages-list {
-	text-align: center;
-}
-
 .advantages-list {
+	display: flex;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
+/* Title */
 .advantages-title {
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
@@ -156,15 +177,13 @@ body {
 	text-transform: uppercase;
 }
 
-.advantages-description {
-	height: 282px;
-	font-size: 22px;
-	line-height: 26px;
+.advantages-items {
+	background-color: #82b3d3;
+	width: 400px;
+	text-align: center;
 }
 
-
 /* title */
-
 .advantages-list-title {
 	font-weight: 700px;
 	font-size: 24px;
@@ -178,22 +197,31 @@ body {
 	line-height: 21px;
 }
 
-.advantages-items {
-	background-color: #82b3d3;
+
+/* Item */
+.enother-advantages-item {
+	width: 400px;
+}
+
+.home, .souvenirs {
+	background-color: rgba(131, 179, 211, 0.12);
 }
 
 
 /* Поиск гостиниц */
 
 .hotel-search {
+	margin-top: 20px;
 	height: 406px;
 	text-align: center;
 }
 
 .hotel-search-header {
-	font-weight: 700px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
+	text-transform: uppercase;
 }
 
 .hotel-search-paragrapher {
