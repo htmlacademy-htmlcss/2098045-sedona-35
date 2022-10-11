@@ -38,16 +38,16 @@ body {
 	margin: 0 auto;
 	width: 1200px;
 	background-color: #ffffff;
-}
-
-.main-container {
+	color: #333333;
 	flex-grow: 1;
 }
 
+
+/*button*/
 .button {
 	font-family: inherit;
-	font-size: 20px;
-	line-height: 36px;
+	font-size: 16px;
+	line-height: 20px;
 	font-weight: 700;
 	text-align: center;
 	color: #ffffff;
@@ -55,6 +55,7 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	border: none;
+	padding: 8px 34px;
 }
 
 
@@ -67,7 +68,7 @@ body {
 
 .logo {
 	display: block;
-	padding-left: 40px;
+	padding-left: 60px;
 }
 
 
@@ -83,6 +84,16 @@ body {
 	width: 310px;
 }
 
+.navigation-link {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+}
+
 .navigation-user {
 	max-width: 380px;
 	margin-left: auto;
@@ -92,35 +103,8 @@ body {
 	color: transparent;
 }
 
-.navigation-item {
-	margin-bottom: 20px;
-}
-
-.navigation-link.button {
-	font-family: inherit;
-	font-size: 20px;
-	line-height: 36px;
-	font-weight: 700;
-	text-align: center;
-	color: #ffffff;
-	background-color: #756157;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
 .navigation-item:last-child {
 	margin-bottom: 0;
-}
-
-
-.navigation-link {
-	font-family: "PT Sans", sans-serif;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
-	text-align: center;
-	text-decoration: none;
-	color: #000000;
 }
 
 .main-index {
@@ -141,6 +125,8 @@ body {
 	display: flex;
 }
 
+
+/*Преимущества*/
 .about-sedona {
 	margin: 0 auto;
 	text-align: center;}
@@ -169,22 +155,14 @@ body {
 }
 
 /* Title */
-.advantages-title {
-	font-family: "PT Sans", sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: uppercase;
-}
-
 .advantages-items {
 	background-color: #82b3d3;
 	width: 400px;
 	text-align: center;
 }
 
-/* title */
 .advantages-list-title {
+	font-family: "PT Sans", sans-serif;
 	font-weight: 700px;
 	font-size: 24px;
 	line-height: 28px;
