@@ -23,8 +23,6 @@ html {
 
 body {
 	margin: 0;
-	display: flex;
-	flex-direction: column;
 	min-height: 100%;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400px;
@@ -36,7 +34,7 @@ body {
 
 .fix-container {
 	margin: 0 auto;
-	width: 960px;
+	width: 1200px;
 	background-color: #ffffff;
 }
 
@@ -46,9 +44,10 @@ body {
 
 .button {
 	font-family: inherit;
-	font-size: 20px;
-	line-height: 36px;
+	font-size: 16px;
+	line-height: 20px;
 	font-weight: 700;
+	padding: 8px 34px;
 	text-align: center;
 	color: #ffffff;
 	background-color: #756157;
@@ -94,18 +93,6 @@ body {
 	margin-bottom: 20px;
 }
 
-.navigation-link.button {
-	font-family: inherit;
-	font-size: 20px;
-	line-height: 36px;
-	font-weight: 700;
-	text-align: center;
-	color: #ffffff;
-	background-color: #756157;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
 .navigation-item:last-child {
 	margin-bottom: 0;
 }
@@ -133,19 +120,27 @@ body {
 	background-size: 100% 485px;
 }
 
-/* List */
+.hero-logo-text {
+	display: block;
+	margin: 0 auto;
+}
 
-.advantages-list,
-.another-advantages-list {
+/* List */
+.advantages-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 0;
+	margin: 0;
 	text-align: center;
 }
 
-.advantages-list {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	display: flex;
+.enother-advantages-list {
+	display: grid;
 	justify-content: space-between;
+	grid-template-columns: repeat(3, 400px);
+	gap: 0;
+	margin: 0;
+	text-align: center;
 }
 
 .advantages-title {
@@ -176,10 +171,33 @@ body {
 	font-weight: 400px;
 	font-size: 18px;
 	line-height: 21px;
+	max-width: 150px;
 }
 
 .advantages-items {
 	background-color: #82b3d3;
+	height: 384px;
+}
+
+.wide {
+	grid-column: span 3;
+	background-color: #ffffff;
+}
+
+.picture {
+	grid-column: span 2;
+}
+
+.home {
+	width: 400px;
+}
+
+.food {
+	width: 400px;
+}
+
+.souvenirs {
+	width: 400px;
 }
 
 
