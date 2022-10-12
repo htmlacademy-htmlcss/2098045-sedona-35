@@ -32,14 +32,17 @@ body {
 	color: #242424;
 }
 
-.fix-container {
-	margin: 0 auto;
-	width: 1200px;
-	background-color: #ffffff;
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
 }
 
-.main-container {
-	flex-grow: 1;
+.page-container {
+	margin: 0 auto;
+	width: 1200px;
+	padding: 0;
+	background-color: #ffffff;
 }
 
 .button {
@@ -69,12 +72,16 @@ body {
 }
 
 .navigation {
-	display: flex;
+	display: grid;
+	grid-template-columns: (6, 120px);
+	grid-auto-flow: column;
 	width: 980px;
 	margin: 0 auto;
+
 }
 
 .navigation-list {
+
 	margin: 0;
 	padding: 0;
 	width: 310px;
@@ -128,76 +135,91 @@ body {
 /* List */
 .advantages-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	gap: 0;
-	margin: 0;
-	text-align: center;
-}
-
-.enother-advantages-list {
-	display: grid;
+	grid-template-columns: repeat(auto-fit, 400px);
 	justify-content: space-between;
-	grid-template-columns: repeat(3, 400px);
+	flex-wrap: wrap;
 	gap: 0;
-	margin: 0;
-	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+
 }
 
+
+/* Items */
+.advantages-items {
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+/* title */
 .advantages-title {
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: uppercase;
-}
+	}
 
 .advantages-description {
 	height: 282px;
 	font-size: 22px;
 	line-height: 26px;
+
 }
-
-
-/* title */
 
 .advantages-list-title {
 	font-weight: 700px;
 	font-size: 24px;
 	line-height: 28px;
-}
 
+}
 
 .advantages-list-description {
 	font-weight: 400px;
 	font-size: 18px;
 	line-height: 21px;
-	max-width: 200px;
 }
 
-.advantages-items {
-	background-color: #82b3d3;
-	width: 400px;
+.white-text {
+	color: #ffffff;
 }
 
 .wide {
 	grid-column: span 3;
-	background-color: #ffffff;
+	padding: 0;
+
 }
 
-.picture {
+.reall {
 	grid-column: span 2;
+
 }
 
 .home {
-	width: 400px;
+	background-color: rgba(131, 179, 211, 0.12);
 }
 
 .food {
-	width: 400px;
+	background-color: #ffffff;
+
 }
 
 .souvenirs {
-	width: 400px;
+	background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.blue-card {
+	background-color: #82b3d3;
+}
+
+.light-blue-card (
+	background-color: rgba(131, 179, 211, 0.12);
+)
+
+.medium-blue-card {
+	background-color: rgba(131, 179, 211, 0.2);
 }
 
 
@@ -206,6 +228,7 @@ body {
 .hotel-search {
 	height: 406px;
 	text-align: center;
+	height: 406px;
 }
 
 .hotel-search-header {
@@ -267,13 +290,6 @@ body {
 	height: 120px;
 	background-repeat: no-repeat;
 	background-color: #ffffff;
-}
-
-
-img {
-	max-width: 100%;
-	height: auto;
-	object-fit: contain;
 }
 
 
