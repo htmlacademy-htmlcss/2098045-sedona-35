@@ -43,6 +43,7 @@ img {
 	width: 1200px;
 	padding: 0;
 	background-color: #ffffff;
+	flex-grow: 1;
 }
 
 .visually-hidden {
@@ -77,7 +78,7 @@ img {
 }
 
 .navigation {
-	display: grid;
+	display: flex;
 	grid-template-columns: (6, 120px);
 	grid-auto-flow: column;
 	width: 980px;
@@ -89,7 +90,7 @@ img {
 
 	margin: 0;
 	padding: 0;
-	width: 310px;
+	width: 339px;
 }
 
 .navigation-user {
