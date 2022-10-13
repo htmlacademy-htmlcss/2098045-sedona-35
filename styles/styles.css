@@ -406,7 +406,7 @@ width: 240px;
 	color: #ffffff;
 }
 
-.hotels-card-button.favorites {
+.hotel-card-button.favorites {
 	background-color: #82b3d3;
 	font-weight: 700;
 	font-size: 20px;
@@ -414,7 +414,7 @@ width: 240px;
 	border: none;
 }
 
-.hotels-card-button.rating {
+.hotel-card-button.rating {
 	background-color: #f2f2f2;
 	font-weight: 400;
 	font-size: 16px;
@@ -459,33 +459,71 @@ width: 240px;
 
 }
 
-/* Список отелей */
+ /* Hotel list*/
 
-.hotels-list {
+.hotel-card {
+	background-color: #ffffff;
 	display: grid;
-	grid-template-columns: repeat(3, 220px);
-
+	grid-template-rows: 212px min-content auto min-content 16px;
+	grid-template-columns: 20px 140px 20px 140px 20px;
 }
 
-.hotels-card-link {
+
+
+.hotel-list {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: 24px;
+	padding: 0;
+	gap: 20px;
+}
+
+.hotel-card-image-link {
+	grid-column: 2 / 5;
+}
+
+.hotel-card-title-link {
 	font-weight: 700px;
 	font-size: 24px;
 	line-height: 28px;
 	color: #000000;
 	text-decoration: none;
+	grid-column: 2 / 5;
 }
 
-.hotels-list {
-	display: grid;
-	grid-template-columns: repeat(3, 300px);
-}
-
-/* Price */
-.hotels-card-price {
+.hotel-card-type {
 	font-weight: 400px;
 	font-size: 18px;
 	line-height: 21px;
 	color: #333333;
+	grid-column: 2 / 5;
+}
+
+/* Price */
+.hotel-card-price {
+	font-weight: 400px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #333333;
+	grid-column: 4 / 5;
+}
+
+.hotel-card-button-detail {
+	grid-column: 2 / 3;
+}
+
+.hotel-card-button-favorites {
+	grid-column: 4 / 5;
+}
+
+.hotel-card-star {
+	grid-column: 2 /3;
+}
+
+.hotel-card-button-rating {
+	grid-column: 4 / 5;
 }
 
 /* Link */
