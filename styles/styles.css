@@ -97,6 +97,7 @@ img {
 
 .navigation-list {
 	display: flex;
+	flex-wrap: wrap;
 	width: 339px;
 	margin: 0;
 	padding: 0;
@@ -122,6 +123,7 @@ img {
 
 .navigation-link {
 	padding: 24px 19px;
+	display: block;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
