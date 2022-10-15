@@ -50,8 +50,14 @@ img {
 }
 
 .visually-hidden {
-	transform: scale(0);
 	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .button {
@@ -79,8 +85,6 @@ img {
 
 .navigation {
 	display: flex;
-	grid-template-columns: (6, 120px);
-	grid-auto-flow: column;
 	width: 980px;
 	margin: 0 auto;
 }
@@ -92,10 +96,10 @@ img {
 }
 
 .navigation-list {
-
+	display: flex;
+	width: 339px;
 	margin: 0;
 	padding: 0;
-	width: 339px;
 }
 
 .navigation-user {
@@ -117,6 +121,7 @@ img {
 
 
 .navigation-link {
+	padding: 24px 19px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
@@ -161,6 +166,10 @@ img {
 	margin: 0 auto;
 	padding: 0;
 	align-items: center;
+}
+
+li:first-child {
+	background-color: rgb(234, 171, 54);
 }
 
 /* Убрать точки у списка */
@@ -231,26 +240,6 @@ img {
 	color: #ffffff;
 }
 
-.home {
-	background-color: rgba(131, 179, 211, 0.12);
-}
-
-.food {
-	background-color: #ffffff;
-}
-
-.souvenirs {
-	background-color: rgba(131, 179, 211, 0.12);
-}
-
-.blue-card {
-	background-color: #82b3d3;
-}
-
-.light-blue-card {
-	background-color: rgba(131, 179, 211, 0.12);
-}
-
 
 /* Поиск гостиниц */
 
@@ -311,7 +300,6 @@ img {
 
 
 .page-footer-subscribe {
-	height: 415px;
 	text-align: center;
 	background-image: url("../images/footer-subscribe.jpg");
 	background-repeat: no-repeat;
@@ -321,7 +309,7 @@ img {
 }
 
 .page-footer-header {
-	font-weight: 700px;
+	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
 	color: #ffffff;
@@ -329,7 +317,7 @@ img {
 }
 
 .page-footer-paragrapher {
-	font-weight: 400px;
+	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
 	color: #ffffff;
@@ -337,7 +325,7 @@ img {
 
 .subscribe.button {
 	background-color: #82b3d3;
-	font-weight: 700px;
+	font-weight: 700;
 	font-size: 20px;
 	line-height: 36px;
 	border: none;
