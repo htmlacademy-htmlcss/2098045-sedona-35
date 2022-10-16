@@ -425,6 +425,27 @@ img {
 	grid-row: span 2;
 }
 
+/* Сортировка */
+.sorting-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.sorting-container .button-view {
+	width: 16px;
+	height: 14px;
+}
+
+.number-hotel {
+	max-width: 400px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+}
 
 /* Кнопки*/
 .button-use {
@@ -452,8 +473,8 @@ img {
 .hotel-card-button.favorites {
 	background-color: #82b3d3;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 36px;
+	font-size: 16px;
+	line-height: 20px;
 	border: none;
 }
 
@@ -559,11 +580,32 @@ img {
 }
 
 /* Link */
+.pagination-container {
+	display: flex;
+	padding: 16px;
+}
+
 .pagination {
+	display: flex;
+	margin: 0;
+	padding: 0;
 	background-color: #ffffff;
 }
 
+.pagination-item::marker {
+	color: transparent;
+}
+
+.pagination-item:not(:last-child) {
+	margin-right: 8px;
+}
+
 .pagination-link {
+	display: block;
+	box-sizing: border-box;
+	width: 60px;
+	height: 60px;
+	padding: 11px 23px;
 	color: #ffffff;
 	background-color: #82b3d3;
 	text-decoration: none;
