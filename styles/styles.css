@@ -530,7 +530,7 @@ img {
 
 /* Hotel list*/
 
-.hotel-card {
+.hotel-card-item {
 	background-color: #ffffff;
 	display: grid;
 	grid-template-columns: 150px 150px;
@@ -539,12 +539,12 @@ img {
 }
 
 
-.hotel-list {
+.hotel-card-list {
 	display: grid;
 	grid-template-columns: repeat(3, 300px);
-	list-style-type: none;
 	margin: 0;
 	margin-bottom: 24px;
+	padding: 0;
 	gap: 20px;
 }
 
