@@ -282,20 +282,26 @@ img {
 }
 
 .footer-social-list {
+	display: flex;
+	flex-wrap: wrap;
 	width: 182px;
 	margin: 0;
 	padding: 0;
 }
 
+
 .footer-social-item {
-	display: flex;
-	flex-wrap: wrap;
 	margin-right: 12px;
 	margin-bottom: 13px;
 	width: 24px;
 	height: 14px;
 	color: #ffffff;
 }
+
+.footer-social-item::marker {
+	color: transparent;
+}
+
 
 .footer-social-item:nth-child(3n) {
 	margin-right: 0;
