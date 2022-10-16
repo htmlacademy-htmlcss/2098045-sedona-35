@@ -97,7 +97,7 @@ img {
 .navigation-list {
 	display: flex;
 	flex-wrap: wrap;
-	width: 339px;
+	width: 547px;
 	margin: 0;
 	padding: 0;
 }
@@ -170,8 +170,12 @@ img {
 	align-items: center;
 }
 
-.advantages-list li:first-child {
-	background-color: rgb(234, 171, 54);
+.advantages-list li:nth-child(2n) {
+	background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list li:nth-child(n+5) {
+	background-color: rgba(131, 179, 211, 0.12);
 }
 
 /* Убрать точки у списка */
@@ -221,6 +225,7 @@ img {
 }
 
 .advantages-description {
+	margin: 0;
 	font-size: 22px;
 	line-height: 26px;
 }
@@ -266,27 +271,39 @@ img {
 /*  Подвал  */
 
 .footer-container {
-
 	width: 1200px;
 	margin: 0 auto;
 }
 
 .page-footer-social {
-	display: grid;
-	grid-template-columns: (3, 1fr);
-	grid-auto-flow: column;
+	display: flex;
 	background-color: #ffffff;
+	padding: 40px 0 35px 70px;
 }
 
 .footer-social-list {
-	width: 240px;
+	width: 182px;
+	margin: 0;
+	padding: 0;
 }
 
 .footer-social-item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 12px;
+	margin-bottom: 13px;
+	width: 24px;
+	height: 14px;
 	color: #ffffff;
 }
 
+.footer-social-item:nth-child(3n) {
+	margin-right: 0;
+}
+
 .footer-phone {
+	display: block;
+	margin: 0 auto;
 	font-weight: 400px;
 	font-size: 40px;
 	line-height: 40px;
@@ -295,6 +312,7 @@ img {
 }
 
 .logo-academy {
+	display: block;
 	margin-left: auto;
 	max-width: 240px;
 	object-fit: contain;
