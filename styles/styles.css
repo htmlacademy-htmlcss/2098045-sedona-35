@@ -353,6 +353,11 @@ img {
 
 
 /* Catalog */
+.breadcrumbs-filter-container {
+	width: 1060px;
+	margin: 0;
+	padding: 35px 70px 70px 70px;
+}
 
 .inner-header {
 	background-image: url("../images/catalog-filter.jpg");
@@ -361,7 +366,9 @@ img {
 	background-color: #ffffff;
 }
 
-.inner-header h1 {
+.inner-header-title {
+	margin-top: 0;
+	margin-bottom: 8px;
 	color: #ffffff;
 	font-weight: 700px;
 	font-size: 60px;
@@ -370,12 +377,20 @@ img {
 
 /* Хлебные крошки */
 
-.breadcrumbs-item {
+.breadcrumbs {
+	display: flex;
+	margin: 0;
+	padding: 0;
 	color: #ffffff;
+}
+
+.breadcrumbs-item::marker {
+	color: transparent;
 }
 
 /* Link */
 .breadcrumbs-link {
+	margin-right: 20px;
 	font-family: inherit;
 	font-weight: 400px;
 	font-size: 16px;
