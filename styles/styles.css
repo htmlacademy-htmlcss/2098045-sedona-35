@@ -196,6 +196,7 @@ img {
 /* Items */
 .advantages-items {
 	padding: 0;
+	margin: 0;
 	align-items: center;
 }
 
