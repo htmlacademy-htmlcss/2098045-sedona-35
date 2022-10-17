@@ -170,13 +170,22 @@ img {
 	align-items: center;
 }
 
-.advantages-list li:nth-child(2n) {
+.blue-card {
+	background-color: #82b3d3;
+}
+
+.light-blue-card {
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list li:nth-child(n+5) {
-	background-color: rgba(131, 179, 211, 0.12);
+.medium-blue-card {
+	background-color: rgba(131, 179, 211, 0.2);
 }
+
+.home {
+	background-color: #ffffff;
+}
+
 
 /* Убрать точки у списка */
 .advantages-items::marker {
@@ -193,6 +202,8 @@ img {
 
 .advantages-items img {
 	display: block;
+	margin: 0;
+	padding: 0;
 	grid-column: 2/4;
 	grid-row: 1/3;
 }
@@ -225,7 +236,6 @@ img {
 }
 
 .advantages-description {
-	margin: 0;
 	font-size: 22px;
 	line-height: 26px;
 }
