@@ -72,6 +72,30 @@ img {
 	text-decoration: none;
 	text-transform: uppercase;
 	border: none;
+	border-radius: 4px;
+}
+
+.navigation-link-button {
+	display: block;
+	margin-top: 14px;
+}
+
+.navigation-link-button:visited {
+	background-color: #e5e5e5;
+	color: #ffffff;
+}
+
+.navigation-link-button:hover {
+	background-color: #615048;
+}
+
+.navigation-link-button:focus {
+	background-color: #615048;
+}
+
+.navigation-link-button:active {
+	background-color: #756157;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -79,7 +103,6 @@ img {
 
 .page-header {
 	color: #000000;
-	background-color: #ffffff;
 }
 
 
@@ -292,6 +315,29 @@ img {
 	line-height: 26px;
 }
 
+.hotel-search-button {
+	color: #ffffff;
+	background-color: #756157;
+}
+
+.hotel-search-button:visited {
+	background-color: #e5e5e5;
+	color: #ffffff;
+}
+
+.hotel-search-button:hover {
+	background-color: #615048;
+}
+
+.hotel-search-button:focus {
+	background-color: #615048;
+}
+
+.hotel-search-button:active {
+	background-color: #756157;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 
 /*  Подвал  */
 
@@ -327,12 +373,17 @@ img {
 	color: #ffffff;
 }
 
-.subscribe.button {
+.field {
+	padding: 14px 345px 14px 20px;
+}
+
+.subscribe-button {
 	background-color: #82b3d3;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 36px;
 	border: none;
+	padding: 8px 50px;
 }
 
 
@@ -369,15 +420,30 @@ img {
 	margin-right: 0;
 }
 
-.footer-phone {
+/*Номер телефона в футере*/
+
+a[href^="tel:88128121212"] {
 	display: block;
 	margin: 0 auto;
 	font-weight: 400px;
 	font-size: 40px;
 	line-height: 40px;
-	color: #000000;
 	text-decoration: none;
+	color: #000000;
 }
+
+a[href^="tel:88128121212"]:visited {
+	color: rgba(117, 97, 87, 0.3);
+}
+
+a[href^="tel:88128121212"]:active {
+	color: #756157;
+}
+
+a[href^="tel:88128121212"]:hover {
+	color: #756157;
+}
+
 
 .logo-academy {
 	display: block;
@@ -487,7 +553,8 @@ img {
 
 /* Кнопки*/
 .button-use {
-	padding: 4px 25px;
+	display: block;
+	padding: 8px 50px;
 	background-color: #82b3d3;
 	border: none;
 	font-weight: 700;
@@ -495,6 +562,7 @@ img {
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #ffffff;
+	border-radius: 4px;
 }
 
 .button-colorless {
@@ -508,12 +576,21 @@ img {
 	color: #ffffff;
 }
 
+.hotel-card-button {
+	padding: 8px 26px;
+	margin: 0;
+	margin-bottom: 16px;
+}
+
+
 .hotel-card-button.favorites {
 	background-color: #82b3d3;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
 	border: none;
+	padding: 8px 20px;
+	margin-left: 16px;
 }
 
 .hotel-card-button.rating {
