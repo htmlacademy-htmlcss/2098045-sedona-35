@@ -407,7 +407,7 @@ img {
 	justify-content: center;
 	width: 1200px;
 	margin: 0;
-	padding: 0 258px 104px 258px;
+	padding: 0 258px 0 258px;
 }
 
 .field {
@@ -553,10 +553,21 @@ a[href^="tel:88128121212"]:hover {
 
 .breadcrumbs {
 	display: flex;
+	width: 114px;
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
 	margin-bottom: 20px;
+	background-image: url("/icons/breadcrumbs/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: 30px;
+}
+
+.breadcrumbs-item {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 20px;
+	cursor: pointer;
 }
 
 
@@ -573,6 +584,17 @@ a[href^="tel:88128121212"]:hover {
 	line-height: 21px;
 	text-decoration: none;
 	color: #ffffff;
+	fill: #ffffff;
+}
+
+.breadcrumbs-link:hover {
+	color: rgba(255, 255, 255, 0.6);
+	fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+	color: rgba(255, 255, 255, 0.6);
+	fill: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -666,10 +688,11 @@ a[href^="tel:88128121212"]:hover {
 	line-height: 36px;
 }
 
-.select-control option {
+.select-control {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
+	padding: 14px 131px 14px 20px;
 }
 
 /*Кнопки в фильтре*/
@@ -786,6 +809,20 @@ a[href^="tel:88128121212"]:hover {
 	line-height: 20px;
 	border: none;
 	padding: 8px 20px;
+	grid-column: 2 / 3;
+}
+
+.hotel-card-button-favorites a {
+	padding: 0;
+	margin: 0;
+}
+
+
+.hotel-card-button-detail {
+	grid-column: 1 / 2;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .hotel-card-button.rating {
@@ -798,29 +835,12 @@ a[href^="tel:88128121212"]:hover {
 	color: #333333;
 }
 
-.hotel-card-button-detail {
-	grid-column: 1 / 2;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-}
-
-.hotel-card-button-favorites {
-	grid-column: 2 / 3;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-}
-
-
-.hotel-card-button-favorites a {
-	padding: 0;
-	margin: 0;
-}
-
 
 .hotel-card-star {
 	grid-column: 1 /2;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 
