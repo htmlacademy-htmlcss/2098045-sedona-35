@@ -373,10 +373,19 @@ img {
 	background-size: 100% auto;
 	background-color: #ffffff;
 	object-fit: cover;
-	padding: 96px 258px 104px 258px;
+	padding: 96px 0 104px 0;
+}
+
+.subscribe-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .page-footer-header {
+	display: flex;
+	width: 1200px;
+	justify-content: center;
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
@@ -385,17 +394,33 @@ img {
 }
 
 .page-footer-paragrapher {
+	display: flex;
+	justify-content: center;
+	width: 1200px;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
 	color: #ffffff;
+	padding: 0 362px 54px 304px;
+}
+
+.subscribe-form {
+	display: flex;
+	justify-content: center;
+	width: 1200px;
+	margin: 0;
+	padding: 0 258px 104px 258px;
 }
 
 .field {
 	padding: 15px 0 15px 20px;
-	border-radius: 4px;
+	border-radius: 4px 0 0 4px;
 	border: none;
 	margin-right: 0;
+	width: 452px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .subscribe-button {
@@ -404,6 +429,7 @@ img {
 	font-size: 20px;
 	line-height: 36px;
 	border: none;
+	border-radius: 0 4px 4px 0;
 	padding: 8px 50px;
 	margin-left: 0;
 }
