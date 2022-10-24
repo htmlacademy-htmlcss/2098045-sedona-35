@@ -219,6 +219,7 @@ img {
 	gap: 0;
 	margin: 0 auto;
 	padding: 0;
+	position: relative;
 }
 
 .advantages-items:nth-child(2n+1) {
@@ -235,10 +236,6 @@ img {
 
 .advantages-items:nth-child(7n) {
 	background-color: #ffffff;
-}
-
-.advantages-list {
-	position: relative;
 }
 
 .advantages-items::before {
