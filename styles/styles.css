@@ -237,13 +237,16 @@ img {
 	background-color: #ffffff;
 }
 
+.advantages-list {
+	position: relative;
+}
 
 .advantages-items::before {
 	position: absolute;
 	width: 60px;
 	height: 2px;
 	background-color: #000000;
-	bottom: 145px;
+	bottom: 20px;
 	left: 50%;
 	padding-left: 85px;
 	content: "";
@@ -293,7 +296,6 @@ img {
 
 
 .advantages-list-title {
-	position: relative;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
