@@ -238,18 +238,17 @@ img {
 }
 
 
-/*
 .advantages-items::before {
+	position: absolute;
 	width: 60px;
 	height: 2px;
 	background-color: #000000;
-	bottom: 142px;
+	bottom: 145px;
 	left: 50%;
 	padding-left: 85px;
 	content: "";
 }
 
-*/
 
 /*Убрать точки у списка */
 .advantages-items::marker {
@@ -294,6 +293,7 @@ img {
 
 
 .advantages-list-title {
+	position: relative;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -726,6 +726,15 @@ a[href^="tel:88128121212"]:hover {
 	cursor: pointer;
 }
 
+.button-use:hover {
+	background-color: #68a2ca;
+}
+
+.button-use:active {
+	background-color: #68a2ca;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .button-colorless {
 	display: inline-block;
 	box-sizing: border-box;
@@ -738,6 +747,19 @@ a[href^="tel:88128121212"]:hover {
 	text-transform: uppercase;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.button-colorless:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.button-colorless:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-colorless:focus {
+	color: #ffffff;
+	border: 3px solid #83b3d3;
 }
 
 /* Сортировка отелей */
@@ -894,11 +916,6 @@ a[href^="tel:88128121212"]:hover {
 	font-weight: 700;
 }
 
-.pagination-current {
-	color: #242424;
-	background-color: #f2f2f2;
-}
-
 .pagination-disabled {
 	background-color: #82b3d3;
 }
@@ -907,7 +924,32 @@ a[href^="tel:88128121212"]:hover {
 	background-color: #68a2ca;
 }
 
+.pagination-link:focus {
+	border: 2px solid #82b3d3;
+	outline: none;
+}
 
+.pagination-link:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-current {
+	color: #242424;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.pagination-current:hover {
+	color: #242424;
+	background-color: #f2f2f2;
+}
+
+.pagination-current:focus {
+	border: none;
+	outline: none;
+}
+
+/*Футер подписка*/
 .page-footer-subscribe-catalog {
 	background-image: none;
 	background-color: #ffffff;
@@ -921,6 +963,6 @@ a[href^="tel:88128121212"]:hover {
 	color: #000000;
 }
 
-#your-email {
+.field-catalog {
 	background-color: #f2f2f2;
 }
