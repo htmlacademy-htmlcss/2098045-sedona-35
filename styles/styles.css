@@ -195,7 +195,6 @@ img {
 }
 
 .advantages-title {
-	position: relative;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
 	font-size: 30px;
@@ -239,8 +238,8 @@ img {
 }
 
 
+/*
 .advantages-items::before {
-	position: absolute;
 	width: 60px;
 	height: 2px;
 	background-color: #000000;
@@ -250,8 +249,9 @@ img {
 	content: "";
 }
 
+*/
 
-/* Убрать точки у списка */
+/*Убрать точки у списка */
 .advantages-items::marker {
 	color: transparent;
 }
@@ -921,6 +921,6 @@ a[href^="tel:88128121212"]:hover {
 	color: #000000;
 }
 
-.your-email {
+#your-email {
 	background-color: #f2f2f2;
 }
