@@ -921,6 +921,6 @@ a[href^="tel:88128121212"]:hover {
 	color: #000000;
 }
 
-#your-email {
+.your-email {
 	background-color: #f2f2f2;
 }
