@@ -639,7 +639,7 @@ a[href^="tel:88128121212"]:hover {
 	display: grid;
 	grid-auto-flow: dense;
 	grid-template-columns: repeat(5, 220px);
-	margin-right: 20px;
+
 	grid-row: span 2;
 	font-weight: 400;
 	font-size: 18px;
@@ -720,8 +720,16 @@ a[href^="tel:88128121212"]:hover {
 }
 
 /*Кнопки в фильтре*/
+.prise-group-button {
+	display: flex;
+	flex-direction: column;
+	width: 191px;
+	margin: 0;
+	margin-right: 70px;
+}
+
 .button-use {
-	display: inline-block;
+
 	box-sizing: border-box;
 	padding: 8px 50px;
 	border: none;
@@ -733,6 +741,8 @@ a[href^="tel:88128121212"]:hover {
 	text-transform: uppercase;
 	color: #ffffff;
 	cursor: pointer;
+	margin-top: 32px;
+	margin-bottom: 30px;
 }
 
 .button-use:hover {
@@ -781,12 +791,22 @@ a[href^="tel:88128121212"]:hover {
 
 .hotel-card-button {
 	padding: 8px 26px;
-	margin: 0;
 }
 
 .prise-group {
+	width: 288px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
 	grid-column: span 2;
 	grid-row: span 2;
+}
+
+.prise {
+	display: inline-block;
+	width: 45px;
+	padding: 12px 70px 12px 20px;
+	margin: 0;
 }
 
 
