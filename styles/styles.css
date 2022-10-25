@@ -291,14 +291,11 @@ img {
 	display: block;
 	width: 60px;
 	height: 2px;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: currentcolor;
+	opacity: 0.3;
 	content: "";
 	margin: 0 auto;
 	margin-top: 30px;
-}
-
-.advantages-list-title:first-child::after {
-	background-color: #ffffff;
 }
 
 .advantages-list-title-icons {
