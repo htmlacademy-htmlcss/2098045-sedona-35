@@ -640,7 +640,8 @@ a[href^="tel:88128121212"]:active {
 
 .catalog-infrostructure-group {
 	width: 150px;
-	grid-row: span 2;
+	margin-right: 70px;
+	padding: 0;
 }
 
 .catalog-filter-title {
@@ -650,10 +651,8 @@ a[href^="tel:88128121212"]:active {
 }
 
 .catalog-filter {
-	display: grid;
-	grid-auto-flow: dense;
-	grid-template-columns: repeat(5, 220px);
-
+	display: flex;
+	width: 1200px;
 	grid-row: span 2;
 	font-weight: 400;
 	font-size: 18px;
@@ -662,7 +661,8 @@ a[href^="tel:88128121212"]:active {
 }
 
 .catalog-type-of-housing-group {
-	grid-row: span 2;
+	margin-right: 150px;
+	padding: 0;
 }
 
 .hotel-filter-item::marker {
@@ -684,6 +684,15 @@ a[href^="tel:88128121212"]:active {
 	margin: 0;
 	margin-bottom: 40px;
 	margin-top: 50px;
+}
+
+.price-group-button-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 191px;
+	margin: 0;
+	padding: 0;
 }
 
 .view-container {
@@ -735,14 +744,6 @@ a[href^="tel:88128121212"]:active {
 }
 
 /*Кнопки в фильтре*/
-.prise-group-button {
-	display: flex;
-	flex-direction: column;
-	width: 191px;
-	margin: 0;
-	margin-right: 70px;
-}
-
 .button-use {
 
 	box-sizing: border-box;
@@ -772,7 +773,7 @@ a[href^="tel:88128121212"]:active {
 .button-colorless {
 	display: inline-block;
 	box-sizing: border-box;
-	padding: 4px 25px;
+	padding: 8px 57px;
 	background-color: transparent;
 	border: none;
 	font-weight: 700;
@@ -813,9 +814,7 @@ a[href^="tel:88128121212"]:active {
 	width: 288px;
 	display: inline-block;
 	padding: 0;
-	margin: 0;
-	grid-column: span 2;
-	grid-row: span 2;
+	margin-right: 70px;
 }
 
 .prise {
