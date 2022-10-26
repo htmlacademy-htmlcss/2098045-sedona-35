@@ -456,8 +456,17 @@ img {
 	margin-left: 0;
 }
 
+.subscribe-button:visited {
+	background-color: #68a2ca;
+}
+
 .subscribe-button:hover {
 	background-color: #68a2ca;
+}
+
+.subscribe-button:focus {
+	background-color: #68a2ca;
+	color: #ffffff;
 }
 
 .subscribe-button:active {
@@ -530,11 +539,11 @@ a[href^="tel:88128121212"]:visited {
 	color: rgba(117, 97, 87, 0.3);
 }
 
-a[href^="tel:88128121212"]:active {
+a[href^="tel:88128121212"]:hover {
 	color: #756157;
 }
 
-a[href^="tel:88128121212"]:hover {
+a[href^="tel:88128121212"]:active {
 	color: #756157;
 }
 
@@ -621,6 +630,11 @@ a[href^="tel:88128121212"]:hover {
 	fill: rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-link:focus {
+	color: #ffffff;
+	fill: #ffffff;
+}
+
 
 /* Фильтры, инфроструктура*/
 
@@ -696,12 +710,13 @@ a[href^="tel:88128121212"]:hover {
 	border: 1px solid #000000;
 }
 
-.button-view:active {
-	border: 1px solid #000000;
-}
 
 .button-view:focus {
 	border: 1px solid #68a2ca;
+}
+
+.button-view:active {
+	border: 1px solid #000000;
 }
 
 
@@ -772,14 +787,15 @@ a[href^="tel:88128121212"]:hover {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.button-colorless:active {
-	color: rgba(255, 255, 255, 0.3);
-}
-
 .button-colorless:focus {
 	color: #ffffff;
 	border: 3px solid #83b3d3;
 }
+
+.button-colorless:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* Сортировка отелей */
 .catalog-container {
@@ -980,6 +996,7 @@ a[href^="tel:88128121212"]:hover {
 	border: none;
 	outline: none;
 }
+
 
 /*Футер подписка*/
 .page-footer-subscribe-catalog {
