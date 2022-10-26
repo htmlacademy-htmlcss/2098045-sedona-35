@@ -653,11 +653,11 @@ a[href^="tel:88128121212"]:active {
 .catalog-filter {
 	display: flex;
 	width: 1200px;
-	grid-row: span 2;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
+	padding: 0;
 }
 
 .catalog-type-of-housing-group {
