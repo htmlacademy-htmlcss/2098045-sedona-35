@@ -545,17 +545,65 @@ img {
 	margin-right: 0;
 }
 
-.social-button {
-	fill: #83b3d3;
+
+.social-button-vkontakte::after {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	mask: url("/icons/stack.svg#social_VK");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #83b3d3;
+}
+
+.social-button-telegam::after {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	mask: url("/icons/stack.svg#social_tg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #83b3d3;
+}
+
+.social-button-youtube::after {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	mask: url("/icons/stack.svg#social_yt");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #83b3d3;
 }
 
 
-.social-button:hover {
-	fill: #68a2ca;
+/*Социальные кнопки Наведение*/
+.social-button-vkontakte:hover::after {
+	background-color: #68a2ca;
 }
 
-.social-button:active {
-	fill: rgba(104, 162, 202, 0.3);
+.social-button-telegam:hover::after {
+	background-color: #68a2ca;
+}
+
+.social-button-youtube:hover::after {
+	background-color: #68a2ca;
+}
+
+/*Социальные кнопки Нажатие*/
+.social-button-vkontakte:active::after {
+	background-color: rgba(104, 162, 202, 0.3);
+}
+
+.social-button-telegam:active::after {
+	background-color: rgba(104, 162, 202, 0.3);
+}
+
+.social-button-youtube:active::after {
+	background-color: rgba(104, 162, 202, 0.3);
 }
 
 
@@ -639,15 +687,11 @@ a[href^="tel:88128121212"]:active {
 	padding: 0;
 	color: #ffffff;
 	margin-bottom: 20px;
-	background-image: url("/icons/breadcrumbs/arrow.svg");
-	background-repeat: no-repeat;
-	background-position: 30px;
 }
 
 .breadcrumbs-item {
 	display: flex;
 	justify-content: space-between;
-	padding-right: 20px;
 	cursor: pointer;
 }
 
@@ -658,7 +702,8 @@ a[href^="tel:88128121212"]:active {
 
 
 .breadcrumbs-link {
-	margin-right: 20px;
+	display: flex;
+	margin-right: 10px;
 	font-family: inherit;
 	font-weight: 400px;
 	font-size: 16px;
@@ -681,6 +726,33 @@ a[href^="tel:88128121212"]:active {
 .breadcrumbs-link:focus {
 	color: #ffffff;
 	fill: #ffffff;
+}
+
+.back-home {
+	content: "";
+	display: block;
+	width: 13px;
+	height: 15px;
+	mask: url("/icons/stack.svg#breadcrumbs_home");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: #ffffff;
+	margin-top: 3px;
+}
+
+.breadcrumbs-link-catalog::before {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 15px;
+	mask: url("/icons/stack.svg#breadcrumbs_arrow");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: #ffffff;
+	margin-top: 3px;
+	margin-right: 10px;
 }
 
 
