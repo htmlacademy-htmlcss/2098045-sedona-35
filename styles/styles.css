@@ -637,7 +637,33 @@ a[href^="tel:88128121212"]:active {
 
 
 /* Фильтры, инфроструктура*/
+.catalog-filter {
+	display: flex;
+	width: 1060px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
 
+.filter-block1 {
+	width: 371px;
+	display: flex;
+	margin: 0;
+	margin-right: auto;
+	padding: 0;
+}
+
+.filter-block2 {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	margin-right: 70px;
+}
+
+/*Инфроструктура*/
 .catalog-infrostructure-group {
 	width: 150px;
 	margin-right: 70px;
@@ -650,18 +676,7 @@ a[href^="tel:88128121212"]:active {
 	line-height: 24px;
 }
 
-.catalog-filter {
-	display: flex;
-	width: 1200px;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
-	color: #ffffff;
-	padding: 0;
-}
-
-.catalog-type-of-housing-group {
-	margin-right: 150px;
+.hotel-filter-list {
 	padding: 0;
 }
 
@@ -673,6 +688,44 @@ a[href^="tel:88128121212"]:active {
 	color: transparent;
 }
 
+/*Тип гостиниц*/
+.catalog-type-of-housing-group {
+	padding: 0;
+	width: 151px;
+}
+
+.type-of-housing-filter-list {
+	padding: 0;
+}
+
+/*фильтр с ценой*/
+.prise-group {
+	width: 288px;
+	display: inline-block;
+	padding: 0;
+	margin-right: 70px;
+}
+
+.prise-group-title {
+	padding-bottom: 20px;
+}
+
+
+.prise {
+	display: inline-block;
+	width: 45px;
+	padding: 12px 70px 12px 20px;
+	margin: 0;
+}
+
+.price-group-button-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 191px;
+	margin: 0;
+	padding: 0;
+}
 
 /* Сортировка по цене и способ отображения карточек */
 .sorting-container {
@@ -686,14 +739,6 @@ a[href^="tel:88128121212"]:active {
 	margin-top: 50px;
 }
 
-.price-group-button-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	width: 191px;
-	margin: 0;
-	padding: 0;
-}
 
 .view-container {
 	display: flex;
@@ -741,6 +786,15 @@ a[href^="tel:88128121212"]:active {
 	font-size: 14px;
 	line-height: 20px;
 	padding: 14px 131px 14px 20px;
+	border: 2px solid #f2f2f2;
+}
+
+.select-control:hover {
+	border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+	border: 2px solid #3f5e72;
 }
 
 /*Кнопки в фильтре*/
@@ -809,21 +863,6 @@ a[href^="tel:88128121212"]:active {
 .hotel-card-button {
 	padding: 8px 26px;
 }
-
-.prise-group {
-	width: 288px;
-	display: inline-block;
-	padding: 0;
-	margin-right: 70px;
-}
-
-.prise {
-	display: inline-block;
-	width: 45px;
-	padding: 12px 70px 12px 20px;
-	margin: 0;
-}
-
 
 .hotel-card-list {
 	display: grid;
