@@ -589,11 +589,10 @@ a[href^="tel:88128121212"]:active {
 	display: block;
 	width: 115px;
 	height: 34px;
-	background-image: url("/icons/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 	margin-left: auto;
 	background-size: contain;
-	background: currentcolor;
+	background-image: currentcolor;
 }
 
 
