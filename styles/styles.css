@@ -592,7 +592,17 @@ a[href^="tel:88128121212"]:active {
 	background-repeat: no-repeat;
 	margin-left: auto;
 	background-size: contain;
-	background-image: currentcolor;
+	mask: url("/icons/logo-htmlacademy.svg");
+	background-color: #000000;
+}
+
+
+.logo-academy:hover::after {
+	background-color: #756157;
+}
+
+.logo-academy:active::after {
+	background: rgba(117, 97, 87, 0.3);
 }
 
 
