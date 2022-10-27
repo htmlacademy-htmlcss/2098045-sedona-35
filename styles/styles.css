@@ -728,7 +728,7 @@ a[href^="tel:88128121212"]:active {
 	fill: #ffffff;
 }
 
-.back-home {
+.back-home::after {
 	content: "";
 	display: block;
 	width: 13px;
@@ -753,8 +753,12 @@ a[href^="tel:88128121212"]:active {
 	background-color: #ffffff;
 	margin-top: 3px;
 	margin-right: 10px;
+	cursor: default;
 }
 
+.back-home:hover::after {
+	background-color: rgba(255, 255, 255, 0.6);
+}
 
 /* Фильтры, инфроструктура*/
 .catalog-filter {
