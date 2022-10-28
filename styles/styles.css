@@ -884,10 +884,45 @@ a[href^="tel:88128121212"]:active {
 	margin-left: 5px;
 }
 
+.button-view-as-table::after {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 14px;
+	mask: url("/icons/stack.svg#filter_cards");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #000000;
+}
+
+.button-view-as-slideshow::after {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 14px;
+	mask: url("/icons/stack.svg#filter_slideshow");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #000000;
+}
+
+.button-view-as-list::after {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 14px;
+	mask: url("/icons/stack.svg#filter_list");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #000000;
+}
+
 .button-view:hover {
 	border: 1px solid #000000;
 }
-
 
 .button-view:focus {
 	border: 1px solid #68a2ca;
@@ -1088,6 +1123,19 @@ a[href^="tel:88128121212"]:active {
 	justify-content: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	width: 140px;
+}
+
+.hotel-card-star::after {
+	content: "";
+	display: block;
+	width: 91px;
+	height: 17px;
+	mask: url("../icons/stack.svg#star");
+	mask-repeat: repeat-x;
+	mask-position: left;
+	mask-size: cover;
+	background-color: #83b3d3;
 }
 
 
