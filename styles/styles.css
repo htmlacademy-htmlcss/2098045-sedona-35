@@ -184,9 +184,9 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url("/icons/search.svg");
+	background-image: url("/icons/stack.svg#search");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 	background-size: contain;
 }
 
@@ -195,9 +195,9 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url("/icons/heart.svg");
+	background-image: url("/icons/stack.svg#heart");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 	background-size: contain;
 }
 
@@ -363,13 +363,44 @@ img {
 	color: #ffffff;
 }
 
-.food-icon,
-.home-icon,
-.souvenirs-icon {
+
+.home-icon::before {
+	content: "";
 	display: block;
-	text-align: center;
+	width: 84px;
+	height: 84px;
+	mask: url("../icons/stack.svg#advantage_home");
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-position: center;
 	margin: 0 auto;
-	fill: #83b3d3;
+	background-color: #83b3d3;
+}
+
+.food-icon::before {
+	content: "";
+	display: block;
+	width: 84px;
+	height: 84px;
+	mask: url("../icons/stack.svg#advantage_food");
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-position: center;
+	margin: 0 auto;
+	background-color: #83b3d3;
+}
+
+.souvenirs-icon::before {
+	content: "";
+	display: block;
+	width: 84px;
+	height: 84px;
+	mask: url("../icons/stack.svg#advantage_souvenirs");
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-position: center;
+	margin: 0 auto;
+	background-color: #83b3d3;
 }
 
 
@@ -552,8 +583,8 @@ img {
 	width: 24px;
 	height: 24px;
 	mask: url("/icons/stack.svg#social_VK");
-	background-repeat: no-repeat;
-	background-size: contain;
+	mask-repeat: no-repeat;
+	mask-size: contain;
 	background-color: #83b3d3;
 }
 
@@ -563,8 +594,8 @@ img {
 	width: 24px;
 	height: 24px;
 	mask: url("/icons/stack.svg#social_tg");
-	background-repeat: no-repeat;
-	background-size: contain;
+	mask-repeat: no-repeat;
+	mask-size: contain;
 	background-color: #83b3d3;
 }
 
@@ -574,8 +605,8 @@ img {
 	width: 24px;
 	height: 24px;
 	mask: url("/icons/stack.svg#social_yt");
-	background-repeat: no-repeat;
-	background-size: contain;
+	mask-repeat: no-repeat;
+	mask-size: contain;
 	background-color: #83b3d3;
 }
 
@@ -631,16 +662,16 @@ a[href^="tel:88128121212"]:active {
 	color: #756157;
 }
 
-
+/*Логотип академии*/
 .logo-academy::after {
 	content: "";
 	display: block;
 	width: 115px;
 	height: 34px;
-	background-repeat: no-repeat;
-	margin-left: auto;
-	background-size: contain;
 	mask: url("/icons/logo-htmlacademy.svg");
+	mask-repeat: no-repeat;
+	margin-left: auto;
+	mask-size: contain;
 	background-color: #000000;
 }
 
@@ -734,9 +765,9 @@ a[href^="tel:88128121212"]:active {
 	width: 13px;
 	height: 15px;
 	mask: url("/icons/stack.svg#breadcrumbs_home");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	mask-repeat: no-repeat;
+	mask-size: contain;
+	mask-position: center;
 	background-color: #ffffff;
 	margin-top: 3px;
 }
@@ -747,9 +778,9 @@ a[href^="tel:88128121212"]:active {
 	width: 6px;
 	height: 15px;
 	mask: url("/icons/stack.svg#breadcrumbs_arrow");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	mask-repeat: no-repeat;
+	mask-size: contain;
+	mask-position: center;
 	background-color: #ffffff;
 	margin-top: 3px;
 	margin-right: 10px;
@@ -890,9 +921,9 @@ a[href^="tel:88128121212"]:active {
 	width: 16px;
 	height: 14px;
 	mask: url("/icons/stack.svg#filter_cards");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: cover;
 	background-color: #000000;
 }
 
@@ -902,9 +933,9 @@ a[href^="tel:88128121212"]:active {
 	width: 16px;
 	height: 14px;
 	mask: url("/icons/stack.svg#filter_slideshow");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: cover;
 	background-color: #000000;
 }
 
@@ -914,9 +945,9 @@ a[href^="tel:88128121212"]:active {
 	width: 16px;
 	height: 14px;
 	mask: url("/icons/stack.svg#filter_list");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: cover;
 	background-color: #000000;
 }
 
@@ -1117,7 +1148,7 @@ a[href^="tel:88128121212"]:active {
 	padding: 8px 22px;
 }
 
-
+/*Звездочки в карточке*/
 .hotel-card-star {
 	grid-column: 1 /2;
 	justify-content: center;
@@ -1129,15 +1160,30 @@ a[href^="tel:88128121212"]:active {
 .hotel-card-star::after {
 	content: "";
 	display: block;
-	width: 91px;
+	width: calc(24px * var(--star-count) - 6px);
 	height: 17px;
-	mask: url("../icons/stack.svg#star");
-	mask-repeat: repeat-x;
-	mask-position: left;
-	mask-size: cover;
-	background-color: #83b3d3;
+	background: url("../icons/stack.svg#star") repeat-x 0 / 24px 17px;
 }
 
+.hotel-card-star-1::after {
+	--star-count: 1;
+}
+
+.hotel-card-star-2::after {
+	--star-count: 2;
+}
+
+.hotel-card-star-3::after {
+	--star-count: 3;
+}
+
+.hotel-card-star-4::after {
+	--star-count: 4;
+}
+
+.hotel-card-star-5::after {
+	--star-count: 5;
+}
 
 /* Пагинация*/
 .pagination-container {
