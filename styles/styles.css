@@ -92,8 +92,14 @@ img {
 	background-color: #615048;
 }
 
-.navigation-link-button:focus {
+.navigation-link-button:focus-visible {
 	background-color: #615048;
+}
+
+@supports not selector(:focus-visible) {
+	.navigation-link-button:focus {
+		background-color: #615048;
+	}
 }
 
 .navigation-link-button:active {
@@ -144,7 +150,7 @@ img {
 }
 
 
-.currient-page::after {
+.navigation-link[aria-current="page"]::after {
 	content: "";
 	display: block;
 	width: 68px;
@@ -153,7 +159,7 @@ img {
 	opacity: 0.3;
 	margin: 0 auto;
 	background-position: center bottom;
-	margin-bottom: 0;
+	margin-bottom: 5px;
 	z-index: 3;
 }
 
@@ -1016,7 +1022,6 @@ a[href^="tel:88128121212"]:active {
 
 .button-colorless {
 	display: inline-block;
-	box-sizing: border-box;
 	padding: 8px 57px;
 	background-color: transparent;
 	border: none;
@@ -1026,15 +1031,23 @@ a[href^="tel:88128121212"]:active {
 	text-transform: uppercase;
 	color: #ffffff;
 	cursor: pointer;
+	box-sizing: border-box;
 }
 
 .button-colorless:hover {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.button-colorless:focus {
+.button-colorless:focus-visible {
 	color: #ffffff;
 	border: 3px solid #83b3d3;
+}
+
+@supports not selector(:focus-visible) {
+	.button-colorless:focus {
+		color: #ffffff;
+		border: 3px solid #83b3d3;
+	}
 }
 
 .button-colorless:active {
@@ -1228,11 +1241,6 @@ a[href^="tel:88128121212"]:active {
 	background-color: #68a2ca;
 }
 
-.pagination-link:focus {
-	border: 2px solid #82b3d3;
-	outline: none;
-}
-
 .pagination-link:active {
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -1246,11 +1254,6 @@ a[href^="tel:88128121212"]:active {
 .pagination-current:hover {
 	color: #242424;
 	background-color: #f2f2f2;
-}
-
-.pagination-current:focus {
-	border: none;
-	outline: none;
 }
 
 
