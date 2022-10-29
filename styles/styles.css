@@ -81,6 +81,7 @@ img {
 	display: block;
 	margin-top: 14px;
 	margin-left: 20px;
+	box-sizing: border-box;
 }
 
 .navigation-link-button:visited {
@@ -173,6 +174,7 @@ img {
 	text-align: center;
 	text-decoration: none;
 	color: #000000;
+	box-sizing: border-box;
 }
 
 .navigation-user .navigation-link {
@@ -224,6 +226,7 @@ img {
 	display: block;
 	margin: 0 auto;
 	padding: 51px 0 82px 0;
+	box-sizing: border-box;
 }
 
 
@@ -338,6 +341,7 @@ img {
 	content: "";
 	margin: 0 auto;
 	margin-top: 30px;
+	box-sizing: border-box;
 }
 
 .advantages-list-title-icons {
@@ -381,6 +385,7 @@ img {
 	mask-position: center;
 	margin: 0 auto;
 	background-color: #83b3d3;
+	box-sizing: border-box;
 }
 
 .food-icon::before {
@@ -394,6 +399,7 @@ img {
 	mask-position: center;
 	margin: 0 auto;
 	background-color: #83b3d3;
+	box-sizing: border-box;
 }
 
 .souvenirs-icon::before {
@@ -407,6 +413,7 @@ img {
 	mask-position: center;
 	margin: 0 auto;
 	background-color: #83b3d3;
+	box-sizing: border-box;
 }
 
 
@@ -592,6 +599,7 @@ img {
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	background-color: #83b3d3;
+	box-sizing: border-box;
 }
 
 .social-button-telegam::after {
@@ -603,11 +611,13 @@ img {
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	background-color: #83b3d3;
+	box-sizing: border-box;
 }
 
 .social-button-youtube::after {
 	content: "";
 	display: block;
+	box-sizing: border-box;
 	width: 24px;
 	height: 24px;
 	mask: url("/icons/stack.svg#social_yt");
@@ -648,6 +658,7 @@ img {
 
 a[href^="tel:88128121212"] {
 	display: block;
+	box-sizing: border-box;
 	margin: 0 auto;
 	font-weight: 400px;
 	font-size: 40px;
@@ -672,6 +683,7 @@ a[href^="tel:88128121212"]:active {
 .logo-academy::after {
 	content: "";
 	display: block;
+	box-sizing: border-box;
 	width: 115px;
 	height: 34px;
 	mask: url("/icons/logo-htmlacademy.svg");
@@ -768,6 +780,7 @@ a[href^="tel:88128121212"]:active {
 .back-home::after {
 	content: "";
 	display: block;
+	box-sizing: border-box;
 	width: 13px;
 	height: 15px;
 	mask: url("/icons/stack.svg#breadcrumbs_home");
@@ -781,6 +794,7 @@ a[href^="tel:88128121212"]:active {
 .breadcrumbs-link-catalog::before {
 	content: "";
 	display: block;
+	box-sizing: border-box;
 	width: 6px;
 	height: 15px;
 	mask: url("/icons/stack.svg#breadcrumbs_arrow");
