@@ -208,6 +208,7 @@ img {
 
 .navigation-item-heart::after {
 	content: "12";
+	display: block;
 	position: absolute;
 	z-index: 4;
 	inset: 11px 4px auto 28px;
