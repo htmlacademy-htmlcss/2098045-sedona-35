@@ -189,10 +189,19 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-image: url("/icons/stack.svg#search");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+	mask: url("/icons/stack.svg#search");
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
+	background-color: #000000;
+}
+
+.navigation-item-search:hover::before {
+	background-color: #82b3d3;
+}
+
+.navigation-item-search:active::before {
+	background-color: #000000;
 }
 
 .navigation-item-heart::before {
@@ -200,29 +209,36 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-image: url("/icons/stack.svg#heart");
-	background-repeat: no-repeat;
-	background-position: center;
+	mask: url("/icons/stack.svg#heart");
+	mask-repeat: no-repeat;
+	mask-position: center;
 	background-size: contain;
+	background-color: #000000;
 }
 
-.navigation-item-heart::after {
-	content: "12";
-	display: block;
+.navigation-item-heart:hover::before {
+	background-color: #82b3d3;
+}
+
+.navigation-item-heart:active::before {
+	background-color: #000000;
+}
+
+.count-badge {
 	position: absolute;
-	z-index: 4;
-	inset: 11px 4px auto 28px;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #7db54f;
-	border: none;
-	color: #ffffff;
+	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
 	font-size: 10px;
+	line-height: 13px;
 	text-align: center;
-	box-sizing: border-box;
+	letter-spacing: -0, 1em;
+	background-color: #7db54f;
+	border-radius: 50%;
+	color: #ffffff;
+	padding: 3px 5px;
+	margin-top: -28px;
 }
+
 
 .main-index {
 	background-color: #ffffff;
@@ -1314,10 +1330,10 @@ a[href^="tel:88128121212"]:active {
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: flex;
+	display: grid;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0, 8);
+	background-color: rgba(242, 242, 242, 242, 8);
 }
 
 .modal {
@@ -1328,20 +1344,23 @@ a[href^="tel:88128121212"]:active {
 }
 
 .modal-auth {
+	display: grid;
+	grid-template-columns: 137px 110px 131px 111px;
 	width: 717px;
-	border-radius: 30%;
+	border-radius: 5%;
 }
 
 .modal-close-button {
 	position: absolute;
 	padding: 0;
-	top: 0;
-	right: 0;
+	top: 30px;
+	right: 10px;
 	width: 52px;
 	height: 52px;
 	border-radius: 50%;
 	background-color: #f2f2f2f2;
 	border: none;
+	cursor: pointer;
 }
 
 .modal-close-button::after {
@@ -1354,15 +1373,21 @@ a[href^="tel:88128121212"]:active {
 	background-image: url("/icons/stack.svg#close");
 	background-repeat: no-repeat;
 	background-position: center;
-	cursor: pointer;
 }
 
 .modal-title {
+	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: uppercase;
+	color: #000000;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 34px;
+	grid-column: 1 / -1;
+}
+
+.uth-form-field {
+	grid-column: 3 /4;
 }

@@ -35,7 +35,8 @@
 						</li>
 						<li class="navigation-item">
 							<a class="navigation-link navigation-item-heart" href="javascript:void(0)">
-								<span class="visually-hidden">Лайки</span>
+								<span class="count-badge">12</span>
+								<span class="visually-hidden">Избранное</span>
 							</a>
 						</li>
 						<li class="navigation-item">
@@ -105,12 +106,6 @@
 				<!-- Поиск гостиниц -->
 				<section class="hotel-search">
 					<h2 class="visually-hidden"> Поиск гостиницы</h2>
-					<div class="popover popover-hitel-search">
-						<h2 class="popover-title">Полный поиск гостиниц</h2>
-						<form>
-
-						</form>
-					</div>
 					<p class="hotel-search-header">Заинтересовались?</p>
 					<p class="hotel-search-paragrapher">Укажите предполагаемы даты поездки и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 					<a href="./catalog.html" class="hotel-search-button button">Поиск гостиниц в Седоне</a>
@@ -166,14 +161,34 @@
 			</footer>
 		</div>
 
-		<div class="modal-container">
+		<!-- Модальное окно -->
+		<div class="modal-container modal-container-close">
 			<div class="modal modal-auth">
 				<button class="modal-close-button">
 					<span class="visually-hidden">Закрыть</span>
 				</button>
 				<section class="modal-content">
 					<h2 class="modal-title">Поиск гостиниц в Седоне</h2>
+					<form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+						<p class="field-group">
+							<label class="auth-form-coming-day" for="auth-date-in">День заезда</label>
+							<input class="auth-form-field field" type="text" id="auth-date-in" name="auth-date-in" placeholder="27 апреля 2020 года">
+						</p>
+						<p class="field-group">
+							<label class="auth-form-out-day" for="auth-date-out">День выезда</label>
+							<input class="auth-form-field field" type="text" id="auth-date-out" name="auth-date-out" placeholder="1 сентября 2023 года">
+						</p>
+						<p class="field-group">
+							<label class="auth-form-adult" for="auth-adult">Взрослые</label>
+							<input class="auth-form-field field" type="number" id="auth-adult" name="auth-adult" placeholder="2">
+						</p>
+						<p class="field-group">
+							<label class="auth-form-children" for="auth-children">Дети</label>
+							<input class="auth-form-field field" type="number" id="auth-children" name="auth-children" placeholder="1">
+						</p>
+						<button class="button auth-form-button" type="button">Найти</button>
 
+					</form>
 				</section>
 
 			</div>
