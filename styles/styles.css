@@ -1329,6 +1329,7 @@ a[href^="tel:88128121212"]:active {
 
 .modal-auth {
 	width: 717px;
+	border-radius: 30%;
 }
 
 .modal-close-button {
@@ -1341,4 +1342,27 @@ a[href^="tel:88128121212"]:active {
 	border-radius: 50%;
 	background-color: #f2f2f2f2;
 	border: none;
+}
+
+.modal-close-button::after {
+	content: "";
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	width: 15px;
+	height: 15px;
+	background-image: url("/icons/stack.svg#close");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.modal-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 34px;
 }
