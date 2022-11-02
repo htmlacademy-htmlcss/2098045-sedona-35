@@ -936,11 +936,23 @@ a[href^="tel:88128121212"]:active {
 
 
 /* Меняю чекбоксы */
+.input-checkbox-control {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	display: grid;
+	width: 141px;
+	grid-template-columns: 1em auto;
+	gap: 0.5em;
+}
+
 input[type="checkbox"] {
 	appearance: none;
 	background-color: #ffffff;
 	margin: 0;
 	margin-right: 4px;
+	margin-bottom: 10px;
 	font: inherit;
 	color: currentcolor;
 	width: 20px;
