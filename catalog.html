@@ -121,9 +121,21 @@
 								<div class="filter-block2">
 								<fieldset class="prise-group">
 									<legend class="prise-group-title">Стоимость, р:</legend>
+									<div class="range-wrapper-inputs">
 									<input class="prise" placeholder="0" type="number">
 									<input class="prise" placeholder="9000" type="number">
-									<input type="range" class="range" name="range" id="prise" min="0" max="9000" value="7000" step="1">
+									</div>
+
+									<div class="range">
+										<div class="range-scale">
+											<div class="range-bar" style="right:42px; width: 226px">
+												<button type="button" class="range-toogle toogle-min"></button>
+												<span class="visually-hidden">Изменить минимальную цену</span>
+												<button type="button" class="range-toogle toogle-max"></button>
+												<span class="visually-hidden ">Изменить максимальную цену</span>
+											</div>
+										</div>
+									</div>
 								</fieldset>
 								<div class="price-group-button-container">
 									<button class="button-use brown" type="submit">Применить</button>

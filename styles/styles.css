@@ -550,11 +550,25 @@ img {
 	border-radius: 4px 0 0 4px;
 	border: none;
 	margin-right: 0;
+	font: inherit;
 	width: 452px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 }
+
+.field:hover {
+	background-color: #e6e6e6;
+}
+
+.field:active {
+	border: 2px solid #000000;
+}
+
+.field:focus {
+	border-color: #83b3d3;
+}
+
 
 .subscribe-button {
 	background-color: #82b3d3;
@@ -882,6 +896,10 @@ a[href^="tel:88128121212"]:active {
 	line-height: 24px;
 }
 
+.hotel-filter-item {
+	padding-bottom: 10px;
+}
+
 .hotel-filter-list {
 	padding: 0;
 }
@@ -889,6 +907,15 @@ a[href^="tel:88128121212"]:active {
 .hotel-filter-item::marker {
 	color: transparent;
 }
+
+.type-of-housing-item {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	padding-bottom: 10px;
+}
+
 
 .type-of-housing-item::marker {
 	color: transparent;
@@ -933,11 +960,75 @@ a[href^="tel:88128121212"]:active {
 	padding: 0;
 }
 
-.range {
+/*Полоса прокрутки цены*/
+.range-scale {
+	position: relative;
+	height: 4px;
+	margin: 0;
+	margin-top: 40px;
+	background-color: rgba(255, 255, 255, 0.3);
 	width: 288px;
 }
 
-/* Сортировка по цене и способ отображения карточек */
+.range-bar {
+	position: absolute;
+	height: 4px;
+	background-color: #ffffff;
+}
+
+.range-toogle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.range-toogle:hover {
+	background-color: #ffffff;
+}
+
+.range-toogle:active {
+	border: 2px solid #83b3d3;
+}
+
+.range-toogle:focus {
+	border: 3px solid #83b3d3;
+}
+
+.toogle-min {
+	top: -8px;
+	right: -20px;
+}
+
+.toogle-max {
+	top: -8px;
+	right: 225px;
+}
+
+.range-input {
+	width: 30px;
+	padding: 0 2px;
+	font: inherit;
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
+}
+
+.range-wrapper-inputs {
+	display: flex;
+	justify-content: center;
+}
+
+
 .sorting-container {
 	display: flex;
 	justify-content: space-between;
@@ -1042,7 +1133,7 @@ a[href^="tel:88128121212"]:active {
 	border: 2px solid #3f5e72;
 }
 
-/*Кнопки в фильтре*/
+
 .button-use {
 
 	box-sizing: border-box;
@@ -1104,13 +1195,11 @@ a[href^="tel:88128121212"]:active {
 }
 
 
-/* Сортировка отелей */
 .catalog-container {
 	width: 1060px;
 	margin: 0 auto;
 }
 
-/*Карточка отеля*/
 
 .hotel-card-button {
 	padding: 8px 26px;
@@ -1150,7 +1239,7 @@ a[href^="tel:88128121212"]:active {
 	padding: 0;
 }
 
-/* Тип заведения на карточке*/
+
 .hotel-card-type {
 	padding: 0;
 	margin: 0;
@@ -1163,7 +1252,6 @@ a[href^="tel:88128121212"]:active {
 }
 
 
-/* Цена на карточке*/
 .hotel-card-price {
 	padding: 0;
 	font-weight: 400px;
@@ -1174,7 +1262,7 @@ a[href^="tel:88128121212"]:active {
 	text-align: right;
 }
 
-/*Кнопки на карточке*/
+
 .hotel-card-button.favorites {
 	background-color: #82b3d3;
 	font-weight: 700;
@@ -1229,7 +1317,7 @@ a[href^="tel:88128121212"]:active {
 	padding: 8px 22px;
 }
 
-/*Звездочки в карточке*/
+
 .hotel-card-star {
 	grid-column: 1 /2;
 	justify-content: center;
@@ -1266,7 +1354,7 @@ a[href^="tel:88128121212"]:active {
 	--star-count: 5;
 }
 
-/* Пагинация*/
+
 .pagination-container {
 	display: flex;
 	padding: 16px;
@@ -1325,7 +1413,6 @@ a[href^="tel:88128121212"]:active {
 }
 
 
-/*Футер подписка*/
 .page-footer-subscribe-catalog {
 	background-image: none;
 	background-color: #ffffff;
@@ -1344,7 +1431,6 @@ a[href^="tel:88128121212"]:active {
 }
 
 
-/*Всплывающее окно*/
 .modal-container {
 	position: fixed;
 	top: 0;
