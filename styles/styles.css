@@ -888,6 +888,7 @@ a[href^="tel:88128121212"]:active {
 	width: 150px;
 	margin-right: 70px;
 	padding: 0;
+	border: none;
 }
 
 .catalog-filter-title {
@@ -921,10 +922,55 @@ a[href^="tel:88128121212"]:active {
 	color: transparent;
 }
 
+.input-text {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	cursor: pointer;
+}
+
+.input-text:hover {
+	color: rgba(242, 242, 242, 0.8);
+}
+
+
+input[type="checkbox"] {
+	appearance: none;
+	background-color: #ffffff;
+	margin: 0;
+	margin-right: 4px;
+	font: inherit;
+	color: currentcolor;
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+	background-color: rgba(242, 242, 242, 0.8);
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	width: 13px;
+	height: 11px;
+	mask: url("/icons/stack.svg#checkbox");
+	mask-repeat: no-repeat;
+	background-color: #3f5e72;
+}
+
+input[type="checkbox"]:focus {
+	border: 3px solid #83b3d3;
+}
+
 /*Тип гостиниц*/
 .catalog-type-of-housing-group {
 	padding: 0;
 	width: 151px;
+	border: none;
 }
 
 .type-of-housing-filter-list {
@@ -937,10 +983,15 @@ a[href^="tel:88128121212"]:active {
 	display: inline-block;
 	padding: 0;
 	margin-right: 70px;
+	border: none;
 }
 
 .prise-group-title {
 	padding-bottom: 20px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
 }
 
 
@@ -955,6 +1006,7 @@ a[href^="tel:88128121212"]:active {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
+	color: #000000;
 }
 
 .range-prise-text {
@@ -964,7 +1016,7 @@ a[href^="tel:88128121212"]:active {
 	color: rgba(8, 8, 8, 0.3);
 	text-align: center;
 	padding-top: 12px;
-	padding-right: 3px;
+	padding-right: 4px;
 	margin-right: 2px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
