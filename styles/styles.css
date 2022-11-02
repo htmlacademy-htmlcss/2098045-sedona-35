@@ -944,12 +944,45 @@ a[href^="tel:88128121212"]:active {
 }
 
 
-.prise {
-	display: inline-block;
+.range-prise {
+	display: flex;
 	width: 45px;
-	padding: 12px 70px 12px 20px;
+	padding: 12px 55px 12px 20px;
+	margin: 0;
+	appearance: textfield;
+	border: none;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.range-prise-text {
+	display: inline-block;
+	justify-content: center;
+	background-color: #ffffff;
+	color: rgba(8, 8, 8, 0.3);
+	text-align: center;
+	padding-top: 12px;
+	padding-right: 3px;
+	margin-right: 2px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.range-prise::-webkit-outer-spin-button,
+.range-prise::-webkit-inner-spin-button {
+	appearance: none;
 	margin: 0;
 }
+
+.range-wrapper-inputs {
+	display: flex;
+	justify-content: center;
+}
+
 
 .price-group-button-container {
 	display: flex;
@@ -1005,27 +1038,6 @@ a[href^="tel:88128121212"]:active {
 .toogle-max {
 	top: -8px;
 	right: 225px;
-}
-
-.range-input {
-	width: 30px;
-	padding: 0 2px;
-	font: inherit;
-	text-align: center;
-	background-color: transparent;
-	border: none;
-	appearance: textfield;
-}
-
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-	appearance: none;
-	margin: 0;
-}
-
-.range-wrapper-inputs {
-	display: flex;
-	justify-content: center;
 }
 
 
