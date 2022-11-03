@@ -966,7 +966,7 @@ input[type="checkbox"]:hover {
 	background-color: rgba(242, 242, 242, 0.8);
 }
 
-input[type="checkbox"]::before {
+input[type="checkbox"]:checked::before {
 	content: "";
 	width: 13px;
 	height: 11px;
@@ -985,7 +985,6 @@ input[type="checkbox"]:focus {
 :root {
 	--form-control-color: #3f5e72;
 }
-
 
 .input-radio-control {
 	font-family: "PT Sans", sans-serif;
@@ -1019,7 +1018,7 @@ input[type="radio"] {
 	margin-top: 1em;
 }
 
-input[type="radio"]::before {
+input[type="radio"]:checked::before {
 	content: "";
 	width: 10px;
 	height: 10px;
@@ -1028,7 +1027,6 @@ input[type="radio"]::before {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 
 /*Тип гостиниц*/
 .catalog-type-of-housing-group {
@@ -1057,7 +1055,6 @@ input[type="radio"]::before {
 	font-size: 20px;
 	line-height: 24px;
 }
-
 
 .range-prise {
 	display: flex;
@@ -1098,7 +1095,6 @@ input[type="radio"]::before {
 	display: flex;
 	justify-content: center;
 }
-
 
 .price-group-button-container {
 	display: flex;
@@ -1157,7 +1153,6 @@ input[type="radio"]::before {
 	right: 225px;
 }
 
-
 .sorting-container {
 	display: flex;
 	justify-content: space-between;
@@ -1168,7 +1163,6 @@ input[type="radio"]::before {
 	margin-bottom: 40px;
 	margin-top: 50px;
 }
-
 
 .view-container {
 	display: flex;
@@ -1238,7 +1232,6 @@ input[type="radio"]::before {
 	border: 1px solid #000000;
 }
 
-
 .number-of-hotel-found {
 	max-width: 400px;
 	font-weight: 700;
@@ -1261,7 +1254,6 @@ input[type="radio"]::before {
 .select-control:active {
 	border: 2px solid #3f5e72;
 }
-
 
 .button-use {
 
@@ -1323,12 +1315,10 @@ input[type="radio"]::before {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-
 .catalog-container {
 	width: 1060px;
 	margin: 0 auto;
 }
-
 
 .hotel-card-button {
 	padding: 8px 26px;
@@ -1353,7 +1343,6 @@ input[type="radio"]::before {
 	gap: 20px;
 }
 
-
 .hotel-card-image-link {
 	grid-column: 1 / -1;
 }
@@ -1368,7 +1357,6 @@ input[type="radio"]::before {
 	padding: 0;
 }
 
-
 .hotel-card-type {
 	padding: 0;
 	margin: 0;
@@ -1380,7 +1368,6 @@ input[type="radio"]::before {
 	grid-column: 1 / 2;
 }
 
-
 .hotel-card-price {
 	padding: 0;
 	font-weight: 400px;
@@ -1390,7 +1377,6 @@ input[type="radio"]::before {
 	grid-column: 2 / 3;
 	text-align: right;
 }
-
 
 .hotel-card-button.favorites {
 	background-color: #82b3d3;
@@ -1416,7 +1402,6 @@ input[type="radio"]::before {
 	margin: 0;
 }
 
-
 .hotel-card-button-detail {
 	grid-column: 1 / 2;
 	font-weight: 700;
@@ -1434,7 +1419,6 @@ input[type="radio"]::before {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-
 .hotel-card-button.rating {
 	grid-column: 2 / 3;
 	background-color: #f2f2f2;
@@ -1445,7 +1429,6 @@ input[type="radio"]::before {
 	color: #333333;
 	padding: 8px 22px;
 }
-
 
 .hotel-card-star {
 	grid-column: 1 /2;
@@ -1482,7 +1465,6 @@ input[type="radio"]::before {
 .hotel-card-star-5::after {
 	--star-count: 5;
 }
-
 
 .pagination-container {
 	display: flex;
@@ -1541,7 +1523,6 @@ input[type="radio"]::before {
 	background-color: #f2f2f2;
 }
 
-
 .page-footer-subscribe-catalog {
 	background-image: none;
 	background-color: #ffffff;
@@ -1559,7 +1540,6 @@ input[type="radio"]::before {
 	background-color: #f2f2f2;
 }
 
-
 .modal-container {
 	position: fixed;
 	top: 0;
@@ -1569,7 +1549,6 @@ input[type="radio"]::before {
 	background-color: rgba(242, 242, 242, 0.8);
 	display: none;
 }
-
 
 .modal {
 	position: relative;
