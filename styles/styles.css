@@ -1153,6 +1153,7 @@ input[type="radio"]:checked::before {
 	right: 225px;
 }
 
+/*Сортировка отелей*/
 .sorting-container {
 	display: flex;
 	justify-content: space-between;
@@ -1239,12 +1240,30 @@ input[type="radio"]:checked::before {
 	line-height: 36px;
 }
 
+
+/*Сортировка отелей*/
+.select {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 292px;
+	margin-left: 200px;
+	margin-right: auto;
+}
+
 .select-control {
+	width: 100%;
+	padding: 14px 110px 14px 20px;
+	font: inherit;
+	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-	padding: 14px 131px 14px 20px;
+	font-size: 18px;
+	line-height: 21px;
 	border: 2px solid #f2f2f2;
+	background-image: url("/icons/breadcrumbs/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	appearance: none;
 }
 
 .select-control:hover {
