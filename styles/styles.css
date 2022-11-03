@@ -1260,9 +1260,9 @@ input[type="radio"]:checked::before {
 	font-size: 18px;
 	line-height: 21px;
 	border: 2px solid #f2f2f2;
-	background-image: url("/icons/breadcrumbs/arrow.svg");
+	background-image: url("/icons/stack.svg#arrow-select");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: right 5px center;
 	appearance: none;
 }
 
