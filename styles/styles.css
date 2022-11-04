@@ -1657,6 +1657,10 @@ input[type="radio"]:checked::before {
 	margin: 0;
 }
 
+.form-label {
+	text-align: center;
+}
+
 .search-form-adult {
 	width: 137px;
 	margin: 0;
@@ -1695,4 +1699,20 @@ label {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
+}
+
+.tooltip {
+	position: relative;
+	background-color: #83b3d3;
+	padding: 5px;
+	border-radius: 50%;
+	cursor: help;
+}
+
+.tooltip::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url("/icons/info.svg") no-repeat center / contain;
 }
