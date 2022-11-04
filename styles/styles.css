@@ -1260,11 +1260,17 @@ input[type="radio"]:checked::before {
 	font-size: 18px;
 	line-height: 21px;
 	border: 2px solid #f2f2f2;
+	appearance: none;
+}
+
+option {
 	background-image: url("/icons/stack.svg#arrow-select");
 	background-repeat: no-repeat;
 	background-position: right 5px center;
-	appearance: none;
+	width: 10px;
+	height: 9px;
 }
+
 
 .select-control:hover {
 	border: 2px solid #68a2ca;
@@ -1559,26 +1565,24 @@ input[type="radio"]:checked::before {
 	background-color: #f2f2f2;
 }
 
+
+/* Модальное окно */
 .modal-container {
 	position: fixed;
 	top: 0;
 	left: 0;
+	display: flex;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(242, 242, 242, 0.8);
-	display: none;
 }
 
 .modal {
 	position: relative;
-	margin: auto;
 	padding: 64px 70px;
 	background-color: #ffffff;
 	border-radius: 5%;
-}
-
-.modal-auth {
-	width: 717px;
+	margin: auto;
 }
 
 .modal-content {
@@ -1625,50 +1629,71 @@ input[type="radio"]:checked::before {
 }
 
 .search-form {
-	grid-template-columns: 137px 100px 88px 131px 111px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	width: 717px;
 	margin: 0;
 	padding: 0;
-	display: inline-block;
+}
+
+.field-group {
+	display: flex;
+	margin: 0;
+	margin-bottom: 48px;
+	width: 577px;
+	justify-content: space-between;
 }
 
 .search-form-coming-day {
-	grid-column: 1 / 2;
-	padding: 0;
+	width: 137px;
+	margin: 0;
+}
+
+.search-form-out-day {
+	width: 137px;
+	margin: 0;
+}
+
+.group-adult-vs-child {
+	display: flex;
+	width: 577px;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.search-form-adult {
+	width: 137px;
+	margin: 0;
+}
+
+.field-adult {
+	width: 110px;
 	margin: 0;
 }
 
 .search-form-field {
-	grid-column: 2 / 6;
 	background-color: #f2f2f2;
 }
 
-.search-form-out-day {
-	grid-column: 1 / 2;
-}
-
-.search-form-adult {
-	grid-column: 1 /3;
-	display: block;
-}
-
 .search-form-children {
-	grid-column: 4 / 5;
-	display: block;
-}
-
-.field-adult {
-	grid-column: 3 / 4;
-	display: block;
-}
-
-.search-form-button {
-	grid-column: 1 / -1;
+	width: 131px;
+	margin: 0;
+	text-align: center;
 }
 
 .field-children {
-	grid-column: 5 / 6;
+	width: 111px;
+	margin: 0;
 }
+
+
+.search-form-button {
+	width: 577px;
+	padding: 18px 257px;
+	background-color: #83b3d3;
+}
+
 
 label {
 	font-family: "PT Sans", sans-serif;
