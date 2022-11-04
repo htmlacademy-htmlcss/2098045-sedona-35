@@ -1253,7 +1253,7 @@ input[type="radio"]:checked::before {
 
 .select-control {
 	width: 100%;
-	padding: 14px 110px 14px 20px;
+	padding: 14px 100px 14px 20px;
 	font: inherit;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
@@ -1261,16 +1261,11 @@ input[type="radio"]:checked::before {
 	line-height: 21px;
 	border: 2px solid #f2f2f2;
 	appearance: none;
-}
-
-option {
-	background-image: url("/icons/stack.svg#arrow-select");
+	background: url("/icons/stack.svg#arrow-select");
+	background-size: 12px 9px;
 	background-repeat: no-repeat;
 	background-position: right 5px center;
-	width: 10px;
-	height: 9px;
 }
-
 
 .select-control:hover {
 	border: 2px solid #68a2ca;
