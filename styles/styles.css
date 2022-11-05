@@ -1660,6 +1660,7 @@ input[type="radio"]:checked::before {
 .form-label {
 	text-align: center;
 	width: 85px;
+	margin: auto;
 }
 
 .search-form-adult {
@@ -1671,6 +1672,7 @@ input[type="radio"]:checked::before {
 	width: 110px;
 	margin: 0;
 }
+
 
 .search-form-field {
 	background-color: #f2f2f2;
@@ -1706,26 +1708,10 @@ label {
 /* Высплывающая подсказка тултип*/
 .tooltip {
 	position: absolute;
-	bottom: 100%;
-	margin: 0;
-	margin-bottom: 6px;
 	margin-top: 4px;
 	margin-left: 2px;
-	width: 260px;
-	height: 143px;
-	border: none;
-	padding: 15px 18px 18px 22px;
-	background-color: #333333;
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
-}
-
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
-	display: block;
+	width: 16px;
+	height: 16px;
 }
 
 .tooltip-toogle {
@@ -1734,33 +1720,33 @@ label {
 	padding: 4px;
 	border-radius: 50%;
 	cursor: help;
-	margin-left: 10px;
+	margin-left: 0;
 	border: none;
 }
 
-.tooltip-toogle::before {
-	content: "";
-	display: block;
-	width: 20px;
-	height: 20px;
-	mask: url("/icons/stack.svg#info") no-repeat center / contain;
-	background-color: #ffffff;
-}
-
-.tooltip-toogle:hover::before {
-	mask: url("/icons/info.svg") no-repeat center / contain;
-	background-color: rgba(255, 255, 255, 0.3);
-}
-
 .tooptip-text {
+	position: absolute;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: none;
-	padding: 10px;
-	border-radius: 10px;
 	display: block;
 	width: 256px;
 	color: #ffffff;
+	background-color: #333333;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	padding: 15px 18px 18px 22px;
+	border: none;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	bottom: 100%;
+	margin-bottom: 6px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+	display: block;
 }
