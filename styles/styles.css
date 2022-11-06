@@ -1704,7 +1704,7 @@ input[type="radio"]:checked::before {
 .field-adult {
 	width: 31px;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 }
 
 .search-form-field {
