@@ -1632,12 +1632,9 @@ input[type="radio"]:checked::before {
 	padding: 0;
 }
 
-.field-group {
-	display: flex;
-	margin: 0;
-	margin-bottom: 48px;
-	width: 577px;
-	justify-content: space-between;
+
+.adult {
+	width: 137px;
 }
 
 .search-form-coming-day {
@@ -1650,11 +1647,46 @@ input[type="radio"]:checked::before {
 	margin: 0;
 }
 
+.search-form-adult {
+	width: 247px;
+	padding: 0;
+}
+
 .group-adult-vs-child {
 	display: flex;
 	width: 577px;
 	justify-content: space-between;
 	margin: 0;
+	margin-bottom: 48px;
+}
+
+.adult-field-buttons {
+	display: flex;
+	width: 111px;
+	padding: 0;
+	margin: 0;
+}
+
+.button-minus {
+	width: 40px;
+	border: none;
+	background-color: #f2f2f2;
+	background-image: url("/icons/minus.svg");
+	background-repeat: no-repeat;
+	background-size: 14px 2px;
+	background-position: center;
+	cursor: pointer;
+}
+
+.button-plius {
+	width: 40px;
+	border: none;
+	background-color: #f2f2f2;
+	background-image: url("/icons/pliuse.svg");
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+	background-position: center;
+	cursor: pointer;
 }
 
 .form-label {
@@ -1663,29 +1695,43 @@ input[type="radio"]:checked::before {
 	margin: auto;
 }
 
-.search-form-adult {
-	width: 137px;
+.adult-container {
 	margin: 0;
+	padding: 0;
 }
+
 
 .field-adult {
-	width: 110px;
+	width: 31px;
 	margin: 0;
+	padding: 0;
 }
-
 
 .search-form-field {
 	background-color: #f2f2f2;
+	border: none;
+	box-sizing: border-box;
+}
+
+.search-form-field::-webkit-outer-spin-button,
+.search-form-field::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
 }
 
 .search-form-children {
 	width: 131px;
 	margin: 0;
+	border: none;
+	display: block;
+	border-radius: 0;
+	padding: 14px 10px 14px 0;
 }
 
 .field-children {
-	width: 111px;
+	width: 31px;
 	margin: 0;
+	border: none;
 }
 
 
@@ -1708,20 +1754,30 @@ label {
 /* Высплывающая подсказка тултип*/
 .tooltip {
 	position: absolute;
-	margin-top: 4px;
-	margin-left: 2px;
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
+	margin-left: 3px;
+	top: 510px;
+	left: 500px;
+}
+
+.tooltip-icon {
+	width: 100%;
+	height: 100%;
+	color: #242424;
+	display: block;
 }
 
 .tooltip-toogle {
-	position: absolute;
+	position: relative;
 	background-color: #83b3d3;
 	padding: 4px;
 	border-radius: 50%;
 	cursor: help;
 	margin-left: 0;
 	border: none;
+	margin-bottom: 6px;
+	top: 10px;
 }
 
 .tooptip-text {
@@ -1743,7 +1799,10 @@ label {
 	transform: translateX(-50%);
 	z-index: 1;
 	bottom: 100%;
-	margin-bottom: 6px;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+	color: rgba(242, 242, 242, 0.8);
 }
 
 .tooltip-toggle:hover + .tooltip-text,
