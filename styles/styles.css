@@ -1659,11 +1659,14 @@ input[type="radio"]:checked::before {
 	margin: auto;
 }
 
-.search-form {
+.field-group {
 	display: grid;
 	grid-template-columns: 137px 440px;
-	margin-bottom: 48px;
 	padding: 12px 295px 12px 20px;
+}
+
+.search-form-field {
+	background-color: #f2f2f2;
 }
 
 .search-form-coming-day {
@@ -1703,7 +1706,7 @@ input[type="radio"]:checked::before {
 	display: block;
 	position: absolute;
 	left: 600px;
-	top: 140px;
+	top: 165px;
 	width: 16px;
 	height: 15px;
 	background-image: url("/icons/calendar.svg");
