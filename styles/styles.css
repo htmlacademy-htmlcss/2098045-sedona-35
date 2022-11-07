@@ -1654,6 +1654,12 @@ input[type="radio"]:checked::before {
 
 .button-minus {
 	--icon: url("../icons/stack.svg#minus");
+	cursor: pointer;
+}
+
+.button-minus:hover {
+	mask: url("../icons/stack.svg#minus") no-repeat center / 14px 2px;
+	background-color: #242424;
 }
 
 .button-plus {
