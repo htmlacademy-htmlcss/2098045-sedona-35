@@ -1708,14 +1708,18 @@ input[type="radio"]:checked::before {
 	gap: 0;
 }
 
-.calendar::before {
+.calendar::after {
 	content: "";
 	display: block;
+	position: absolute;
+	left: 600px;
+	top: 140px;
 	width: 16px;
-	mask: url("/icons/calendar.svg");
-	mask-repeat: no-repeat;
-	background-color: #000000;
+	height: 15px;
+	background-image: url("/icons/calendar.svg");
+	background-repeat: no-repeat;
 	background-size: 16px 15px;
+	cursor: pointer;
 }
 
 .search-form-field.field-adult {
