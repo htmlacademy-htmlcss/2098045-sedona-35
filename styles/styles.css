@@ -1633,33 +1633,6 @@ input[type="radio"]:checked::before {
 }
 
 
-.adult {
-	width: 137px;
-}
-
-.search-form-coming-day {
-	width: 137px;
-	margin: 0;
-}
-
-.search-form-out-day {
-	width: 137px;
-	margin: 0;
-}
-
-.search-form-adult {
-	width: 247px;
-	padding: 0;
-}
-
-.group-adult-vs-child {
-	display: flex;
-	width: 577px;
-	justify-content: space-between;
-	margin: 0;
-	margin-bottom: 48px;
-}
-
 .adult-field-buttons {
 	display: flex;
 	width: 111px;
@@ -1695,43 +1668,72 @@ input[type="radio"]:checked::before {
 	margin: auto;
 }
 
-.adult-container {
+.field-group {
+	display: flex;
+	width: 577px;
+	margin: 0;
+	margin-bottom: 48px;
+	padding: 0;
+}
+
+.search-form-coming-day {
+	width: 137px;
+	margin: 0;
+	padding: 12px 24px 12px 0;
+}
+
+.search-form-out-day {
+	width: 137px;
+	margin: 0;
+	padding: 12px 18px 12px 0;
+}
+
+.some-mistake-text {
+	width: 320px;
+	color: #ff5757;
 	margin: 0;
 	padding: 0;
 }
 
-
-.field-adult {
-	width: 31px;
-	margin: 0;
-	padding: 10px;
-}
-
 .search-form-field {
 	background-color: #f2f2f2;
+	width: 440px;
 	border: none;
 	box-sizing: border-box;
+}
+
+.calendar::before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 15px;
+	mask: url("/icons/calendar.svg");
+	mask-repeat: no-repeat;
+	background-color: #000000;
+}
+
+.search-form-field.field-adult {
+	border: none;
+	padding: 14px 10px;
+	margin: none;
+	background-color: #f2f2f2;
+	text-align: center;
+	width: 20px;
+}
+
+.search-form-field.field-children {
+	border: none;
+	padding: 14px 10px;
+	margin: none;
+	background-color: #f2f2f2;
+	text-align: center;
+	width: 20px;
 }
 
 .search-form-field::-webkit-outer-spin-button,
 .search-form-field::-webkit-inner-spin-button {
 	appearance: none;
 	margin: 0;
-}
-
-.search-form-children {
-	width: 131px;
-	margin: 0;
-	border: none;
-	display: block;
-	border-radius: 0;
-	padding: 14px 10px 14px 0;
-}
-
-.field-children {
-	width: 31px;
-	margin: 0;
-	border: none;
 }
 
 
@@ -1759,6 +1761,7 @@ label {
 	margin-left: 3px;
 	top: 510px;
 	left: 500px;
+	display: none;
 }
 
 .tooltip-icon {
