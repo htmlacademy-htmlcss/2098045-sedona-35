@@ -189,7 +189,7 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	mask: url("/icons/stack.svg#search");
+	mask: url("../icons/stack.svg#search");
 	mask-repeat: no-repeat;
 	mask-position: center;
 	mask-size: contain;
@@ -209,7 +209,7 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	mask: url("/icons/stack.svg#heart");
+	mask: url("../icons/stack.svg#heart");
 	mask-repeat: no-repeat;
 	mask-position: center;
 	background-size: contain;
@@ -642,7 +642,7 @@ img {
 	display: block;
 	width: 24px;
 	height: 24px;
-	mask: url("/icons/stack.svg#social_VK");
+	mask: url("../icons/stack.svg#social_VK");
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	background-color: #83b3d3;
@@ -654,7 +654,7 @@ img {
 	display: block;
 	width: 24px;
 	height: 24px;
-	mask: url("/icons/stack.svg#social_tg");
+	mask: url("../icons/stack.svg#social_tg");
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	background-color: #83b3d3;
@@ -667,7 +667,7 @@ img {
 	box-sizing: border-box;
 	width: 24px;
 	height: 24px;
-	mask: url("/icons/stack.svg#social_yt");
+	mask: url("../icons/stack.svg#social_yt");
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	background-color: #83b3d3;
@@ -733,7 +733,7 @@ a[href^="tel:88128121212"]:active {
 	box-sizing: border-box;
 	width: 115px;
 	height: 34px;
-	mask: url("/icons/logo-htmlacademy.svg");
+	mask: url("../icons/logo-htmlacademy.svg");
 	mask-repeat: no-repeat;
 	margin-left: auto;
 	mask-size: contain;
@@ -830,7 +830,7 @@ a[href^="tel:88128121212"]:active {
 	box-sizing: border-box;
 	width: 13px;
 	height: 15px;
-	mask: url("/icons/stack.svg#breadcrumbs_home");
+	mask: url("../icons/stack.svg#breadcrumbs_home");
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	mask-position: center;
@@ -844,7 +844,7 @@ a[href^="tel:88128121212"]:active {
 	box-sizing: border-box;
 	width: 6px;
 	height: 15px;
-	mask: url("/icons/stack.svg#breadcrumbs_arrow");
+	mask: url("../icons/stack.svg#breadcrumbs_arrow");
 	mask-repeat: no-repeat;
 	mask-size: contain;
 	mask-position: center;
@@ -972,7 +972,7 @@ input[type="checkbox"]:checked::before {
 	content: "";
 	width: 13px;
 	height: 11px;
-	background-image: url("/icons/stack.svg#checkbox");
+	background-image: url("../icons/stack.svg#checkbox");
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: block;
@@ -1025,7 +1025,7 @@ input[type="radio"]:checked::before {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background-image: url("/icons/stack.svg#radio");
+	background-image: url("../icons/stack.svg#radio");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -1192,7 +1192,7 @@ input[type="radio"]:checked::before {
 	display: block;
 	width: 16px;
 	height: 14px;
-	mask: url("/icons/stack.svg#filter_cards");
+	mask: url("../icons/stack.svg#filter_cards");
 	mask-repeat: no-repeat;
 	mask-position: center;
 	mask-size: cover;
@@ -1204,7 +1204,7 @@ input[type="radio"]:checked::before {
 	display: block;
 	width: 16px;
 	height: 14px;
-	mask: url("/icons/stack.svg#filter_slideshow");
+	mask: url("../icons/stack.svg#filter_slideshow");
 	mask-repeat: no-repeat;
 	mask-position: center;
 	mask-size: cover;
@@ -1216,7 +1216,7 @@ input[type="radio"]:checked::before {
 	display: block;
 	width: 16px;
 	height: 14px;
-	mask: url("/icons/stack.svg#filter_list");
+	mask: url("../icons/stack.svg#filter_list");
 	mask-repeat: no-repeat;
 	mask-position: center;
 	mask-size: cover;
@@ -1263,7 +1263,7 @@ input[type="radio"]:checked::before {
 	line-height: 21px;
 	border: 2px solid #f2f2f2;
 	appearance: none;
-	background: url("/icons/stack.svg#arrow-select");
+	background: url("../icons/stack.svg#arrow-select");
 	background-size: 12px 9px;
 	background-repeat: no-repeat;
 	background-position: right 5px center;
@@ -1566,6 +1566,7 @@ input[type="radio"]:checked::before {
 /* Модальное окно */
 .modal-container {
 	position: fixed;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	display: flex;
@@ -1608,7 +1609,7 @@ input[type="radio"]:checked::before {
 	margin: 0 auto;
 	width: 15px;
 	height: 15px;
-	background-image: url("/icons/stack.svg#close");
+	background-image: url("../icons/stack.svg#close");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -1656,7 +1657,7 @@ input[type="radio"]:checked::before {
 }
 
 .button-plus {
-	--icon: url("../icons/stack.svg#plus");
+	--icon: url("../icons/plus.svg");
 }
 
 .form-label {
@@ -1668,11 +1669,22 @@ input[type="radio"]:checked::before {
 .field-group {
 	position: relative;
 	display: grid;
-	grid-template-columns: 137px 440px;
-	margin-bottom: 38px;
+	grid-template-columns: 137px auto 1fr;
+}
+
+.field-group::after {
+	content: "";
+	min-height: 21px;
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.search-form {
+	display: grid;
+	gap: 38px;
 }
 
 .search-form-field {
+	grid-area: 1 / 3 / 2 / 4;
 	background-color: #f2f2f2;
 	border: none;
 	appearance: textfield;
@@ -1720,17 +1732,17 @@ input[type="radio"]:checked::before {
 	gap: 0;
 }
 
-.group-adult-vs-child {
+.group-guests {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
 }
 
 .field-group-adult {
-	width: 247px;
+	width: 260px;
 }
 
-.search-form-field.field-adult {
+.search-form-field-number {
 	border: none;
 	padding: 14px 10px;
 	margin: none;
@@ -1739,15 +1751,11 @@ input[type="radio"]:checked::before {
 	width: 20px;
 }
 
-.search-form-field.field-children {
-	border: none;
-	padding: 14px 10px;
-	margin: none;
-	background-color: #f2f2f2;
-	text-align: center;
-	width: 20px;
+.search-form-field-number:focus-visible {
+	z-index: 2;
 }
 
+/* урбать родные стрелочки у инпута*/
 .search-form-field::-webkit-outer-spin-button,
 .search-form-field::-webkit-inner-spin-button {
 	appearance: none;
@@ -1783,7 +1791,8 @@ label {
 
 
 .tooltip {
-	position: absolute;
+	grid-area: 1 / 2 / 2 / 3;
+	position: relative;
 	width: 20px;
 	height: 20px;
 	margin-left: 3px;
@@ -1791,51 +1800,55 @@ label {
 	left: 500px;
 }
 
-.tooltip-icon {
+.tooltip::before {
+	content: "";
+	top: 10px;
+	margin-left: 0;
 	width: 100%;
 	height: 100%;
-	color: #242424;
 	display: block;
-}
-
-.tooltip-toogle {
-	position: relative;
-	background-color: #83b3d3;
 	padding: 4px;
 	border-radius: 50%;
-	cursor: help;
-	margin-left: 0;
 	border: none;
 	margin-bottom: 6px;
-	top: 10px;
+	background: #83b3d3 url("../icons/info.svg") no-repeat center / 20px 20px;
+	cursor: help;
 }
 
 .tooptip-text {
 	position: absolute;
+	z-index: 1;
+	left: 50%;
+	bottom: calc(100% + 6px);
+	display: block;
+	width: 256px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: none;
-	display: block;
-	width: 256px;
 	color: #ffffff;
 	background-color: #333333;
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
 	padding: 15px 18px 18px 22px;
 	border: none;
-	left: 50%;
 	transform: translateX(-50%);
-	z-index: 1;
-	bottom: 100%;
+	/*
+	visibility: hidden;
+	opacity: 0.01;
+	transition: visibility 0.3s, opacity 0.3s;*/
 }
 
-.tooltip-toggle:hover .tooltip-icon {
-	color: rgba(242, 242, 242, 0.8);
+.tooltip-text::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	bottom: -10px;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
-	display: block;
+:where(.tooltip:hover, .tooltip:focus-within, .field:focus ~ .tooltip) .tooltip-text {
+	visibility: visible;
+	opacity: 1;
 }
