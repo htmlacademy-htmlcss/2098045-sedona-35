@@ -546,12 +546,10 @@ img {
 }
 
 .field {
-	padding: 15px 0 15px 20px;
-	border-radius: 4px 0 0 4px;
+	padding: 15px 20px 15px;
 	border: none;
 	margin-right: 0;
 	font: inherit;
-	width: 452px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
@@ -562,13 +560,17 @@ img {
 }
 
 .field:active {
-	border: 2px solid #000000;
+	box-shadow: inset 0 0 0 2px #000000;
 }
 
 .field:focus {
 	border-color: #83b3d3;
 }
 
+.subscribe-field {
+	width: 452px;
+	border-radius: 4px 0 0 4px;
+}
 
 .subscribe-button {
 	background-color: #82b3d3;
@@ -1623,7 +1625,7 @@ input[type="radio"]:checked::before {
 	margin-bottom: 34px;
 }
 
-
+/* Кнопки изменения количества*/
 .adult-field-buttons {
 	display: flex;
 	width: 111px;
@@ -1631,26 +1633,30 @@ input[type="radio"]:checked::before {
 	margin: 0;
 }
 
-.button-minus {
-	width: 40px;
-	border: none;
-	background-color: #f2f2f2;
-	background-image: url("/icons/stack.svg#minus");
-	background-repeat: no-repeat;
-	background-size: 14px 2px;
-	background-position: center;
-	cursor: pointer;
+.number-buttons {
+	padding: 0;
+	border: 0;
+	background: #f2f2f2;
 }
 
-.button-plius {
+.number-buttons:focus-visible {
+	z-index: 1;
+}
+
+.number-buttons::before {
+	content: "";
+	display: block;
 	width: 40px;
-	border: none;
-	background-color: #f2f2f2;
-	background-image: url("/icons/stack.svg#pliuse");
-	background-repeat: no-repeat;
-	background-size: 14px 14px;
-	background-position: center;
-	cursor: pointer;
+	height: 40px;
+	background: var(--icon) no-repeat center / 14px 2px;
+}
+
+.button-minus {
+	--icon: url("../icons/stack.svg#minus");
+}
+
+.button-plus {
+	--icon: url("../icons/stack.svg#plus");
 }
 
 .form-label {
@@ -1660,26 +1666,40 @@ input[type="radio"]:checked::before {
 }
 
 .field-group {
+	position: relative;
 	display: grid;
 	grid-template-columns: 137px 440px;
-	padding: 12px 295px 12px 20px;
+	margin-bottom: 38px;
 }
 
 .search-form-field {
 	background-color: #f2f2f2;
+	border: none;
+	appearance: textfield;
+	width: auto;
 }
 
-.search-form-coming-day {
+.search-form-label {
 	width: 137px;
 	margin: 0;
 	padding: 0;
+	padding-top: 12px;
+	/* padding: 12px 18px 12px 0; */
 	grid-column: 1 /2;
 }
 
-.search-form-out-day {
-	width: 137px;
-	margin: 0;
-	padding: 12px 18px 12px 0;
+.search-form-label-icon-cal::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 15px;
+	right: 40px;
+	top: 20px;
+	mask-image: url("../icons/stack.svg#calendar");
+	mask-repeat: no-repeat;
+	background-size: 16px 15px;
+	pointer-events: none;
+	background-color: rgba(8, 8, 8, 0.3);
 }
 
 .some-mistake-text {
@@ -1692,7 +1712,6 @@ input[type="radio"]:checked::before {
 
 .search-form-field-coming {
 	background-color: #f2f2f2;
-	width: 440px;
 	border: none;
 	box-sizing: border-box;
 	grid-column: 2/ -1;
@@ -1701,18 +1720,14 @@ input[type="radio"]:checked::before {
 	gap: 0;
 }
 
-.calendar::after {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 600px;
-	top: 165px;
-	width: 16px;
-	height: 15px;
-	background-image: url("/icons/calendar.svg");
-	background-repeat: no-repeat;
-	background-size: 16px 15px;
-	cursor: pointer;
+.group-adult-vs-child {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.field-group-adult {
+	width: 247px;
 }
 
 .search-form-field.field-adult {
@@ -1739,13 +1754,24 @@ input[type="radio"]:checked::before {
 	margin: 0;
 }
 
-
 .search-form-button {
 	width: 577px;
 	padding: 18px 257px;
 	background-color: #83b3d3;
 }
 
+.search-form-button:hover {
+	background-color: #68a2ca;
+}
+
+.search-form-button:focus-visible {
+	background-color: #68a2ca;
+}
+
+.search-form-button:active {
+	background-color: #82b3d3;
+	color: rgb(255, 255, 255, 0.3);
+}
 
 label {
 	font-family: "PT Sans", sans-serif;
@@ -1756,7 +1782,6 @@ label {
 }
 
 
-/* Высплывающая подсказка тултип*/
 .tooltip {
 	position: absolute;
 	width: 20px;
@@ -1764,7 +1789,6 @@ label {
 	margin-left: 3px;
 	top: 510px;
 	left: 500px;
-	display: none;
 }
 
 .tooltip-icon {

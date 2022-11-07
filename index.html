@@ -124,7 +124,7 @@
 							<p class="page-footer-paragrapher">Только полезная информация и никакого спама, честное бойскаутское!</p>
 							<form class="subscribe-form" action="https://echo.htmlcademy.ru" method="post">
 								<label class="visually-hidden" for="your-email">Ваш электропочта:</label>
-								<input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="your-email" required>
+								<input class="subscribe-field field" placeholder="Ваш email" type="email" name="newsletter-email" id="your-email" required>
 								<button class="subscribe-button button" type="submit">Подписаться</button>
 							</form>
 						</div>
@@ -172,16 +172,14 @@
 
 					<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
 						<div class="field-group">
-							<label class="search-form-coming-day" for="search-date-in">День заезда:</label>
-							<span class="calendar">
-								<input class="search-form-field field" type="text" id="search-date-in" name="search-date-in" placeholder="27 апреля 2020 года">
-							</span>
-							<span class="some-mistake-text" >Мы не можем отправить вас в прошлое</span>
+							<label class="search-form-label search-form-label-icon-cal" for="search-date-in">День заезда:</label>
+							<input class="search-form-field field" type="text" id="search-date-in" name="search-date-in" placeholder="27 апреля 2020 года">
+							<span class="some-mistake-text">Мы не можем отправить вас в прошлое</span>
 							<span class="some-mistake-text" hidden>Ой что-то не пошло не так</span>
 							<span class="some-mistake-text" hidden>Оуч</span>
 						</div>
 						<div class="field-group">
-							<label class="search-form-out-day" for="search-date-out">День выезда:</label>
+							<label class="search-form-label search-form-label-icon-cal" for="search-date-out">День выезда:</label>
 							<input class="search-form-field field" type="text" id="search-date-out" name="search-date-out" placeholder="1 сентября 2023 года">
 							<span class="some-mistake-text" hidden>На эти даты есть свободные номера. Пока есть.</span>
 							<span class="some-mistake-text" hidden>На эти даты нет свободных номеров. Увы.</span>
@@ -189,35 +187,31 @@
 						</div>
 
 						<div class="group-adult-vs-child">
-							<div class="field-group adult">
+							<div class="field-group adult field-group-adult">
 								<label class="search-form-adult" for="search-adult">Взрослые:</label>
 								<div class="adult-field-buttons">
-									<button class="button-minus" type="button">
+									<button class="number-buttons button-minus" type="button">
 										<span class="visually-hidden">Кнопка минус</span>
 									</button>
 									<input class="search-form-field field-adult" type="number" id="search-adult" name="search-adult" placeholder="2">
-									<button class="button-plius" type="button">
+									<button class="number-buttons button-plus" type="button">
 										<span class="visually-hidden">Кнопка плюс</span>
 									</button>
 								</div>
 							</div>
 
-							<div class="field-group">
+							<div class="field-group field-group-adult">
 								<label class="search-form-children" for="search-children">Дети:</label>
 								<div class="adult-field-buttons">
-									<button class="button-minus" type="button">
+									<button class="number-buttons button-minus" type="button">
 										<span class="visually-hidden">Кнопка минус</span>
 									</button>
 									<input class="search-form-field field-children" type="number" id="search-children" name="search-children" placeholder="1">
-									<button class="button-plius" type="button">
+									<button class="number-buttons button-plus" type="button">
 										<span class="visually-hidden">Кнопка плюс</span>
 									</button>
 									<span class="tooltip">
-										<button class="tooltip-toogle" type="button">
-											<svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
-												<path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd" />
-											</svg>
-										</button>
+										<button class="tooltip-toogle" type="button"></button>
 										<span class="tooptip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
 									</span>
 								</div>
