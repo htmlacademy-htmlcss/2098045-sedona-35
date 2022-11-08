@@ -231,9 +231,8 @@ img {
 	font-size: 10px;
 	line-height: 13px;
 	text-align: center;
-	letter-spacing: -0, 1em;
 	background-color: #7db54f;
-	border-radius: 50%;
+	border-radius: 50px;
 	color: #ffffff;
 	padding: 3px 5px;
 	margin-top: -28px;
@@ -612,6 +611,7 @@ img {
 .footer-social-list {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 12px;
 	width: 182px;
 	margin: 0;
 	padding: 0;
@@ -619,7 +619,6 @@ img {
 
 
 .footer-social-item {
-	margin-right: 12px;
 	margin-bottom: 13px;
 	margin-top: 11px;
 	width: 24px;
@@ -631,75 +630,41 @@ img {
 	color: transparent;
 }
 
-
-.footer-social-item:nth-child(3n) {
-	margin-right: 0;
+.social-button {
+	display: flex;
+	gap: 0.5em;
+	color: #83b3d3;
 }
 
+.social-button:hover {
+	color: #68a2ca;
+}
 
-.social-button-vkontakte::after {
+.social-button:active {
+	color: rgba(104, 162, 202, 0.3);
+}
+
+.social-button::before {
 	content: "";
 	display: block;
 	width: 24px;
 	height: 24px;
-	mask: url("../icons/stack.svg#social_VK");
-	mask-repeat: no-repeat;
-	mask-size: contain;
-	background-color: #83b3d3;
+	background: currentcolor;
+	mask: var(--icon) no-repeat center / contain;
 	box-sizing: border-box;
 }
 
-.social-button-telegam::after {
-	content: "";
-	display: block;
-	width: 24px;
-	height: 24px;
-	mask: url("../icons/stack.svg#social_tg");
-	mask-repeat: no-repeat;
-	mask-size: contain;
-	background-color: #83b3d3;
-	box-sizing: border-box;
+.social-button-vk {
+	--icon: url("../icons/stack.svg#social_vk");
 }
 
-.social-button-youtube::after {
-	content: "";
-	display: block;
-	box-sizing: border-box;
-	width: 24px;
-	height: 24px;
-	mask: url("../icons/stack.svg#social_yt");
-	mask-repeat: no-repeat;
-	mask-size: contain;
-	background-color: #83b3d3;
+.social-button-tg {
+	--icon: url("../icons/stack.svg#social_tg");
 }
 
-
-/*Социальные кнопки Наведение*/
-.social-button-vkontakte:hover::after {
-	background-color: #68a2ca;
+.social-button-yt {
+	--icon: url("../icons/stack.svg#social_yt");
 }
-
-.social-button-telegam:hover::after {
-	background-color: #68a2ca;
-}
-
-.social-button-youtube:hover::after {
-	background-color: #68a2ca;
-}
-
-/*Социальные кнопки Нажатие*/
-.social-button-vkontakte:active::after {
-	background-color: rgba(104, 162, 202, 0.3);
-}
-
-.social-button-telegam:active::after {
-	background-color: rgba(104, 162, 202, 0.3);
-}
-
-.social-button-youtube:active::after {
-	background-color: rgba(104, 162, 202, 0.3);
-}
-
 
 /*Номер телефона в футере*/
 
@@ -1004,7 +969,7 @@ input[type="radio"] {
 	appearance: none;
 	background-color: #ffffff;
 	font: inherit;
-	color: currentccolor;
+	color: currentcolor;
 	height: 20px;
 	width: 20px;
 	margin: 0;
@@ -1562,17 +1527,18 @@ input[type="radio"]:checked::before {
 	background-color: #f2f2f2;
 }
 
-
 /* Модальное окно */
 .modal-container {
 	position: fixed;
 	z-index: 100;
-	top: 0;
-	left: 0;
-	display: flex;
-	width: 100%;
-	height: 100%;
+	inset: 0;
+	display: grid;
+	place-items: center;
 	background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-closed {
+	display: none;
 }
 
 .modal {
@@ -1580,26 +1546,22 @@ input[type="radio"]:checked::before {
 	padding: 64px 70px;
 	background-color: #ffffff;
 	border-radius: 5%;
-	margin: auto;
 }
 
 .modal-content {
+	display: grid;
+	gap: 64px;
 	width: 577px;
-	margin: 0 auto;
-	padding: 0;
 }
 
 .modal-close-button {
 	position: absolute;
 	padding: 0;
-	top: 30px;
-	right: 10px;
-	width: 52px;
-	height: 52px;
-	border-radius: 50%;
-	background-color: #f2f2f2f2;
+	top: 64px;
+	right: 52px;
+	border-radius: 100px;
+	background-color: #f2f2f2;
 	border: none;
-	cursor: pointer;
 }
 
 .modal-close-button::after {
@@ -1607,11 +1569,9 @@ input[type="radio"]:checked::before {
 	display: block;
 	padding: 0;
 	margin: 0 auto;
-	width: 15px;
-	height: 15px;
-	background-image: url("../icons/stack.svg#close");
-	background-repeat: no-repeat;
-	background-position: center;
+	width: 52px;
+	height: 52px;
+	background: url("../icons/stack.svg#close") no-repeat center / 14px;
 }
 
 .modal-title {
@@ -1623,47 +1583,6 @@ input[type="radio"]:checked::before {
 	color: #000000;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 34px;
-}
-
-/* Кнопки изменения количества*/
-.adult-field-buttons {
-	display: flex;
-	width: 111px;
-	padding: 0;
-	margin: 0;
-}
-
-.number-buttons {
-	padding: 0;
-	border: 0;
-	background: #f2f2f2;
-}
-
-.number-buttons:focus-visible {
-	z-index: 1;
-}
-
-.number-buttons::before {
-	content: "";
-	display: block;
-	width: 40px;
-	height: 40px;
-	background: var(--icon) no-repeat center / 14px 2px;
-}
-
-.button-minus {
-	--icon: url("../icons/stack.svg#minus");
-	cursor: pointer;
-}
-
-.button-minus:hover {
-	mask: url("../icons/stack.svg#minus") no-repeat center / 14px 2px;
-	background-color: #242424;
-}
-
-.button-plus {
-	--icon: url("../icons/plus.svg");
 }
 
 .form-label {
@@ -1672,105 +1591,162 @@ input[type="radio"]:checked::before {
 	margin: auto;
 }
 
-.field-group {
-	position: relative;
+.search-form {
 	display: grid;
-	grid-template-columns: 137px auto 1fr;
+	gap: 23px;
 }
 
-.field-group::after {
+.search-form-field {
+	position: relative;
+	display: grid;
+	grid-template-columns: 133px 1fr;
+	gap: 4px;
+}
+
+.search-form-field::after {
 	content: "";
 	min-height: 21px;
 	grid-area: 2 / 1 / 3 / 2;
 }
 
-.search-form {
-	display: grid;
-	gap: 38px;
-}
-
-.search-form-field {
-	grid-area: 1 / 3 / 2 / 4;
-	background-color: #f2f2f2;
-	border: none;
-	appearance: textfield;
-	width: auto;
-}
-
 .search-form-label {
-	width: 137px;
+	grid-area: 1 / 1 / 2 / 2;
 	margin: 0;
-	padding: 0;
-	padding-top: 12px;
-	/* padding: 12px 18px 12px 0; */
-	grid-column: 1 /2;
+	line-height: 24px;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 12px 0;
 }
 
 .search-form-label-icon-cal::before {
 	content: "";
 	position: absolute;
-	width: 16px;
-	height: 15px;
-	right: 40px;
-	top: 20px;
-	mask-image: url("../icons/stack.svg#calendar");
-	mask-repeat: no-repeat;
-	background-size: 16px 15px;
-	pointer-events: none;
+	width: 20px;
+	height: 20px;
+	right: 20px;
+	top: 14px;
+	mask: url("../icons/stack.svg#calendar") no-repeat center / 16px 15px;
 	background-color: rgba(8, 8, 8, 0.3);
+	pointer-events: none;
 }
 
-.some-mistake-text {
-	width: 320px;
-	color: #ff5757;
-	margin: 0;
-	padding: 0;
-	grid-column: 2 / -1;
-}
-
-.search-form-field-coming {
-	background-color: #f2f2f2;
+.search-form-input {
+	grid-area: 1 / -2 / 2 / -1;
+	width: auto;
+	padding: 12px 20px;
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: 700;
 	border: none;
-	box-sizing: border-box;
-	grid-column: 2/ -1;
-	padding: 0;
-	margin-bottom: 37px;
-	gap: 0;
+	border-radius: 4px;
+	background-color: #f2f2f2;
 }
 
-.group-guests {
+.field-message {
+	grid-area: 2 / -2 / 3 / -1;
+	margin: 0;
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.field-success ~ .field-message-success {
+	display: block;
+}
+
+.field-error ~ .field-message-error {
+	display: block;
+	color: #ff5757;
+}
+
+.search-form-field-container {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
 }
 
-.field-group-adult {
-	width: 260px;
+.search-form-field-with-tooltip {
+	grid-template-columns: min-content 1fr;
 }
 
-.search-form-field-number {
-	border: none;
-	padding: 14px 10px;
+/* Кнопки изменения количества*/
+.search-form-number-control {
+	display: grid;
+	grid-template-areas: "tooltip minus input plus";
+	grid-template-columns: min-content 40px min-content 40px;
+	padding: 0;
+	margin: 0;
+}
+
+.button-number {
+	padding: 0;
+	border: 0;
+	background: #f2f2f2;
+}
+
+.button-number:focus-visible {
+	--fill: hsl(0 0% 0% / var(--alpha, 1));
+	z-index: 1;
+}
+
+.button-number:hover {
+	--fill: hsl(0 0% 0% / var(--alpha, 1));
+}
+
+.button-number:active {
+	--alpha: 0.2;
+}
+
+.button-number::before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: var(--fill, hsl(20 15% 40% / 0.3));
+	mask: var(--icon) no-repeat center / 20px;
+}
+
+.button-number-minus {
+	grid-area: minus;
+	--icon: url("../icons/stack.svg#minus");
+	border-radius: 4px 0 0 4px;
+}
+
+.button-number-plus {
+	grid-area: plus;
+	--icon: url("../icons/stack.svg#plus");
+	border-radius: 0 4px 4px 0;
+}
+
+.search-form-input-number {
+	grid-column: input;
 	margin: none;
-	background-color: #f2f2f2;
+	border: none;
+	padding-inline: 10px;
+	width: 1ch;
+	border-radius: 0;
+	appearance: textfield;
 	text-align: center;
-	width: 20px;
+	background-color: #f2f2f2;
 }
 
-.search-form-field-number:focus-visible {
+.search-form-input-number:focus-visible {
 	z-index: 2;
 }
 
-/* урбать родные стрелочки у инпута*/
-.search-form-field::-webkit-outer-spin-button,
-.search-form-field::-webkit-inner-spin-button {
+.search-form-input-number::-webkit-outer-spin-button,
+.search-form-input-number::-webkit-inner-spin-button {
 	appearance: none;
 	margin: 0;
 }
 
 .search-form-button {
-	width: 577px;
-	padding: 18px 257px;
+	width: 100%;
+	padding: 18px 36px;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
 	background-color: #83b3d3;
 }
 
@@ -1787,74 +1763,58 @@ input[type="radio"]:checked::before {
 	color: rgb(255, 255, 255, 0.3);
 }
 
-label {
-	font-family: "PT Sans", sans-serif;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
-	padding-top: 15px;
-}
-
-
 .tooltip {
-	grid-area: 1 / 2 / 2 / 3;
 	position: relative;
-	width: 20px;
-	height: 20px;
-	margin-left: 3px;
-	top: 510px;
-	left: 500px;
+	grid-area: tooltip;
+	align-self: center;
+	width: 26px;
+	height: 26px;
+	margin-inline: 6px 46px;
+	border-radius: 26px;
+	cursor: help;
 }
 
 .tooltip::before {
 	content: "";
-	top: 10px;
-	margin-left: 0;
+	display: block;
 	width: 100%;
 	height: 100%;
-	display: block;
-	padding: 4px;
-	border-radius: 50%;
-	border: none;
-	margin-bottom: 6px;
+	border-radius: 20px;
 	background: #83b3d3 url("../icons/info.svg") no-repeat center / 20px 20px;
-	cursor: help;
 }
 
-.tooptip-text {
+.tooltip-text {
+	box-sizing: border-box;
 	position: absolute;
-	z-index: 1;
+	z-index: 5;
 	left: 50%;
-	bottom: calc(100% + 6px);
+	top: calc(100% + 6px + 9px);
 	display: block;
 	width: 256px;
-	font-family: "PT Sans", sans-serif;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
-	text-transform: none;
 	color: #ffffff;
 	background-color: #333333;
 	border-radius: 10px;
-	padding: 15px 18px 18px 22px;
-	border: none;
+	padding: 20px 18px 23px 22px;
 	transform: translateX(-50%);
-	/*
 	visibility: hidden;
 	opacity: 0.01;
-	transition: visibility 0.3s, opacity 0.3s;*/
+	box-shadow: 0 15px 30px hsl(0 0% 0% / 0.3);
+	transition: visibility 0.3s, opacity 0.3s;
 }
 
-.tooltip-text::after {
+.tooltip-text::before {
 	content: "";
 	position: absolute;
-	top: 100%;
-	left: 0;
-	right: 0;
-	bottom: -10px;
+	left: calc(50% - 19px / 2);
+	right: calc(50% - 19px / 2);
+	top: -20px;
+	bottom: 100%;
+	background: url("../icons/stack.svg#tail") no-repeat bottom / 19px 9px;
 }
 
-:where(.tooltip:hover, .tooltip:focus-within, .field:focus ~ .tooltip) .tooltip-text {
+:is(.tooltip:hover, .search-form-input-number:focus-visible ~ .tooltip) .tooltip-text {
 	visibility: visible;
 	opacity: 1;
 }
