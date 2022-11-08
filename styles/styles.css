@@ -1554,6 +1554,19 @@ input[type="radio"]:checked::before {
 	width: 577px;
 }
 
+.modal-title {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*Кнопка закрытия модального окна*/
 .modal-close-button {
 	position: absolute;
 	padding: 0;
@@ -1574,23 +1587,14 @@ input[type="radio"]:checked::before {
 	background: url("../icons/stack.svg#close") no-repeat center / 14px;
 }
 
-.modal-title {
-	font-family: "PT Sans", sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: uppercase;
-	color: #000000;
-	padding: 0;
-	margin: 0;
-}
-
+/*
 .form-label {
 	text-align: center;
 	width: 85px;
 	margin: auto;
-}
+}*/
 
+/*Форма внутри модального окна*/
 .search-form {
 	display: grid;
 	gap: 23px;
@@ -1763,6 +1767,7 @@ input[type="radio"]:checked::before {
 	color: rgb(255, 255, 255, 0.3);
 }
 
+/*Тултип*/
 .tooltip {
 	position: relative;
 	grid-area: tooltip;
