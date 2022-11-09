@@ -266,12 +266,12 @@ img {
 	position: absolute;
 	width: 1200px;
 	height: 57px;
-	background-image: url("../icons/advantage/driver.svg") no-repeat center;
-	background-color: #68a2ca;
+	mask: url("../icons/stack.svg#advantage_driver") no-repeat center / 1200px 57px;
 	z-index: 6;
+	background-color: #ffffff;
 	margin: 0;
 	padding: 0;
-	top: 549px;
+	top: 492px;
 }
 
 .advantages {
