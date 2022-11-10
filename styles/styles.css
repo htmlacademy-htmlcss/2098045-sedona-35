@@ -259,7 +259,7 @@ img {
 .hero-logo-text {
 	display: block;
 	margin: 0 auto;
-	padding: 51px 0 82px 0;
+	padding: 51px 0 82px;
 	box-sizing: border-box;
 }
 
@@ -426,7 +426,7 @@ img {
 }
 
 .advantages-list-title.blue-card {
-	padding: 92px 112px 0 112px;
+	padding: 92px 112px 0;
 	text-align: center;
 	color: #ffffff;
 	margin: 0;
@@ -434,7 +434,7 @@ img {
 
 
 .advantages-list-description.blue-card {
-	padding: 0 85px 81px 85px;
+	padding: 0 85px 81px;
 	color: #ffffff;
 }
 
@@ -548,7 +548,7 @@ img {
 	background-size: 100% auto;
 	background-color: #ffffff;
 	object-fit: cover;
-	padding: 96px 0 104px 0;
+	padding: 96px 0 104px;
 }
 
 
@@ -589,7 +589,7 @@ img {
 	justify-content: center;
 	width: 1200px;
 	margin: 0;
-	padding: 0 258px 0 258px;
+	padding: 0 258px;
 }
 
 .field {
@@ -626,7 +626,7 @@ img {
 	line-height: 36px;
 	border: none;
 	border-radius: 0 4px 4px 0;
-	padding: 8px 50px 8px 50px;
+	padding: 8px 50px;
 	margin-left: 0;
 }
 
@@ -655,7 +655,7 @@ img {
 	grid-template-columns: 144px 720px 157px;
 	justify-content: space-between;
 	background-color: #ffffff;
-	padding: 36px 70px 30px 70px;
+	padding: 36px 70px 30px;
 }
 
 .footer-social-list {
@@ -773,7 +773,7 @@ a[href^="tel:88128121212"]:active {
 .breadcrumbs-filter-container {
 	width: 1060px;
 	margin: 0 auto;
-	padding: 35px 70px 70px 70px;
+	padding: 35px 70px 70px;
 	margin-bottom: 20px;
 }
 
