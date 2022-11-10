@@ -626,7 +626,7 @@ img {
 	line-height: 36px;
 	border: none;
 	border-radius: 0 4px 4px 0;
-	padding: 8px 50px 8px 82px;
+	padding: 8px 50px 8px 50px;
 	margin-left: 0;
 }
 
@@ -1390,11 +1390,10 @@ input[type="radio"]:checked::before {
 .hotel-card-item {
 	display: grid;
 	grid-template-columns: 140px 140px;
-	margin-bottom: 20px;
 	background-color: #ffffff;
 	border: 2px solid #f2f2f2;
 	padding: 20px;
-	gap: 20px;
+	gap: 16px;
 }
 
 .hotel-card-image-link {
@@ -1411,10 +1410,18 @@ input[type="radio"]:checked::before {
 	padding: 0;
 }
 
+.hotel-card-title {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700px;
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0;
+}
+
 .hotel-card-type {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 16px;
+	margin-bottom: 1px;
 	font-weight: 400px;
 	font-size: 18px;
 	line-height: 21px;
@@ -1520,9 +1527,20 @@ input[type="radio"]:checked::before {
 	--star-count: 5;
 }
 
+.pagination::before {
+	content: "";
+	display: block;
+	width: 1060px;
+	height: 2px;
+	background-color: #e6e6e6;
+	margin: 0;
+	margin-bottom: 34px;
+	padding: 0;
+}
+
 .pagination-container {
 	display: flex;
-	padding: 16px;
+	padding-top: 14px;
 }
 
 .pagination {
@@ -1591,6 +1609,7 @@ input[type="radio"]:checked::before {
 .page-footer-subscribe-catalog {
 	background-image: none;
 	background-color: #ffffff;
+	margin-top: 51px;
 }
 
 .page-footer-header-catalog {
@@ -1603,6 +1622,8 @@ input[type="radio"]:checked::before {
 
 .field-catalog {
 	background-color: #f2f2f2;
+	padding-left: 18px;
+	padding-right: 245px;
 }
 
 /* Модальное окно */
