@@ -581,7 +581,7 @@ img {
 	font-size: 22px;
 	line-height: 26px;
 	color: #ffffff;
-	padding: 0 352px 54px 304px;
+	padding: 0 365px 32px 366px;
 }
 
 .subscribe-form {
@@ -593,7 +593,7 @@ img {
 }
 
 .field {
-	padding: 15px 20px 15px;
+	padding-left: 22px;
 	border: none;
 	margin-right: 0;
 	font: inherit;
@@ -615,7 +615,7 @@ img {
 }
 
 .subscribe-field {
-	width: 452px;
+	width: 454px;
 	border-radius: 4px 0 0 4px;
 }
 
@@ -626,7 +626,7 @@ img {
 	line-height: 36px;
 	border: none;
 	border-radius: 0 4px 4px 0;
-	padding: 8px 50px;
+	padding: 8px 50px 8px 82px;
 	margin-left: 0;
 }
 
@@ -655,16 +655,17 @@ img {
 	grid-template-columns: 144px 720px 157px;
 	justify-content: space-between;
 	background-color: #ffffff;
-	padding: 40px 70px 30px 70px;
+	padding: 36px 70px 30px 70px;
 }
 
 .footer-social-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 12px;
+	gap: 23px;
 	max-width: 182px;
 	margin: 0;
 	padding: 0;
+	padding-left: 14px;
 }
 
 
@@ -728,6 +729,7 @@ a[href^="tel:88128121212"] {
 	text-decoration: none;
 	color: #000000;
 	max-width: 720px;
+	padding-left: 46px;
 }
 
 a[href^="tel:88128121212"]:visited {
@@ -754,6 +756,7 @@ a[href^="tel:88128121212"]:active {
 	margin-left: auto;
 	mask-size: contain;
 	background-color: #000000;
+	margin-top: 5px;
 }
 
 
