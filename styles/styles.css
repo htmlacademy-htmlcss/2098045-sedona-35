@@ -827,6 +827,7 @@ a[href^="tel:88128121212"]:active {
 	text-decoration: none;
 	color: #ffffff;
 	fill: #ffffff;
+	margin-bottom: 19px;
 }
 
 .breadcrumbs-link:hover {
@@ -913,10 +914,12 @@ a[href^="tel:88128121212"]:active {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
+	padding-left: 0;
+	padding-bottom: 15px;
 }
 
 .hotel-filter-item {
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 }
 
 .hotel-filter-list {
@@ -932,7 +935,7 @@ a[href^="tel:88128121212"]:active {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 }
 
 
@@ -962,7 +965,7 @@ a[href^="tel:88128121212"]:active {
 	display: grid;
 	width: 141px;
 	grid-template-columns: 1em auto;
-	gap: 0.5em;
+	gap: 16px;
 }
 
 input[type="checkbox"] {
@@ -1012,7 +1015,7 @@ input[type="checkbox"]:focus {
 	display: grid;
 	width: 141px;
 	grid-template-columns: 1em auto;
-	gap: 0.5em;
+	gap: 14px;
 	cursor: pointer;
 }
 
@@ -1062,12 +1065,12 @@ input[type="radio"]:checked::before {
 	width: 288px;
 	display: inline-block;
 	padding: 0;
-	margin-right: 70px;
+	margin: 0;
 	border: none;
 }
 
 .prise-group-title {
-	padding-bottom: 20px;
+	padding-bottom: 32px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
@@ -1132,9 +1135,9 @@ input[type="radio"]:checked::before {
 	position: relative;
 	height: 4px;
 	margin: 0;
-	margin-top: 40px;
 	background-color: rgba(255, 255, 255, 0.3);
 	width: 288px;
+	margin-top: 43px;
 }
 
 .range-bar {
@@ -1167,7 +1170,7 @@ input[type="radio"]:checked::before {
 
 .toogle-min {
 	top: -8px;
-	right: -20px;
+	right: -8px;
 }
 
 .toogle-max {
@@ -1183,9 +1186,7 @@ input[type="radio"]:checked::before {
 	background-color: #ffffff;
 	color: #000000;
 	padding: 0;
-	margin: 0;
-	margin-bottom: 40px;
-	margin-top: 50px;
+	margin: 5px 0 36px;
 }
 
 .view-container {
@@ -1194,6 +1195,7 @@ input[type="radio"]:checked::before {
 	justify-content: flex-end;
 	max-width: 290px;
 	padding: 0;
+	margin-top: -3px;
 }
 
 .button-view {
@@ -1265,6 +1267,7 @@ input[type="radio"]:checked::before {
 	line-height: 36px;
 	color: #000000;
 	text-transform: uppercase;
+	padding-top: 6px;
 }
 
 
@@ -1276,6 +1279,7 @@ input[type="radio"]:checked::before {
 	width: 292px;
 	margin-left: 200px;
 	margin-right: auto;
+	margin-top: -17px;
 }
 
 .select-control {
@@ -1291,7 +1295,8 @@ input[type="radio"]:checked::before {
 	background: url("../icons/stack.svg#arrow-select");
 	background-size: 12px 9px;
 	background-repeat: no-repeat;
-	background-position: right 5px center;
+	background-position: right 18px center;
+	margin-top: 13px;
 }
 
 .select-control:hover {
@@ -1305,7 +1310,7 @@ input[type="radio"]:checked::before {
 .button-use {
 
 	box-sizing: border-box;
-	padding: 8px 50px;
+	padding: 8px 42px;
 	border: none;
 	background-color: #82b3d3;
 	border-radius: 4px;
@@ -1315,7 +1320,8 @@ input[type="radio"]:checked::before {
 	text-transform: uppercase;
 	color: #ffffff;
 	cursor: pointer;
-	margin-top: 32px;
+	margin-top: 56px;
+	margin-left: 70px;
 	margin-bottom: 30px;
 }
 
@@ -1340,6 +1346,7 @@ input[type="radio"]:checked::before {
 	color: #ffffff;
 	cursor: pointer;
 	box-sizing: border-box;
+	margin-left: 70px;
 }
 
 .button-colorless:hover {
