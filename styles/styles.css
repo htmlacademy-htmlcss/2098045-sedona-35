@@ -75,7 +75,6 @@ img {
 	text-transform: uppercase;
 	border: none;
 	border-radius: 4px;
-	cursor: pointer;
 }
 
 .navigation-link-button {
@@ -92,17 +91,7 @@ img {
 }
 
 .navigation-link-button:hover {
-	background-color: #615048;
-}
-
-.navigation-link-button:focus-visible {
-	background-color: #615048;
-}
-
-@supports not selector(:focus-visible) {
-	.navigation-link-button:focus {
-		background-color: #615048;
-	}
+	background-color: #756157;
 }
 
 .navigation-link-button:active {
@@ -158,15 +147,13 @@ img {
 	position: absolute;
 	z-index: 3;
 	height: 2px;
-	inset: auto 5px -20px;
+	inset: auto 19px -1px;
 	background-color: #756257;
 }
 
 .navigation-link {
 	position: relative;
-	padding-top: 18px;
-	margin-left: 38px;
-
+	padding: 20px 16px;
 	display: block;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
@@ -177,6 +164,15 @@ img {
 	color: #000000;
 	box-sizing: border-box;
 }
+
+.navigation-link:hover {
+	color: #756157;
+}
+
+.navigation-link:active {
+	color: rgba(117, 97, 87, 0.3);
+}
+
 
 .navigation-user .navigation-link {
 	min-width: 16px;
@@ -201,11 +197,11 @@ img {
 }
 
 .navigation-item-search:hover::before {
-	background-color: #82b3d3;
+	background-color: #756157;
 }
 
 .navigation-item-search:active::before {
-	background-color: #000000;
+	background-color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-item-heart::before {
@@ -221,11 +217,11 @@ img {
 }
 
 .navigation-item-heart:hover::before {
-	background-color: #82b3d3;
+	background-color: #756157;
 }
 
 .navigation-item-heart:active::before {
-	background-color: #000000;
+	background-color: rgba(117, 97, 87, 0.3);
 }
 
 .count-badge {
@@ -522,10 +518,6 @@ img {
 	background-color: #615048;
 }
 
-.hotel-search-button:focus {
-	background-color: #615048;
-}
-
 .hotel-search-button:active {
 	background-color: #756157;
 	color: rgba(255, 255, 255, 0.3);
@@ -610,9 +602,6 @@ img {
 	box-shadow: inset 0 0 0 2px #000000;
 }
 
-.field:focus {
-	border-color: #83b3d3;
-}
 
 .subscribe-field {
 	width: 454px;
@@ -638,16 +627,10 @@ img {
 	background-color: #68a2ca;
 }
 
-.subscribe-button:focus {
-	background-color: #68a2ca;
-	color: #ffffff;
-}
-
 .subscribe-button:active {
 	background-color: #68a2ca;
 	color: rgba(255, 255, 255, 0.3);
 }
-
 
 /*Футер соц.сети*/
 .page-footer-social {
@@ -808,7 +791,6 @@ a[href^="tel:88128121212"]:active {
 .breadcrumbs-item {
 	display: flex;
 	justify-content: space-between;
-	cursor: pointer;
 }
 
 
@@ -840,10 +822,6 @@ a[href^="tel:88128121212"]:active {
 	fill: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:focus {
-	color: #ffffff;
-	fill: #ffffff;
-}
 
 .back-home::after {
 	content: "";
@@ -899,7 +877,6 @@ a[href^="tel:88128121212"]:active {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	margin-right: 70px;
 }
 
 /*Инфроструктура*/
@@ -948,7 +925,6 @@ a[href^="tel:88128121212"]:active {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
-	cursor: pointer;
 }
 
 .input-text:hover {
@@ -978,9 +954,8 @@ input[type="checkbox"] {
 	color: currentcolor;
 	width: 20px;
 	height: 20px;
-	border: 3px solid #ffffff;
+	border: none;
 	border-radius: 4px;
-	cursor: pointer;
 }
 
 input[type="checkbox"]:hover {
@@ -989,17 +964,13 @@ input[type="checkbox"]:hover {
 
 input[type="checkbox"]:checked::before {
 	content: "";
-	width: 13px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	background-image: url("../icons/stack.svg#checkbox");
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: block;
 	margin: auto;
-}
-
-input[type="checkbox"]:focus {
-	border: 3px solid #83b3d3;
 }
 
 /* Меняю радиокнопки */
@@ -1016,7 +987,6 @@ input[type="checkbox"]:focus {
 	width: 141px;
 	grid-template-columns: 1em auto;
 	gap: 14px;
-	cursor: pointer;
 }
 
 input[type="radio"] {
@@ -1032,7 +1002,6 @@ input[type="radio"] {
 	border: none;
 	display: grid;
 	place-content: center;
-	cursor: pointer;
 }
 
 .input-radio-control + .input-radio-control {
@@ -1041,8 +1010,8 @@ input[type="radio"] {
 
 input[type="radio"]:checked::before {
 	content: "";
-	width: 10px;
-	height: 10px;
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
 	background-image: url("../icons/stack.svg#radio");
 	background-repeat: no-repeat;
@@ -1121,7 +1090,7 @@ input[type="radio"]:checked::before {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	width: 191px;
+	width: 276px;
 	margin: 0;
 	padding: 0;
 }
@@ -1153,7 +1122,6 @@ input[type="radio"]:checked::before {
 	background-color: #ffffff;
 	border-radius: 5px;
 	border: none;
-	cursor: pointer;
 }
 
 .range-toogle:hover {
@@ -1162,10 +1130,6 @@ input[type="radio"]:checked::before {
 
 .range-toogle:active {
 	border: 2px solid #83b3d3;
-}
-
-.range-toogle:focus {
-	border: 3px solid #83b3d3;
 }
 
 .toogle-min {
@@ -1252,9 +1216,6 @@ input[type="radio"]:checked::before {
 	border: 1px solid #000000;
 }
 
-.button-view:focus {
-	border: 1px solid #68a2ca;
-}
 
 .button-view:active {
 	border: 1px solid #000000;
@@ -1319,7 +1280,6 @@ input[type="radio"]:checked::before {
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #ffffff;
-	cursor: pointer;
 	margin-top: 56px;
 	margin-left: 70px;
 	margin-bottom: 30px;
@@ -1344,25 +1304,12 @@ input[type="radio"]:checked::before {
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #ffffff;
-	cursor: pointer;
 	box-sizing: border-box;
 	margin-left: 70px;
 }
 
 .button-colorless:hover {
 	color: rgba(255, 255, 255, 0.6);
-}
-
-.button-colorless:focus-visible {
-	color: #ffffff;
-	border: 3px solid #83b3d3;
-}
-
-@supports not selector(:focus-visible) {
-	.button-colorless:focus {
-		color: #ffffff;
-		border: 3px solid #83b3d3;
-	}
 }
 
 .button-colorless:active {
@@ -1595,6 +1542,10 @@ input[type="radio"]:checked::before {
 	background-color: #f2f2f2;
 	border: none;
 	text-align: center;
+}
+
+.pagination-and-so-on {
+	background-color: #ffffff;
 }
 
 .pagination-current-big {
@@ -1857,9 +1808,6 @@ input[type="radio"]:checked::before {
 	background-color: #68a2ca;
 }
 
-.search-form-button:focus-visible {
-	background-color: #68a2ca;
-}
 
 .search-form-button:active {
 	background-color: #82b3d3;
