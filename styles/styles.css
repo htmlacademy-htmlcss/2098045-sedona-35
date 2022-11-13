@@ -48,6 +48,7 @@ img {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -99,6 +100,9 @@ img {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+a:not([href]) {
+	color: rgba(117, 97, 87, 0.3);
+}
 
 /* Pages */
 
@@ -129,8 +133,8 @@ img {
 }
 
 .navigation-user {
-	max-width: 308px;
 	margin-left: auto;
+	justify-content: end;
 }
 
 .navigation-item::marker {
@@ -204,6 +208,10 @@ img {
 	background-color: rgba(117, 97, 87, 0.3);
 }
 
+.navigation-item-search:disabled::before {
+	background-color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-item-heart::before {
 	content: "";
 	display: block;
@@ -221,6 +229,10 @@ img {
 }
 
 .navigation-item-heart:active::before {
+	background-color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-item-heart:disabled::before {
 	background-color: rgba(117, 97, 87, 0.3);
 }
 
@@ -302,7 +314,7 @@ img {
 	padding-bottom: 70px;
 }
 
-/* List */
+/* Список преимуществ*/
 .advantages-list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -312,19 +324,19 @@ img {
 	padding: 0;
 }
 
-.advantages-items:nth-child(2n+1) {
+.dark-blue-card {
 	background-color: #82b3d3;
 }
 
-.advantages-items:nth-child(2n+2) {
+.light-blue-card {
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-items:nth-child(3n) {
+.medium-blue-card {
 	background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-items:nth-child(7n) {
+.white-color-card {
 	background-color: #ffffff;
 }
 
@@ -354,11 +366,13 @@ img {
 	padding: 0;
 	grid-column: 2/4;
 	grid-row: 1/3;
+	background-color: #82b3d3;
 }
 
 
 .reverse img {
 	grid-column: 1/3;
+	background-color: #82b3d3;
 }
 
 .reverse h3 {
@@ -602,6 +616,9 @@ img {
 	box-shadow: inset 0 0 0 2px #000000;
 }
 
+.field:disabled {
+	color: rgba(0, 0, 0, 0.3);
+}
 
 .subscribe-field {
 	width: 454px;
@@ -630,6 +647,11 @@ img {
 .subscribe-button:active {
 	background-color: #68a2ca;
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+	background-color: #e5e5e5;
+	color: #ffffff;
 }
 
 /*Футер соц.сети*/
@@ -675,6 +697,10 @@ img {
 }
 
 .social-button:active {
+	color: rgba(104, 162, 202, 0.3);
+}
+
+.social-button:disabled {
 	color: rgba(104, 162, 202, 0.3);
 }
 
@@ -751,6 +777,10 @@ a[href^="tel:88128121212"]:active {
 	background: rgba(117, 97, 87, 0.3);
 }
 
+.logo-academy:disabled::after {
+	background: rgba(117, 97, 87, 0.3);
+}
+
 
 /* Catalog */
 .breadcrumbs-filter-container {
@@ -763,7 +793,7 @@ a[href^="tel:88128121212"]:active {
 .inner-header {
 	background-image: url("../images/catalog-filter.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 412px;
+	background-size: cover;
 	background-color: #ffffff;
 }
 
@@ -822,6 +852,11 @@ a[href^="tel:88128121212"]:active {
 	fill: rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-link:disabled {
+	color: rgba(255, 255, 255, 0.6);
+	fill: rgba(255, 255, 255, 0.6);
+}
+
 
 .back-home::after {
 	content: "";
@@ -851,6 +886,14 @@ a[href^="tel:88128121212"]:active {
 
 .back-home:hover::after {
 	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.back-home:active::after {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.back-home:disabled::after {
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Фильтры, инфроструктура*/
@@ -931,6 +974,13 @@ a[href^="tel:88128121212"]:active {
 	color: rgba(242, 242, 242, 0.8);
 }
 
+.input-text:active {
+	color: rgba(242, 242, 242, 0.8);
+}
+
+.input-text:disabled {
+	color: rgba(242, 242, 242, 0.8);
+}
 
 /* Меняю чекбоксы */
 .input-checkbox-control {
@@ -944,7 +994,7 @@ a[href^="tel:88128121212"]:active {
 	gap: 16px;
 }
 
-input[type="checkbox"] {
+.checkbox-item[type="checkbox"] {
 	appearance: none;
 	background-color: #ffffff;
 	margin: 0;
@@ -958,11 +1008,19 @@ input[type="checkbox"] {
 	border-radius: 4px;
 }
 
-input[type="checkbox"]:hover {
+.checkbox-item[type="checkbox"]:hover {
 	background-color: rgba(242, 242, 242, 0.8);
 }
 
-input[type="checkbox"]:checked::before {
+.checkbox-item[type="checkbox"]:active {
+	background-color: rgba(242, 242, 242, 0.8);
+}
+
+.checkbox-item[type="checkbox"]:disabled {
+	background-color: rgba(242, 242, 242, 0.8);
+}
+
+.checkbox-item[type="checkbox"]:checked::before {
 	content: "";
 	width: 20px;
 	height: 20px;
@@ -989,7 +1047,7 @@ input[type="checkbox"]:checked::before {
 	gap: 14px;
 }
 
-input[type="radio"] {
+.control-input[type="radio"] {
 	appearance: none;
 	background-color: #ffffff;
 	font: inherit;
@@ -1008,7 +1066,7 @@ input[type="radio"] {
 	margin-top: 1em;
 }
 
-input[type="radio"]:checked::before {
+.control-input[type="radio"]:checked::before {
 	content: "";
 	width: 20px;
 	height: 20px;
@@ -1016,6 +1074,18 @@ input[type="radio"]:checked::before {
 	background-image: url("../icons/stack.svg#radio");
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.control-input[type="radio"]:hover {
+	background-color: rgba(242, 242, 242, 0.8);
+}
+
+.control-input[type="radio"]:active {
+	background-color: rgba(242, 242, 242, 0.8);
+}
+
+.control-input[type="radio"]:disabled {
+	background-color: rgba(242, 242, 242, 0.8);
 }
 
 /*Тип гостиниц*/
@@ -1049,7 +1119,7 @@ input[type="radio"]:checked::before {
 .range-prise {
 	display: flex;
 	width: 45px;
-	padding: 12px 55px 12px 20px;
+	padding: 0 42px 12px 20px;
 	margin: 0;
 	appearance: textfield;
 	border: none;
@@ -1061,13 +1131,13 @@ input[type="radio"]:checked::before {
 }
 
 .range-prise-text {
-	display: inline-block;
-	justify-content: center;
+	display: flex;
+	justify-content: space-between;
 	background-color: #ffffff;
 	color: rgba(8, 8, 8, 0.3);
 	text-align: center;
 	padding-top: 12px;
-	padding-right: 4px;
+	padding-right: 20px;
 	margin-right: 2px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
@@ -1132,12 +1202,16 @@ input[type="radio"]:checked::before {
 	border: 2px solid #83b3d3;
 }
 
-.toogle-min {
+.range-toogle:disabled {
+	border: 2px solid #83b3d3;
+}
+
+.toogle-max {
 	top: -8px;
 	right: -8px;
 }
 
-.toogle-max {
+.toogle-min {
 	top: -8px;
 	right: 225px;
 }
@@ -1221,6 +1295,10 @@ input[type="radio"]:checked::before {
 	border: 1px solid #000000;
 }
 
+.button-view:disabled {
+	border: 1px solid #000000;
+}
+
 .number-of-hotel-found {
 	max-width: 400px;
 	font-weight: 700;
@@ -1268,6 +1346,12 @@ input[type="radio"]:checked::before {
 	border: 2px solid #3f5e72;
 }
 
+.select-control:disabled {
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
+	opacity: 0.3%;
+}
+
 .button-use {
 
 	box-sizing: border-box;
@@ -1290,9 +1374,15 @@ input[type="radio"]:checked::before {
 }
 
 .button-use:active {
-	background-color: #68a2ca;
+	background-color: #e5e5e5;
 	color: rgba(255, 255, 255, 0.3);
 }
+
+.button-use:disabled {
+	background-color: #68a2ca;
+	color: #ffffff;
+}
+
 
 .button-colorless {
 	display: inline-block;
@@ -1314,6 +1404,11 @@ input[type="radio"]:checked::before {
 
 .button-colorless:active {
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-colorless:disabled {
+	background-color: #68a2ca;
+	color: #ffffff;
 }
 
 .catalog-container {
@@ -1338,13 +1433,16 @@ input[type="radio"]:checked::before {
 	display: grid;
 	grid-template-columns: 140px 140px;
 	background-color: #ffffff;
-	border: 2px solid #f2f2f2;
+	box-shadow: 0 0 1px 0  #e6e6e6;
 	padding: 20px;
 	gap: 16px;
+	grid-template-rows: 212px 1fr;
+	border-radius: 4px;
 }
 
 .hotel-card-image-link {
 	grid-column: 1 / -1;
+	width: 300px;
 }
 
 .hotel-card-title-link {
@@ -1363,6 +1461,16 @@ input[type="radio"]:checked::before {
 	font-size: 24px;
 	line-height: 28px;
 	margin: 0;
+	width: 300px;
+	color: #333333;
+}
+
+.hotel-card-title:hover {
+	color: #756157;
+}
+
+.hotel-card-title:active {
+	color: rgba(117, 97, 87, 0.3);
 }
 
 .hotel-card-type {
@@ -1387,23 +1495,51 @@ input[type="radio"]:checked::before {
 }
 
 .hotel-card-button.favorites {
-	background-color: #82b3d3;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
 	border: none;
-	padding: 8px 20px;
+	padding: 8px 10px;
 	grid-column: 2 / 3;
 }
 
-.favorites:hover {
+.favourites-not-choosen {
+	background-color: #82b3d3;
+}
+
+.favourites-not-choosen :hover {
 	background-color: #68a2ca;
 }
 
-.favorites:active {
+.favourites-not-choosen:active {
 	background-color: #82b3d3;
 	color: rgba(255, 255, 255, 0.3);
 }
+
+.favourites-not-choosen:disabled {
+	background-color: #e5e5e5;
+	color: #ffffff;
+}
+
+.favourites-choosen {
+	background-color: #7db54f;
+	color: #ffffff;
+}
+
+.favourites-choosen :hover {
+	background-color: #6c9e42;
+}
+
+.favourites-choosen:active {
+	background-color: #7db54f;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.favourites-choosen:disabled {
+	background-color: #e5e5e5;
+	color: #ffffff;
+}
+
 
 .hotel-card-button-favorites a {
 	padding: 0;
@@ -1425,6 +1561,11 @@ input[type="radio"]:checked::before {
 .hotel-card-button-detail:active {
 	background-color: #756157;
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-button-detail:disabled {
+	background-color: #e5e5e5;
+	color: #ffffff;
 }
 
 .hotel-card-button.rating {
@@ -1473,6 +1614,7 @@ input[type="radio"]:checked::before {
 .hotel-card-star-5::after {
 	--star-count: 5;
 }
+
 
 .pagination::before {
 	content: "";
@@ -1537,6 +1679,10 @@ input[type="radio"]:checked::before {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.pagination-link:disabled {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-current {
 	color: #242424;
 	background-color: #f2f2f2;
@@ -1554,6 +1700,16 @@ input[type="radio"]:checked::before {
 
 .pagination-current:hover {
 	color: #242424;
+	background-color: #f2f2f2;
+}
+
+.pagination-current:active {
+	color: #242424;
+	background-color: #f2f2f2;
+}
+
+.pagination-current:disabled {
+	color: rgba(117, 97, 87, 0.3);
 	background-color: #f2f2f2;
 }
 
@@ -1637,12 +1793,6 @@ input[type="radio"]:checked::before {
 	background: url("../icons/stack.svg#close") no-repeat center / 14px;
 }
 
-/*
-.form-label {
-	text-align: center;
-	width: 85px;
-	margin: auto;
-}*/
 
 /*Форма внутри модального окна*/
 .search-form {
@@ -1656,6 +1806,16 @@ input[type="radio"]:checked::before {
 	grid-template-columns: 133px 1fr;
 	gap: 4px;
 }
+
+.search-form-field:hover {
+	background-color: #e6e6e6;
+}
+
+.search-form-field:active {
+	background-color: #f2f2f2;
+	color: #333333;
+}
+
 
 .search-form-field::after {
 	content: "";
@@ -1751,6 +1911,10 @@ input[type="radio"]:checked::before {
 	--alpha: 0.2;
 }
 
+.button-number:disabled {
+	--alpha: 0.2;
+}
+
 .button-number::before {
 	content: "";
 	display: block;
@@ -1810,6 +1974,11 @@ input[type="radio"]:checked::before {
 
 
 .search-form-button:active {
+	background-color: #82b3d3;
+	color: rgb(255, 255, 255, 0.3);
+}
+
+.search-form-button:disabled {
 	background-color: #82b3d3;
 	color: rgb(255, 255, 255, 0.3);
 }

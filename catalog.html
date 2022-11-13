@@ -15,7 +15,7 @@
 			<header class="page-header">
 				<nav class="navigation">
 					<a href="./index.html">
-						<img src="./images/logo.svg" class="navigation-logo" alt="Логотип сайта городка Седона" width="140" height="70">
+						<img src="./images/logo.svg" class="navigation-logo" alt="Логотип сайта городка Седона." width="140" height="70">
 					</a>
 					<ul class="navigation-list">
 						<li class="navigation-item">
@@ -74,19 +74,19 @@
 									<ul class="hotel-filter-list">
 										<li class="hotel-filter-item">
 											<label class="input-text input-checkbox-control">
-												<input type="checkbox" name="infrostructure" value="Бассейн" checked>
+												<input type="checkbox" class="checkbox-item" name="infrostructure" value="Бассейн" checked>
 												Бассейна
 											</label>
 										</li>
 										<li class="hotel-filter-item">
 											<label class="input-text input-checkbox-control">
-												<input type="checkbox" name="infrostructure" value="Парковка" checked>
+												<input type="checkbox" class="checkbox-item" name="infrostructure" value="Парковка" checked>
 												Парковка
 											</label>
 										</li>
 										<li class="hotel-filter-item">
 											<label class="input-text input-checkbox-control">
-												<input type="checkbox" name="infrostructure" value="wi-Fi">
+												<input type="checkbox" class="checkbox-item"  name="infrostructure" value="wi-Fi">
 												Wi-Fi
 											</label>
 										</li>
@@ -123,19 +123,24 @@
 								<fieldset class="prise-group">
 									<legend class="prise-group-title">Стоимость, &#8381;:</legend>
 									<div class="range-wrapper-inputs">
-									<input class="range-prise" placeholder="0" type="number">
-										<span class="range-prise-text">от</span>
-									<input class="range-prise" placeholder="9000" type="number">
-										<span class="range-prise-text">до</span>
+										<label class="range-prise-text">
+											<input class="range-prise" placeholder="0" type="number">от
+										</label>
+										<label class="range-prise-text">
+											<input class="range-prise" placeholder="9000" type="number">до</label>
 									</div>
 
 									<div class="range">
 										<div class="range-scale">
 											<div class="range-bar" style="right:42px; width: 226px">
-												<button type="button" class="range-toogle toogle-min"></button>
-												<span class="visually-hidden">Изменить минимальную цену</span>
-												<button type="button" class="range-toogle toogle-max"></button>
-												<span class="visually-hidden ">Изменить максимальную цену</span>
+												<button type="button" class="range-toogle toogle-min">
+													<span class="visually-hidden">Изменить минимальную цену</span>
+												</button>
+
+												<button type="button" class="range-toogle toogle-max">
+													<span class="visually-hidden ">Изменить максимальную цену</span>
+												</button>
+
 											</div>
 										</div>
 									</div>
@@ -189,7 +194,8 @@
 							<p class="hotel-card-type">Гостиница</p>
 							<b class="hotel-card-price">от 4000 ₽</b>
 							<a class="hotel-card-button-detail button " href="javascript:void(0)">Подробнее</a>
-							<a class="hotel-card-button button favorites" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-not-choosen" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-choosen visually-hidden" href="javascript:void(0)">В избранном</a>
 							<div class="hotel-card-star hotel-card-star-4">
 								<span class="visually-hidden">Четырехзвездочный отель</span>
 							</div>
@@ -206,7 +212,8 @@
 							<p class="hotel-card-type">Гостиница</p>
 							<b class="hotel-card-price">от 5000 ₽</b>
 							<a class="hotel-card-button-detail button" href="javascript:void(0)">Подробнее</a>
-							<a class="hotel-card-button button favorites" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-not-choosen visually-hidden" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-choosen" href="javascript:void(0)">В избранном</a>
 							<div class="hotel-card-star hotel-card-star-4">
 								<span class="visually-hidden">Четырехзвездочный отель</span>
 							</div>
@@ -223,7 +230,8 @@
 							<p class="hotel-card-type">Гостиница</p>
 							<b class="hotel-card-price">от 2500 ₽</b>
 							<a class="hotel-card-button-detail button" href="javascript:void(0)">Подробнее</a>
-							<a class="hotel-card-button button favorites" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-not-choosen" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-choosen visually-hidden" href="javascript:void(0)">В избранном</a>
 							<div class="hotel-card-star hotel-card-star-3">
 								<span class="visually-hidden">Трехзвездочный отель</span>
 							</div>
@@ -239,7 +247,8 @@
 							<p class="hotel-card-type">Гостиница</p>
 							<b class="hotel-card-price">от 1500 ₽</b>
 							<a class="hotel-card-button-detail button" href="javascript:void(0)">Подробнее</a>
-							<a class="hotel-card-button button favorites" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-not-choosen" href="javascript:void(0)">В избранное</a>
+							<a class="hotel-card-button button favorites favourites-choosen visually-hidden" href="javascript:void(0)">В избранном</a>
 							<div class="hotel-card-star hotel-card-star-2">
 								<span class="visually-hidden">Двухзвездочный отель</span>
 							</div>
