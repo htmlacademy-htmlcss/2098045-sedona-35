@@ -253,7 +253,7 @@ img {
 	background-size: 100% 485px;
 	object-fit: cover;
 	z-index: -1;
-	background-color: #ffffff;
+	background-color: #6188a0;
 }
 
 .hero-logo-text {
@@ -539,7 +539,7 @@ img {
 	background-image: url("../images/footer-subscribe.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-color: #ffffff;
+	background-color: #6188a0;
 	object-fit: cover;
 	padding: 96px 0 104px;
 }
@@ -767,7 +767,7 @@ img {
 	background-image: url("../images/catalog-filter.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #ffffff;
+	background-color: #6188a0;
 }
 
 .inner-header-title {
