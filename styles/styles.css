@@ -92,7 +92,7 @@ img {
 }
 
 .navigation-link-button:hover {
-	background-color: #756157;
+	background-color: #615048;
 }
 
 .navigation-link-button:active {
@@ -100,12 +100,7 @@ img {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-a:not([href]) {
-	color: rgba(117, 97, 87, 0.3);
-}
-
-/* Pages */
-
+/* Навигация */
 .page-header {
 	color: #000000;
 	z-index: 2;
@@ -232,10 +227,6 @@ a:not([href]) {
 	background-color: rgba(117, 97, 87, 0.3);
 }
 
-.navigation-item-heart:disabled::before {
-	background-color: rgba(117, 97, 87, 0.3);
-}
-
 .count-badge {
 	position: absolute;
 	font-family: "PT Sans", sans-serif;
@@ -262,6 +253,7 @@ a:not([href]) {
 	background-size: 100% 485px;
 	object-fit: cover;
 	z-index: -1;
+	background-color: #ffffff;
 }
 
 .hero-logo-text {
@@ -346,7 +338,7 @@ a:not([href]) {
 }
 
 
-/* Items */
+/* Преимущества */
 .advantages-items {
 	padding: 103px 85px 111px 85px;
 	margin: 0 auto;
@@ -360,7 +352,7 @@ a:not([href]) {
 }
 
 
-.advantages-items img {
+.advantages-images {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -370,7 +362,7 @@ a:not([href]) {
 }
 
 
-.reverse img {
+.reverse .advantages-images {
 	grid-column: 1/3;
 	background-color: #82b3d3;
 }
@@ -381,14 +373,12 @@ a:not([href]) {
 
 
 /*Объединила карточку*/
-
 .wide {
 	grid-column: span 3;
 	display: grid;
 	grid-template-columns: repeat(2, 400px);
 	padding: 0;
 }
-
 
 .advantages-list-title {
 	font-weight: 700;
@@ -398,7 +388,6 @@ a:not([href]) {
 	text-align: center;
 	text-transform: uppercase;
 }
-
 
 .advantages-list-title::after {
 	content: "";
@@ -442,7 +431,6 @@ a:not([href]) {
 	margin: 0;
 }
 
-
 .advantages-list-description.blue-card {
 	padding: 0 85px 81px;
 	color: #ffffff;
@@ -451,7 +439,6 @@ a:not([href]) {
 .white-text {
 	color: #ffffff;
 }
-
 
 .home-icon::before {
 	content: "";
@@ -649,11 +636,6 @@ a:not([href]) {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.subscribe-button:disabled {
-	background-color: #e5e5e5;
-	color: #ffffff;
-}
-
 /*Футер соц.сети*/
 .page-footer-social {
 	display: grid;
@@ -700,10 +682,6 @@ a:not([href]) {
 	color: rgba(104, 162, 202, 0.3);
 }
 
-.social-button:disabled {
-	color: rgba(104, 162, 202, 0.3);
-}
-
 .social-button::before {
 	content: "";
 	display: block;
@@ -728,7 +706,7 @@ a:not([href]) {
 
 /*Номер телефона в футере*/
 
-a[href^="tel:88128121212"] {
+.footer-phone {
 	display: block;
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -741,15 +719,15 @@ a[href^="tel:88128121212"] {
 	padding-left: 46px;
 }
 
-a[href^="tel:88128121212"]:visited {
+.footer-phone:visited {
 	color: rgba(117, 97, 87, 0.3);
 }
 
-a[href^="tel:88128121212"]:hover {
+.footer-phone:hover {
 	color: #756157;
 }
 
-a[href^="tel:88128121212"]:active {
+.footer-phone:active {
 	color: #756157;
 }
 
@@ -776,11 +754,6 @@ a[href^="tel:88128121212"]:active {
 .logo-academy:active::after {
 	background: rgba(117, 97, 87, 0.3);
 }
-
-.logo-academy:disabled::after {
-	background: rgba(117, 97, 87, 0.3);
-}
-
 
 /* Catalog */
 .breadcrumbs-filter-container {
@@ -889,10 +862,6 @@ a[href^="tel:88128121212"]:active {
 }
 
 .back-home:active::after {
-	background-color: rgba(255, 255, 255, 0.3);
-}
-
-.back-home:disabled::after {
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1119,7 +1088,7 @@ a[href^="tel:88128121212"]:active {
 .range-prise {
 	display: flex;
 	width: 45px;
-	padding: 0 42px 12px 20px;
+	padding: 12px 42px 12px 20px;
 	margin: 0;
 	appearance: textfield;
 	border: none;
@@ -1136,13 +1105,24 @@ a[href^="tel:88128121212"]:active {
 	background-color: #ffffff;
 	color: rgba(8, 8, 8, 0.3);
 	text-align: center;
-	padding-top: 12px;
 	padding-right: 20px;
 	margin-right: 2px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
+}
+
+.range-prise-text-from {
+	position: absolute;
+	top: 12px;
+	left: 105px;
+}
+
+.range-prise-text-under {
+	position: absolute;
+	top: 12px;
+	left: 234px;
 }
 
 .range-prise::-webkit-outer-spin-button,
@@ -1154,6 +1134,7 @@ a[href^="tel:88128121212"]:active {
 .range-wrapper-inputs {
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 
 .price-group-button-container {
@@ -1292,10 +1273,6 @@ a[href^="tel:88128121212"]:active {
 
 
 .button-view:active {
-	border: 1px solid #000000;
-}
-
-.button-view:disabled {
 	border: 1px solid #000000;
 }
 
@@ -1534,12 +1511,6 @@ a[href^="tel:88128121212"]:active {
 	background-color: #7db54f;
 	color: rgba(255, 255, 255, 0.3);
 }
-
-.favourites-choosen:disabled {
-	background-color: #e5e5e5;
-	color: #ffffff;
-}
-
 
 .hotel-card-button-favorites a {
 	padding: 0;
@@ -2038,4 +2009,10 @@ a[href^="tel:88128121212"]:active {
 :is(.tooltip:hover, .search-form-input-number:focus-visible ~ .tooltip) .tooltip-text {
 	visibility: visible;
 	opacity: 1;
+}
+
+/*Обесцвечиваем ссылки и уменьшаем контраст*/
+a:not([href]),
+:disabled {
+	filter: grayscale(1) contrast(0.5) brightness(1.9);
 }
