@@ -174,13 +174,13 @@
 					<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
 						<div class="search-form-field">
 							<label class="search-form-label search-form-label-icon-cal" for="search-date-in">Дата Заезда:</label>
-							<input class="search-form-input field field-error" type="text" id="search-date-in" name="search-date-in" placeholder="Укажите дату" value="27 апреля 2020">
+							<input class="search-form-input field field-error" type="text" id="search-date-in" name="search-date-in" placeholder="Укажите дату" value="27 апреля 2020" maxlength="20">
 							<span class="field-message field-message-error" hidden>Мы не можем отправить вас в прошлое</span>
 							<span class="field-message field-message-success" hidden>Ой что-то не пошло не так</span>
 						</div>
 						<div class="search-form-field">
 							<label class="search-form-label search-form-label-icon-cal" for="search-date-out">Дата Выезда:</label>
-							<input class="search-form-input field field-success" type="text" id="search-date-out" name="search-date-out" placeholder="Укажите дату" value="1 сентября 2023">
+							<input class="search-form-input field field-success" type="text" id="search-date-out" name="search-date-out" placeholder="Укажите дату" value="1 сентября 2023" maxlength="20">
 							<span class="field-message field-message-error" hidden>На эти даты нет свободных номеров. Увы.</span>
 							<span class="field-message field-message-success" hidden>На эти даты есть свободные номера. Пока есть.</span>
 						</div>
@@ -192,7 +192,7 @@
 									<button class="button-number button-number-minus" type="button">
 										<span class="visually-hidden">Кнопка минус</span>
 									</button>
-									<input class="search-form-input search-form-input-number" type="number" id="search-adult" name="search-adult" value="2">
+									<input class="search-form-input search-form-input-number" type="number" id="search-adult" name="search-adult" value="2" >
 									<button class="button-number button-number-plus" type="button">
 										<span class="visually-hidden">Кнопка плюс</span>
 									</button>
