@@ -81,9 +81,9 @@ img {
 .navigation-link-button {
 	display: block;
 	margin-top: 14px;
-	margin-left: 28px;
+	margin-left: 18px;
 	box-sizing: border-box;
-	padding-left: 34px;
+	padding-left: 42px;
 }
 
 .navigation-link-button:visited {
@@ -146,13 +146,13 @@ img {
 	position: absolute;
 	z-index: 3;
 	height: 2px;
-	inset: auto 19px -1px;
+	inset: 63px 0 0 40px;
 	background-color: #756257;
 }
 
 .navigation-link {
 	position: relative;
-	padding: 20px 16px;
+	padding: 20px 0 20px 38px;
 	display: block;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
@@ -284,7 +284,7 @@ img {
 .sedona-reason {
 	text-align: center;
 	padding: 0;
-	padding-top: 47px;
+	padding-top: 44px;
 	margin: 0;
 }
 
@@ -295,6 +295,8 @@ img {
 	line-height: 36px;
 	color: #000000;
 	text-transform: uppercase;
+	margin-left: 284px;
+	margin-right: 284px;
 }
 
 
@@ -343,13 +345,13 @@ img {
 
 /* Преимущества */
 .advantages-items {
-	padding: 103px 85px 111px 85px;
+	padding: 79px 85px 103px 85px;
 	margin: 0 auto;
 	align-items: center;
 }
 
 .advantages-items-different {
-	padding: 70px 82px;
+	padding-bottom: 64px;
 	margin: 0 auto;
 	align-items: center;
 }
@@ -430,15 +432,16 @@ img {
 }
 
 .advantages-list-title.blue-card {
-	padding: 92px 112px 0;
+	padding: 81px 121px 0 107px;
 	text-align: center;
 	color: #ffffff;
 	margin: 0;
 }
 
 .advantages-list-description.blue-card {
-	padding: 0 85px 81px;
+	padding: 0 83px 95px;
 	color: #ffffff;
+	margin: 0;
 }
 
 .white-text {
@@ -485,7 +488,7 @@ img {
 /* Поиск гостиниц */
 
 .hotel-search {
-	padding: 66px 304px;
+	padding: 63px 304px;
 	margin: 0;
 	margin-bottom: 15px;
 	text-align: center;
@@ -507,6 +510,7 @@ img {
 	font-size: 22px;
 	line-height: 26px;
 	color: #333333;
+	margin-bottom: 28px;
 }
 
 .hotel-search-button {
@@ -516,8 +520,8 @@ img {
 	line-height: 36px;
 	color: #ffffff;
 	background-color: #756157;
-	padding: 12px 59px;
-	margin-bottom: 10px;
+	padding: 8px 59px;
+	margin-bottom: 18px;
 }
 
 
@@ -626,7 +630,7 @@ img {
 	line-height: 36px;
 	border: none;
 	border-radius: 0 4px 4px 0;
-	padding: 8px 50px;
+	padding: 8px 38px;
 	margin-left: 0;
 }
 
@@ -766,7 +770,7 @@ img {
 .breadcrumbs-filter-container {
 	width: 1060px;
 	margin: 0 auto;
-	padding: 35px 70px 70px;
+	padding: 35px 70px 40px;
 	margin-bottom: 20px;
 }
 
@@ -886,8 +890,7 @@ img {
 .filter-block1 {
 	width: 380px;
 	display: flex;
-	margin: 0;
-	margin-right: auto;
+	margin: 0 133px 0 0;
 	padding: 0;
 }
 
@@ -966,7 +969,7 @@ img {
 	display: grid;
 	width: 141px;
 	grid-template-columns: 1em auto;
-	gap: 16px;
+	gap: 15px;
 }
 
 .checkbox-item[type="checkbox"] {
@@ -1094,7 +1097,7 @@ img {
 .range-prise {
 	display: flex;
 	width: 45px;
-	padding: 12px 80px 12px 20px;
+	padding: 12px 77px 12px 20px;
 	margin: 0;
 	appearance: textfield;
 	font-family: "PT Sans", sans-serif;
@@ -1245,7 +1248,7 @@ img {
 	background-color: #ffffff;
 	color: #000000;
 	padding: 0;
-	margin: 5px 0 36px;
+	margin: 51px 0 36px;
 }
 
 .view-container {
@@ -1709,7 +1712,7 @@ img {
 
 .pagination-container {
 	display: flex;
-	padding-top: 14px;
+	padding-top: 19px;
 }
 
 .pagination {
