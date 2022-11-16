@@ -621,6 +621,11 @@ img {
 .subscribe-field {
 	width: 454px;
 	border-radius: 4px 0 0 4px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
 }
 
 .subscribe-button {
@@ -1807,13 +1812,21 @@ img {
 }
 
 .page-footer-paragrapher-catalog {
-	color: #000000;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	color: #333333;
 }
 
 .field-catalog {
 	background-color: #f2f2f2;
 	padding-left: 18px;
 	padding-right: 245px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 /* Модальное окно */
@@ -1913,6 +1926,10 @@ img {
 	display: grid;
 	grid-template-columns: 133px 1fr;
 	gap: 4px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .search-form-field::after {
@@ -1924,10 +1941,11 @@ img {
 .search-form-label {
 	grid-area: 1 / 1 / 2 / 2;
 	margin: 0;
-	line-height: 24px;
-	font-size: 20px;
-	font-weight: 700;
 	padding: 12px 0;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
 }
 
 .search-form-label-icon-cal::before {
