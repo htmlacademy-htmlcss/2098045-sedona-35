@@ -83,7 +83,7 @@ img {
 	margin-top: 14px;
 	margin-left: 18px;
 	box-sizing: border-box;
-	padding-left: 42px;
+	padding-left: 36px;
 }
 
 .navigation-link-button:visited {
@@ -177,6 +177,8 @@ img {
 	min-width: 16px;
 	min-height: 22px;
 	padding-top: 22px;
+	padding-left: 6px;
+	padding-right: 16px;
 }
 
 .navigation-user .navigation-item {
@@ -405,6 +407,7 @@ img {
 	opacity: 0.3;
 	margin: 0 auto;
 	margin-top: 30px;
+	margin-bottom: 20px;
 	box-sizing: border-box;
 }
 
@@ -432,14 +435,14 @@ img {
 }
 
 .advantages-list-title.blue-card {
-	padding: 81px 121px 0 107px;
+	padding: 81px 111px 0 107px;
 	text-align: center;
 	color: #ffffff;
 	margin: 0;
 }
 
 .advantages-list-description.blue-card {
-	padding: 0 83px 95px;
+	padding: 0 83px 104px;
 	color: #ffffff;
 	margin: 0;
 }
@@ -592,11 +595,11 @@ img {
 	justify-content: center;
 	width: 1200px;
 	margin: 0;
-	padding: 0 258px;
+	padding: 0 258px 0 252px;
 }
 
 .field {
-	padding-left: 22px;
+	padding-left: 27px;
 	border: none;
 	margin-right: 0;
 	font: inherit;
@@ -619,7 +622,7 @@ img {
 }
 
 .subscribe-field {
-	width: 454px;
+	width: 424px;
 	border-radius: 4px 0 0 4px;
 	font-family: "PT Sans", sans-serif;
 	font-weight: 400;
@@ -635,7 +638,7 @@ img {
 	line-height: 36px;
 	border: none;
 	border-radius: 0 4px 4px 0;
-	padding: 8px 38px;
+	padding: 8px 49px;
 	margin-left: 0;
 }
 
@@ -1864,6 +1867,7 @@ img {
 	text-transform: uppercase;
 	color: #000000;
 	padding: 0;
+	padding-right: 50px;
 	margin: 0;
 }
 
@@ -1872,8 +1876,8 @@ img {
 .modal-close-button {
 	position: absolute;
 	padding: 0;
-	top: 23px;
-	right: 25px;
+	top: 64px;
+	right: 52px;
 	border-radius: 100px;
 	background-color: #f2f2f2;
 	border: none;
@@ -2144,6 +2148,14 @@ img {
 	color: rgb(255, 255, 255, 0.3);
 }
 
+.search-form-input::placeholder {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
 /*Тултип*/
 .tooltip {
 	position: relative;
@@ -2205,4 +2217,21 @@ img {
 a:not([href]),
 :disabled {
 	filter: grayscale(1) contrast(0.5) brightness(1.9);
+}
+
+input::placeholder {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	opacity: 0.6;
+}
+
+.range-prise::placeholder {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
 }
