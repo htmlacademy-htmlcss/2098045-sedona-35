@@ -13,7 +13,7 @@
 			<!-- Шапка -->
 			<header class="page-header">
 				<nav class="navigation">
-					<a href="./index.html" aria-current="page">
+					<a class="navigation-logo-link" href="./index.html" aria-current="page">
 						<img src="./images/logo.svg" class="navigation-logo" alt="Логотип сайта городка Седона." width="140" height="70">
 					</a>
 					<ul class="navigation-list">
@@ -36,8 +36,8 @@
 						</li>
 						<li class="navigation-item">
 							<a class="navigation-link navigation-item-heart" href="javascript:void(0)">
-								<span class="count-badge">12</span>
 								<span class="visually-hidden">Избранное</span>
+								<span class="count-badge">12</span>
 							</a>
 						</li>
 						<li class="navigation-item">
@@ -66,40 +66,45 @@
 				<section class="advantages">
 					<h2 class="visually-hidden"> Преимущества</h2>
 					<ul class="advantages-list">
-						<li class="advantages-items wide dark-blue-card">
-							<h3 class="advantages-list-title blue-card">Настоящий городок</h3>
-							<p class="advantages-list-description blue-card">Cедона - не аттракцион для туристов, там течет своя жизнь</p>
-							<img src="./images/advantages-1.jpg" class="advantages-images" alt="Вид из-за угла на второй этаж деревянного отеля на фоне гор и флагов." width="800" height="384">
+						<li class="advantages-item advantages-item-illustrated">
+							<div class="advantages-item-text">
+								<h3 class="advantages-item-title">Настоящий <br>городок</h3>
+								<p class="advantages-item-description">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
+							</div>
+							<img class="advantages-image" src="./images/advantages-1.jpg" alt="Вид из-за угла на второй этаж деревянного отеля на фоне гор и флагов." width="800" height="384">
 						</li>
-						<li class="advantages-items light-blue-card">
-							<h3 class="advantages-list-title">Небольшая площадь</h3>
-							<p class="advantages-list-description">Все достопримечатеьности находятся очень близко</p>
+						<li class="advantages-item advantages-item-text">
+							<h3 class="advantages-item-title">Небольшая площадь</h3>
+							<p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
 						</li>
-						<li class="advantages-items medium-blue-card">
-							<h3 class="advantages-list-title">Красивая<br> дорога</h3>
-							<p class="advantages-list-description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+						<li class="advantages-item advantages-item-text">
+							<h3 class="advantages-item-title">Красивая<br> дорога</h3>
+							<p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</li>
-						<li class="advantages-items light-blue-card">
-							<h3 class="advantages-list-title">Мало<br> туристов</h3>
-							<p class="advantages-list-description">Большинство едет в Гранд Каньон и толпится там</p>
+						<li class="advantages-item advantages-item-text">
+							<h3 class="advantages-item-title">Мало<br> туристов</h3>
+							<p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
 						</li>
-						<li class="advantages-items wide reverse dark-blue-card">
-							<h3 class="advantages-list-title blue-card">Там есть <br> мост дьявола</h3>
-							<p class="advantages-list-description blue-card">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-							<img src="./images/advantages-2.jpg" class="advantages-images" alt="Вид сверху на каньон Седона." width="800" height="384">
+						<li class="advantages-item advantages-item-illustrated">
+							<div class="advantages-item-text">
+								<h3 class="advantages-item-title blue-card">Там есть <br> мост дьявола</h3>
+								<p class="advantages-item-description blue-card">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+							</div>
+							<img class="advantages-image advantages-image-reordered" src="./images/advantages-2.jpg" alt="Вид сверху на каньон Седона." width="800" height="384">
 						</li>
-
-						<li class="advantages-items advantages-items-different home-icon medium-blue-card">
-							<h3 class="advantages-list-title-icons">Жилье</h3>
-							<p class="advantages-list-description description-icon">Рекомендуем пожить в настоящем отеле, все как в кино</p>
+					</ul>
+					<ul class="advantages-list advantages-list-featured">
+						<li class="advantages-item advantages-item-text">
+							<h3 class="advantages-item-title icon-home">Жилье</h3>
+							<p class="advantages-item-description">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
 						</li>
-						<li class="advantages-items advantages-items-different food-icon white-color-card">
-							<h3 class="advantages-list-title-icons">Еда</h3>
-							<p class="advantages-list-description description-icon">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
+						<li class="advantages-item advantages-item-text">
+							<h3 class="advantages-item-title icon-food">Еда</h3>
+							<p class="advantages-item-description">Всегда заказывайте <br>топовый фирменный бургер, <br>вы не разочаруетесь!</p>
 						</li>
-						<li class="advantages-items advantages-items-different souvenirs-icon medium-blue-card">
-							<h3 class="advantages-list-title-icons">Сувениры</h3>
-							<p class="advantages-list-description description-icon">Не только китайского,<br>но и настоящего местного производства</p>
+						<li class="advantages-item advantages-item-text">
+							<h3 class="advantages-item-title icon-souvenirs">Сувениры</h3>
+							<p class="advantages-item-description">Не только китайского, <br>но и настоящего местного <br>производства!</p>
 						</li>
 					</ul>
 				</section>
@@ -108,8 +113,8 @@
 				<section class="hotel-search">
 					<h2 class="visually-hidden"> Поиск гостиницы</h2>
 					<p class="hotel-search-header">Заинтересовались?</p>
-					<p class="hotel-search-paragrapher">Укажите предполагаемы даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-					<a href="./catalog.html" class="hotel-search-button button">Поиск гостиниц в Седоне</a>
+					<p class="hotel-search-paragrapher">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<a href="./catalog.html" class="hotel-search-button button">Поиск гостиницы в Седоне</a>
 
 				</section>
 
@@ -122,10 +127,10 @@
 					<section class="page-footer-subscribe">
 						<div class="subscribe-container">
 							<h2 class="page-footer-header">Подпишитесь на рассылку</h2>
-							<p class="page-footer-paragrapher">Только полезная информация и никакого спама, честное бойскаутское!</p>
+							<p class="page-footer-paragrapher">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 							<form class="subscribe-form" action="https://echo.htmlcademy.ru" method="post">
 								<label class="visually-hidden" for="your-email">Ваш электропочта:</label>
-								<input class="subscribe-field field" placeholder="Ваш email" type="email" name="newsletter-email" id="your-email" required>
+								<input class="subscribe-field field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="your-email" required>
 								<button class="subscribe-button button" type="submit">Подписаться</button>
 							</form>
 						</div>
@@ -192,7 +197,7 @@
 									<button class="button-number button-number-minus" type="button">
 										<span class="visually-hidden">Кнопка минус</span>
 									</button>
-									<input class="search-form-input search-form-input-number" type="number" id="search-adult" name="search-adult" value="2" >
+									<input class="field search-form-input search-form-input-number" type="number" id="search-adult" name="search-adult" placeholder="2" value="2" >
 									<button class="button-number button-number-plus" type="button">
 										<span class="visually-hidden">Кнопка плюс</span>
 									</button>
@@ -205,7 +210,7 @@
 									<button class="button-number button-number-minus" type="button">
 										<span class="visually-hidden">Кнопка минус</span>
 									</button>
-									<input class="search-form-input search-form-input-number" type="number" id="search-children" name="search-children" value="2" aria-describedby="tooltip-search-children">
+									<input class="field search-form-input search-form-input-number" type="number" id="search-children" name="search-children" placeholder="2" value="2" aria-describedby="tooltip-search-children">
 									<button class="button-number button-number-plus" type="button">
 										<span class="visually-hidden">Кнопка плюс</span>
 									</button>
