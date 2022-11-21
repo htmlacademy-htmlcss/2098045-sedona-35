@@ -1517,12 +1517,23 @@ img {
 	grid-column: 2 / 3;
 }
 
+.hotel-card-button.favorites:hover {
+	background-color: #68a2ca;
+}
+
 .favourites-not-choosen {
 	background-color: #82b3d3;
 }
 
 .favourites-not-choosen :hover {
-	background-color: #68a2ca;
+	.hotel-card-button.favorites {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		border: none;
+		padding: 8px 10px;
+		grid-column: 2 / 3;
+	}
 }
 
 .favourites-not-choosen:active {
